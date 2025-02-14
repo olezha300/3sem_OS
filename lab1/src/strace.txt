@@ -1,0 +1,193 @@
+`
+execve("./parent", ["./parent"], 0xffffec9af5d8 /* 32 vars */) = 0
+brk(NULL)                               = 0xaaaac1a8a000
+mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffffbe146000
+faccessat(AT_FDCWD, "/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=15047, ...}, AT_EMPTY_PATH) = 0
+mmap(NULL, 15047, PROT_READ, MAP_PRIVATE, 3, 0) = 0xffffbe142000
+close(3)                                = 0
+openat(AT_FDCWD, "/lib/aarch64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0\267\0\1\0\0\0\340u\2\0\0\0\0\0"..., 832) = 832
+newfstatat(3, "", {st_mode=S_IFREG|0755, st_size=1637400, ...}, AT_EMPTY_PATH) = 0
+mmap(NULL, 1805928, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffffbdf58000
+mmap(0xffffbdf60000, 1740392, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0) = 0xffffbdf60000
+munmap(0xffffbdf58000, 32768)           = 0
+munmap(0xffffbe109000, 32360)           = 0
+mprotect(0xffffbe0e8000, 61440, PROT_NONE) = 0
+mmap(0xffffbe0f7000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x187000) = 0xffffbe0f7000
+mmap(0xffffbe0fd000, 48744, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0xffffbe0fd000
+close(3)                                = 0
+set_tid_address(0xffffbe146f50)         = 71655
+set_robust_list(0xffffbe146f60, 24)     = 0
+rseq(0xffffbe147620, 0x20, 0, 0xd428bc00) = 0
+mprotect(0xffffbe0f7000, 16384, PROT_READ) = 0
+mprotect(0xaaaabdf41000, 4096, PROT_READ) = 0
+mprotect(0xffffbe14b000, 8192, PROT_READ) = 0
+prlimit64(0, RLIMIT_STACK, NULL, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+munmap(0xffffbe142000, 15047)           = 0
+pipe2([3, 4], 0)                        = 0
+pipe2([5, 6], 0)                        = 0
+clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLDstrace: Process 71656 attached
+ <unfinished ...>
+[pid 71656] set_robust_list(0xffffbe146f60, 24 <unfinished ...>
+[pid 71655] <... clone resumed>, child_tidptr=0xffffbe146f50) = 71656
+[pid 71656] <... set_robust_list resumed>) = 0
+[pid 71655] close(3)                    = 0
+[pid 71656] close(4 <unfinished ...>
+[pid 71655] close(6 <unfinished ...>
+[pid 71656] <... close resumed>)        = 0
+[pid 71655] <... close resumed>)        = 0
+[pid 71656] close(5 <unfinished ...>
+[pid 71655] newfstatat(1, "",  <unfinished ...>
+[pid 71656] <... close resumed>)        = 0
+[pid 71655] <... newfstatat resumed>{st_mode=S_IFCHR|0620, st_rdev=makedev(0x88, 0x1), ...}, AT_EMPTY_PATH) = 0
+[pid 71656] dup3(3, 0, 0 <unfinished ...>
+[pid 71655] getrandom( <unfinished ...>
+[pid 71656] <... dup3 resumed>)         = 0
+[pid 71655] <... getrandom resumed>"\x0b\xfe\xe6\x4d\xe7\xaa\xcc\x05", 8, GRND_NONBLOCK) = 8
+[pid 71656] dup3(6, 1, 0 <unfinished ...>
+[pid 71655] brk(NULL <unfinished ...>
+[pid 71656] <... dup3 resumed>)         = 1
+[pid 71655] <... brk resumed>)          = 0xaaaac1a8a000
+[pid 71656] close(3 <unfinished ...>
+[pid 71655] brk(0xaaaac1aab000 <unfinished ...>
+[pid 71656] <... close resumed>)        = 0
+[pid 71655] <... brk resumed>)          = 0xaaaac1aab000
+[pid 71656] close(6 <unfinished ...>
+[pid 71655] newfstatat(0, "",  <unfinished ...>
+[pid 71656] <... close resumed>)        = 0
+[pid 71655] <... newfstatat resumed>{st_mode=S_IFCHR|0620, st_rdev=makedev(0x88, 0x1), ...}, AT_EMPTY_PATH) = 0
+[pid 71656] newfstatat(1, "",  <unfinished ...>
+[pid 71655] write(1, "Enter filename: ", 16 <unfinished ...>
+[pid 71656] <... newfstatat resumed>{st_mode=S_IFIFO|0600, st_size=0, ...}, AT_EMPTY_PATH) = 0
+Enter filename: [pid 71655] <... write resumed>)        = 16
+[pid 71656] getrandom( <unfinished ...>
+[pid 71655] read(0,  <unfinished ...>
+[pid 71656] <... getrandom resumed>"\x1f\x6e\xb0\x45\x7c\x04\x2d\x89", 8, GRND_NONBLOCK) = 8
+[pid 71656] brk(NULL)                   = 0xaaaac1a8a000
+[pid 71656] brk(0xaaaac1aab000)         = 0xaaaac1aab000
+[pid 71656] execve("./child", ["child"], 0xfffff229fa68 /* 32 vars */) = 0
+[pid 71656] brk(NULL)                   = 0xaaaadc275000
+[pid 71656] mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff98351000
+[pid 71656] faccessat(AT_FDCWD, "/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory)
+[pid 71656] openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+[pid 71656] newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=15047, ...}, AT_EMPTY_PATH) = 0
+[pid 71656] mmap(NULL, 15047, PROT_READ, MAP_PRIVATE, 3, 0) = 0xffff9834d000
+[pid 71656] close(3)                    = 0
+[pid 71656] openat(AT_FDCWD, "/lib/aarch64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+[pid 71656] read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0\267\0\1\0\0\0\340u\2\0\0\0\0\0"..., 832) = 832
+[pid 71656] newfstatat(3, "", {st_mode=S_IFREG|0755, st_size=1637400, ...}, AT_EMPTY_PATH) = 0
+[pid 71656] mmap(NULL, 1805928, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff98163000
+[pid 71656] mmap(0xffff98170000, 1740392, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0) = 0xffff98170000
+[pid 71656] munmap(0xffff98163000, 53248) = 0
+[pid 71656] munmap(0xffff98319000, 11880) = 0
+[pid 71656] mprotect(0xffff982f8000, 61440, PROT_NONE) = 0
+[pid 71656] mmap(0xffff98307000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x187000) = 0xffff98307000
+[pid 71656] mmap(0xffff9830d000, 48744, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0xffff9830d000
+[pid 71656] close(3)                    = 0
+[pid 71656] set_tid_address(0xffff98351f50) = 71656
+[pid 71656] set_robust_list(0xffff98351f60, 24) = 0
+[pid 71656] rseq(0xffff98352620, 0x20, 0, 0xd428bc00) = 0
+[pid 71656] mprotect(0xffff98307000, 16384, PROT_READ) = 0
+[pid 71656] mprotect(0xaaaabc841000, 4096, PROT_READ) = 0
+[pid 71656] mprotect(0xffff98356000, 8192, PROT_READ) = 0
+[pid 71656] prlimit64(0, RLIMIT_STACK, NULL, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+[pid 71656] munmap(0xffff9834d000, 15047) = 0
+[pid 71656] newfstatat(0, "", {st_mode=S_IFIFO|0600, st_size=0, ...}, AT_EMPTY_PATH) = 0
+[pid 71656] getrandom("\x1c\x37\xfc\x65\xb4\x3b\x42\x9b", 8, GRND_NONBLOCK) = 8
+[pid 71656] brk(NULL)                   = 0xaaaadc275000
+[pid 71656] brk(0xaaaadc296000)         = 0xaaaadc296000
+[pid 71656] read(0,  <unfinished ...>
+[pid 71655] <... read resumed>0xaaaac1a8a6b0, 1024) = ? ERESTARTSYS (To be restarted if SA_RESTART is set)
+[pid 71656] <... read resumed>0xaaaadc2752a0, 4096) = ? ERESTARTSYS (To be restarted if SA_RESTART is set)
+[pid 71655] --- SIGWINCH {si_signo=SIGWINCH, si_code=SI_KERNEL} ---
+[pid 71656] --- SIGWINCH {si_signo=SIGWINCH, si_code=SI_KERNEL} ---
+[pid 71655] read(0,  <unfinished ...>
+[pid 71656] read(0,  <unfinished ...>
+[pid 71655] <... read resumed>0xaaaac1a8a6b0, 1024) = ? ERESTARTSYS (To be restarted if SA_RESTART is set)
+[pid 71656] <... read resumed>0xaaaadc2752a0, 4096) = ? ERESTARTSYS (To be restarted if SA_RESTART is set)
+[pid 71655] --- SIGWINCH {si_signo=SIGWINCH, si_code=SI_KERNEL} ---
+[pid 71656] --- SIGWINCH {si_signo=SIGWINCH, si_code=SI_KERNEL} ---
+[pid 71655] --- SIGWINCH {si_signo=SIGWINCH, si_code=SI_KERNEL} ---
+[pid 71656] --- SIGWINCH {si_signo=SIGWINCH, si_code=SI_KERNEL} ---
+[pid 71655] read(0,  <unfinished ...>
+[pid 71656] read(0,  <unfinished ...>
+[pid 71655] <... read resumed>0xaaaac1a8a6b0, 1024) = ? ERESTARTSYS (To be restarted if SA_RESTART is set)
+[pid 71656] <... read resumed>0xaaaadc2752a0, 4096) = ? ERESTARTSYS (To be restarted if SA_RESTART is set)
+[pid 71655] --- SIGWINCH {si_signo=SIGWINCH, si_code=SI_KERNEL} ---
+[pid 71655] read(0,  <unfinished ...>
+[pid 71656] --- SIGWINCH {si_signo=SIGWINCH, si_code=SI_KERNEL} ---
+[pid 71655] <... read resumed>0xaaaac1a8a6b0, 1024) = ? ERESTARTSYS (To be restarted if SA_RESTART is set)
+[pid 71656] read(0,  <unfinished ...>
+[pid 71655] --- SIGWINCH {si_signo=SIGWINCH, si_code=SI_KERNEL} ---
+[pid 71656] <... read resumed>0xaaaadc2752a0, 4096) = ? ERESTARTSYS (To be restarted if SA_RESTART is set)
+[pid 71655] read(0,  <unfinished ...>
+[pid 71656] --- SIGWINCH {si_signo=SIGWINCH, si_code=SI_KERNEL} ---
+[pid 71656] read(0,  <unfinished ...>
+[pid 71655] <... read resumed>0xaaaac1a8a6b0, 1024) = ? ERESTARTSYS (To be restarted if SA_RESTART is set)
+[pid 71656] <... read resumed>0xaaaadc2752a0, 4096) = ? ERESTARTSYS (To be restarted if SA_RESTART is set)
+[pid 71655] --- SIGWINCH {si_signo=SIGWINCH, si_code=SI_KERNEL} ---
+[pid 71656] --- SIGWINCH {si_signo=SIGWINCH, si_code=SI_KERNEL} ---
+[pid 71655] read(0,  <unfinished ...>
+[pid 71656] read(0,  <unfinished ...>
+[pid 71655] <... read resumed>0xaaaac1a8a6b0, 1024) = ? ERESTARTSYS (To be restarted if SA_RESTART is set)
+[pid 71656] <... read resumed>0xaaaadc2752a0, 4096) = ? ERESTARTSYS (To be restarted if SA_RESTART is set)
+[pid 71655] --- SIGWINCH {si_signo=SIGWINCH, si_code=SI_KERNEL} ---
+[pid 71656] --- SIGWINCH {si_signo=SIGWINCH, si_code=SI_KERNEL} ---
+[pid 71655] read(0,  <unfinished ...>
+[pid 71656] read(0,  <unfinished ...>
+[pid 71655] <... read resumed>0xaaaac1a8a6b0, 1024) = ? ERESTARTSYS (To be restarted if SA_RESTART is set)
+[pid 71656] <... read resumed>0xaaaadc2752a0, 4096) = ? ERESTARTSYS (To be restarted if SA_RESTART is set)
+[pid 71655] --- SIGWINCH {si_signo=SIGWINCH, si_code=SI_KERNEL} ---
+[pid 71656] --- SIGWINCH {si_signo=SIGWINCH, si_code=SI_KERNEL} ---
+[pid 71655] read(0,  <unfinished ...>
+[pid 71656] read(0,  <unfinished ...>
+[pid 71655] <... read resumed>0xaaaac1a8a6b0, 1024) = ? ERESTARTSYS (To be restarted if SA_RESTART is set)
+[pid 71656] <... read resumed>0xaaaadc2752a0, 4096) = ? ERESTARTSYS (To be restarted if SA_RESTART is set)
+[pid 71655] --- SIGWINCH {si_signo=SIGWINCH, si_code=SI_KERNEL} ---
+[pid 71656] --- SIGWINCH {si_signo=SIGWINCH, si_code=SI_KERNEL} ---
+[pid 71655] read(0,  <unfinished ...>
+[pid 71656] read(0, output.txt
+ <unfinished ...>
+[pid 71655] <... read resumed>"output.txt\n", 1024) = 11
+[pid 71655] write(4, "output.txt", 10)  = 10
+[pid 71656] <... read resumed>"output.txt", 4096) = 10
+[pid 71655] write(4, "\n", 1 <unfinished ...>
+[pid 71656] read(0,  <unfinished ...>
+[pid 71655] <... write resumed>)        = 1
+[pid 71656] <... read resumed>"\n", 4096) = 1
+[pid 71655] write(1, "Enter command (numbers separated"..., 45 <unfinished ...>
+[pid 71656] openat(AT_FDCWD, "output.txt", O_WRONLY|O_CREAT|O_TRUNC, 0666Enter command (numbers separated by spaces):  <unfinished ...>
+[pid 71655] <... write resumed>)        = 45
+[pid 71655] read(0,  <unfinished ...>
+[pid 71656] <... openat resumed>)       = 3
+[pid 71656] read(0, 500 2 5
+ <unfinished ...>
+[pid 71655] <... read resumed>"500 2 5\n", 1024) = 8
+[pid 71655] write(4, "500 2 5\n", 8)    = 8
+[pid 71656] <... read resumed>"500 2 5\n", 4096) = 8
+[pid 71655] write(4, "\n", 1 <unfinished ...>
+[pid 71656] newfstatat(1, "",  <unfinished ...>
+[pid 71655] <... write resumed>)        = 1
+[pid 71656] <... newfstatat resumed>{st_mode=S_IFIFO|0600, st_size=0, ...}, AT_EMPTY_PATH) = 0
+[pid 71655] wait4(71656,  <unfinished ...>
+[pid 71656] newfstatat(3, "", {st_mode=S_IFREG|0664, st_size=0, ...}, AT_EMPTY_PATH) = 0
+[pid 71656] write(3, "Result: 50\n", 11) = 11
+[pid 71656] close(3)                    = 0
+[pid 71656] write(1, "Received command: 500 2 5\n\nResul"..., 38) = 38
+[pid 71656] exit_group(0)               = ?
+[pid 71656] +++ exited with 0 +++
+<... wait4 resumed>NULL, 0, NULL)       = 71656
+--- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=71656, si_uid=1000, si_status=0, si_utime=0, si_stime=0} ---
+close(4)                                = 0
+read(5, "Received command: 500 2 5\n\nResul"..., 1024) = 38
+write(1, "Child process output: Received c"..., 60Child process output: Received command: 500 2 5
+
+Result: 50
+) = 60
+write(1, "\n", 1
+)                       = 1
+close(5)                                = 0
+exit_group(0)                           = ?
++++ exited with 0 +++

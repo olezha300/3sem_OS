@@ -35,8 +35,10 @@ int main()
         close(pipe1[0]);
         close(pipe2[1]);
 
+        printf("Starting child process...\n");  // Отладочное сообщение
         execl("./child", "child", (char *)NULL);
         perror("Execl failed");
+        exit(1); // Добавьте выход из дочернего процесса в случае ошибки
         return 1;
     }
     else
@@ -59,7 +61,7 @@ int main()
         write(pipe1[1], command, strlen(command));
         write(pipe1[1], "\n", 1);
 
-        wait(NULL);
+        waitpid(pid, NULL, 0);
 
         close(pipe1[1]);
 

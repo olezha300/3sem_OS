@@ -40,11 +40,14 @@ int main(int argc, char *argv[])
     print_matrix(matrix, rows, cols);
     struct timespec start, end;
     clock_gettime(CLOCK_MONOTONIC, &start);
+
+    // Создание
     pthread_t threads[max_threads];
     ThreadData thread_data[max_threads];
 
     for (int i = 0; i < max_threads; i++)
     {
+        // Инициализация
         thread_data[i].matrix = matrix;
         thread_data[i].result = result;
         thread_data[i].rows = rows;

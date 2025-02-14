@@ -34,6 +34,8 @@ int main()
         return 1;
     }
 
+    printf("Received command: %s\n", command);  // Отладочное сообщение
+
     int numbers[BUFFER_SIZE], num_count = 0;
     char *token = strtok(command, " ");
     while (token != NULL)

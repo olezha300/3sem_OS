@@ -1,0 +1,200 @@
+execve("./median_filter", ["./median_filter", "10", "10", "3", "2", "4"], 0xffffe2179b30 /* 32 vars */) = 0
+brk(NULL)                               = 0xaaaaf8944000
+mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff95ff7000
+faccessat(AT_FDCWD, "/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=15047, ...}, AT_EMPTY_PATH) = 0
+mmap(NULL, 15047, PROT_READ, MAP_PRIVATE, 3, 0) = 0xffff95ff3000
+close(3)                                = 0
+openat(AT_FDCWD, "/lib/aarch64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0\267\0\1\0\0\0\340u\2\0\0\0\0\0"..., 832) = 832
+newfstatat(3, "", {st_mode=S_IFREG|0755, st_size=1637400, ...}, AT_EMPTY_PATH) = 0
+mmap(NULL, 1805928, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff95e09000
+mmap(0xffff95e10000, 1740392, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0) = 0xffff95e10000
+munmap(0xffff95e09000, 28672)           = 0
+munmap(0xffff95fb9000, 36456)           = 0
+mprotect(0xffff95f98000, 61440, PROT_NONE) = 0
+mmap(0xffff95fa7000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x187000) = 0xffff95fa7000
+mmap(0xffff95fad000, 48744, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0xffff95fad000
+close(3)                                = 0
+set_tid_address(0xffff95ff7f50)         = 91514
+set_robust_list(0xffff95ff7f60, 24)     = 0
+rseq(0xffff95ff8620, 0x20, 0, 0xd428bc00) = 0
+mprotect(0xffff95fa7000, 16384, PROT_READ) = 0
+mprotect(0xaaaaca871000, 4096, PROT_READ) = 0
+mprotect(0xffff95ffc000, 8192, PROT_READ) = 0
+prlimit64(0, RLIMIT_STACK, NULL, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+munmap(0xffff95ff3000, 15047)           = 0
+getrandom("\x71\x5f\xf6\xe1\xaf\xc5\xc8\x5e", 8, GRND_NONBLOCK) = 8
+brk(NULL)                               = 0xaaaaf8944000
+brk(0xaaaaf8965000)                     = 0xaaaaf8965000
+newfstatat(1, "", {st_mode=S_IFCHR|0620, st_rdev=makedev(0x88, 0x1), ...}, AT_EMPTY_PATH) = 0
+write(1, "Original Matrix:\n", 17Original Matrix:
+)      = 17
+write(1, "103 198 105 115 81 255 74 236 41"..., 38103 198 105 115 81 255 74 236 41 205 
+) = 38
+write(1, "186 171 242 251 227 70 124 194 8"..., 39186 171 242 251 227 70 124 194 84 248 
+) = 39
+write(1, "27 232 231 141 118 90 46 99 51 1"..., 3627 232 231 141 118 90 46 99 51 159 
+) = 36
+write(1, "201 154 102 50 13 183 49 88 163 "..., 36201 154 102 50 13 183 49 88 163 90 
+) = 36
+write(1, "37 93 5 23 88 233 94 212 171 178"..., 3437 93 5 23 88 233 94 212 171 178 
+) = 34
+write(1, "205 198 155 180 84 17 14 130 116"..., 37205 198 155 180 84 17 14 130 116 65 
+) = 37
+write(1, "33 61 220 135 112 233 62 161 65 "..., 3733 61 220 135 112 233 62 161 65 225 
+) = 37
+write(1, "252 103 62 1 126 151 234 220 107"..., 38252 103 62 1 126 151 234 220 107 150 
+) = 38
+write(1, "143 56 92 42 236 176 59 251 50 1"..., 36143 56 92 42 236 176 59 251 50 175 
+) = 36
+write(1, "60 84 236 24 219 92 2 26 254 67 "..., 3360 84 236 24 219 92 2 26 254 67 
+) = 33
+rt_sigaction(SIGRT_1, {sa_handler=0xffff95e8a700, sa_mask=[], sa_flags=SA_ONSTACK|SA_RESTART|SA_SIGINFO}, NULL, 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [RTMIN RT_1], NULL, 8) = 0
+mmap(NULL, 8454144, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_STACK, -1, 0) = 0xffff95600000
+mprotect(0xffff95610000, 8388608, PROT_READ|PROT_WRITE) = 0
+rt_sigprocmask(SIG_BLOCK, ~[], [], 8)   = 0
+clone(child_stack=0xffff95e0e960, flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTIDstrace: Process 91515 attached
+, parent_tid=[91515], tls=0xffff95e0f8e0, child_tidptr=0xffff95e0f1f0) = 91515
+[pid 91515] rseq(0xffff95e0f8c0, 0x20, 0, 0xd428bc00 <unfinished ...>
+[pid 91514] rt_sigprocmask(SIG_SETMASK, [],  <unfinished ...>
+[pid 91515] <... rseq resumed>)         = 0
+[pid 91514] <... rt_sigprocmask resumed>NULL, 8) = 0
+[pid 91515] set_robust_list(0xffff95e0f200, 24 <unfinished ...>
+[pid 91514] mmap(NULL, 8454144, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_STACK, -1, 0 <unfinished ...>
+[pid 91515] <... set_robust_list resumed>) = 0
+[pid 91514] <... mmap resumed>)         = 0xffff94c00000
+[pid 91515] rt_sigprocmask(SIG_SETMASK, [],  <unfinished ...>
+[pid 91514] mprotect(0xffff94c10000, 8388608, PROT_READ|PROT_WRITE <unfinished ...>
+[pid 91515] <... rt_sigprocmask resumed>NULL, 8) = 0
+[pid 91514] <... mprotect resumed>)     = 0
+[pid 91514] futex(0xffff95ffeb28, FUTEX_WAIT_PRIVATE, 2, NULL <unfinished ...>
+[pid 91515] openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+[pid 91515] newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=15047, ...}, AT_EMPTY_PATH) = 0
+[pid 91515] mmap(NULL, 15047, PROT_READ, MAP_PRIVATE, 3, 0) = 0xffff95ff3000
+[pid 91515] close(3)                    = 0
+[pid 91515] mmap(NULL, 134217728, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_NORESERVE, -1, 0) = 0xffff8cc00000
+[pid 91515] munmap(0xffff8cc00000, 54525952) = 0
+[pid 91515] munmap(0xffff94000000, 12582912) = 0
+[pid 91515] mprotect(0xffff90000000, 135168, PROT_READ|PROT_WRITE) = 0
+[pid 91515] openat(AT_FDCWD, "/lib/aarch64-linux-gnu/libgcc_s.so.1", O_RDONLY|O_CLOEXEC) = 3
+[pid 91515] read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0\267\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
+[pid 91515] newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=84296, ...}, AT_EMPTY_PATH) = 0
+[pid 91515] mmap(NULL, 213704, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff955cb000
+[pid 91515] mmap(0xffff955d0000, 148168, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0) = 0xffff955d0000
+[pid 91515] munmap(0xffff955cb000, 20480) = 0
+[pid 91515] munmap(0xffff955f5000, 41672) = 0
+[pid 91515] mprotect(0xffff955e4000, 61440, PROT_NONE) = 0
+[pid 91515] mmap(0xffff955f3000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x13000) = 0xffff955f3000
+[pid 91515] close(3)                    = 0
+[pid 91515] mprotect(0xffff955f3000, 4096, PROT_READ) = 0
+[pid 91515] futex(0xffff95ffeb28, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+[pid 91514] <... futex resumed>)        = 0
+[pid 91515] <... futex resumed>)        = 1
+[pid 91514] futex(0xffff95ffeb28, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+[pid 91515] munmap(0xffff95ff3000, 15047 <unfinished ...>
+[pid 91514] <... futex resumed>)        = 0
+[pid 91515] <... munmap resumed>)       = 0
+[pid 91514] rt_sigprocmask(SIG_BLOCK, ~[], [], 8) = 0
+[pid 91515] futex(0xffff955f4234, FUTEX_WAKE_PRIVATE, 2147483647 <unfinished ...>
+[pid 91514] clone(child_stack=0xffff9540e960, flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID <unfinished ...>
+[pid 91515] <... futex resumed>)        = 0
+strace: Process 91516 attached
+[pid 91514] <... clone resumed>, parent_tid=[91516], tls=0xffff9540f8e0, child_tidptr=0xffff9540f1f0) = 91516
+[pid 91516] rseq(0xffff9540f8c0, 0x20, 0, 0xd428bc00 <unfinished ...>
+[pid 91514] rt_sigprocmask(SIG_SETMASK, [],  <unfinished ...>
+[pid 91516] <... rseq resumed>)         = 0
+[pid 91514] <... rt_sigprocmask resumed>NULL, 8) = 0
+[pid 91516] set_robust_list(0xffff9540f200, 24 <unfinished ...>
+[pid 91514] mmap(NULL, 8454144, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_STACK, -1, 0 <unfinished ...>
+[pid 91516] <... set_robust_list resumed>) = 0
+[pid 91514] <... mmap resumed>)         = 0xffff94200000
+[pid 91516] rt_sigprocmask(SIG_SETMASK, [],  <unfinished ...>
+[pid 91514] mprotect(0xffff94210000, 8388608, PROT_READ|PROT_WRITE <unfinished ...>
+[pid 91516] <... rt_sigprocmask resumed>NULL, 8) = 0
+[pid 91514] <... mprotect resumed>)     = 0
+[pid 91514] rt_sigprocmask(SIG_BLOCK, ~[], [], 8) = 0
+[pid 91514] clone(child_stack=0xffff94a0e960, flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTIDstrace: Process 91517 attached
+, parent_tid=[91517], tls=0xffff94a0f8e0, child_tidptr=0xffff94a0f1f0) = 91517
+[pid 91514] rt_sigprocmask(SIG_SETMASK, [],  <unfinished ...>
+[pid 91517] rseq(0xffff94a0f8c0, 0x20, 0, 0xd428bc00 <unfinished ...>
+[pid 91514] <... rt_sigprocmask resumed>NULL, 8) = 0
+[pid 91517] <... rseq resumed>)         = 0
+[pid 91514] mmap(NULL, 8454144, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_STACK, -1, 0) = 0xffff8f600000
+[pid 91517] set_robust_list(0xffff94a0f200, 24 <unfinished ...>
+[pid 91514] mprotect(0xffff8f610000, 8388608, PROT_READ|PROT_WRITE <unfinished ...>
+[pid 91517] <... set_robust_list resumed>) = 0
+[pid 91516] rt_sigprocmask(SIG_BLOCK, ~[RT_1],  <unfinished ...>
+[pid 91515] rt_sigprocmask(SIG_BLOCK, ~[RT_1],  <unfinished ...>
+[pid 91514] <... mprotect resumed>)     = 0
+[pid 91517] rt_sigprocmask(SIG_SETMASK, [],  <unfinished ...>
+[pid 91516] <... rt_sigprocmask resumed>NULL, 8) = 0
+[pid 91515] <... rt_sigprocmask resumed>NULL, 8) = 0
+[pid 91517] <... rt_sigprocmask resumed>NULL, 8) = 0
+[pid 91514] rt_sigprocmask(SIG_BLOCK, ~[],  <unfinished ...>
+[pid 91516] madvise(0xffff94c00000, 8314880, MADV_DONTNEED <unfinished ...>
+[pid 91514] <... rt_sigprocmask resumed>[], 8) = 0
+[pid 91515] madvise(0xffff95600000, 8314880, MADV_DONTNEED <unfinished ...>
+[pid 91517] rt_sigprocmask(SIG_BLOCK, ~[RT_1],  <unfinished ...>
+[pid 91516] <... madvise resumed>)      = 0
+[pid 91514] clone(child_stack=0xffff8fe0e960, flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID <unfinished ...>
+[pid 91517] <... rt_sigprocmask resumed>NULL, 8) = 0
+[pid 91516] exit(0 <unfinished ...>
+[pid 91515] <... madvise resumed>)      = 0
+[pid 91517] madvise(0xffff94200000, 8314880, MADV_DONTNEEDstrace: Process 91518 attached
+ <unfinished ...>
+[pid 91515] exit(0 <unfinished ...>
+[pid 91516] <... exit resumed>)         = ?
+[pid 91514] <... clone resumed>, parent_tid=[91518], tls=0xffff8fe0f8e0, child_tidptr=0xffff8fe0f1f0) = 91518
+[pid 91515] <... exit resumed>)         = ?
+[pid 91517] <... madvise resumed>)      = 0
+[pid 91516] +++ exited with 0 +++
+[pid 91514] rt_sigprocmask(SIG_SETMASK, [],  <unfinished ...>
+[pid 91518] rseq(0xffff8fe0f8c0, 0x20, 0, 0xd428bc00 <unfinished ...>
+[pid 91515] +++ exited with 0 +++
+[pid 91514] <... rt_sigprocmask resumed>NULL, 8) = 0
+[pid 91518] <... rseq resumed>)         = 0
+[pid 91517] exit(0 <unfinished ...>
+[pid 91514] futex(0xffff94a0f1f0, FUTEX_WAIT_BITSET|FUTEX_CLOCK_REALTIME, 91517, NULL, FUTEX_BITSET_MATCH_ANY <unfinished ...>
+[pid 91518] set_robust_list(0xffff8fe0f200, 24 <unfinished ...>
+[pid 91517] <... exit resumed>)         = ?
+[pid 91514] <... futex resumed>)        = -1 EAGAIN (Resource temporarily unavailable)
+[pid 91518] <... set_robust_list resumed>) = 0
+[pid 91517] +++ exited with 0 +++
+[pid 91514] futex(0xffff8fe0f1f0, FUTEX_WAIT_BITSET|FUTEX_CLOCK_REALTIME, 91518, NULL, FUTEX_BITSET_MATCH_ANY <unfinished ...>
+[pid 91518] rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+[pid 91518] rt_sigprocmask(SIG_BLOCK, ~[RT_1], NULL, 8) = 0
+[pid 91518] madvise(0xffff8f600000, 8314880, MADV_DONTNEED) = 0
+[pid 91518] exit(0)                     = ?
+[pid 91518] +++ exited with 0 +++
+<... futex resumed>)                    = 0
+write(1, "\n", 1
+)                       = 1
+write(1, "Filtered Matrix:\n", 17Filtered Matrix:
+)      = 17
+write(1, "186 186 186 186 141 124 124 159 "..., 41186 186 186 186 141 124 124 159 159 159 
+) = 41
+write(1, "186 186 186 141 124 118 118 124 "..., 41186 186 186 141 124 118 118 124 159 159 
+) = 41
+write(1, "186 186 154 118 112 112 116 118 "..., 41186 186 154 118 112 112 116 118 159 159 
+) = 41
+write(1, "186 154 118 112 112 102 112 116 "..., 41186 154 118 112 112 102 112 116 159 159 
+) = 41
+write(1, "154 135 112 112 112 112 112 116 "..., 41154 135 112 112 112 112 112 116 130 159 
+) = 41
+write(1, "135 112 112 112 112 112 116 130 "..., 41135 112 112 112 112 112 116 130 130 150 
+) = 41
+write(1, "103 103 112 112 112 126 130 130 "..., 41103 103 112 112 112 126 130 130 150 150 
+) = 41
+write(1, "103 103 103 112 126 150 150 150 "..., 41103 103 103 112 126 150 150 150 150 150 
+) = 41
+write(1, "103 103 103 126 150 150 150 150 "..., 41103 103 103 126 150 150 150 150 150 150 
+) = 41
+write(1, "103 103 103 126 150 150 150 150 "..., 41103 103 103 126 150 150 150 150 150 150 
+) = 41
+write(1, "Time taken: 0.010132 seconds\n", 29Time taken: 0.010132 seconds
+) = 29
+exit_group(0)                           = ?
++++ exited with 0 +++
