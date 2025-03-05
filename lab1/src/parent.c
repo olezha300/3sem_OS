@@ -38,7 +38,7 @@ int main()
         printf("Starting child process...\n");  // Отладочное сообщение
         execl("./child", "child", (char *)NULL);
         perror("Execl failed");
-        exit(1); // Добавьте выход из дочернего процесса в случае ошибки
+        exit(1);
         return 1;
     }
     else
