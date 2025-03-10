@@ -18,7 +18,7 @@ int main(int argc, char *argv[])
     int window_size = atoi(argv[3]);
     int iterations = atoi(argv[4]);
     int max_threads = atoi(argv[5]);
-
+    
     if (max_threads > MAX_THREADS)
     {
         printf("Maximum number of threads is %d\n", MAX_THREADS);

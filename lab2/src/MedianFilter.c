@@ -7,7 +7,7 @@
 
 void apply_median_filter(int **matrix, int **result, int rows, int cols, int window_size)
 {
-    int half_window = window_size / 2;
+    int half_window = window_size / 2; // вычисляется смещение от центра окна
     for (int i = 0; i < rows; i++)
     {
         for (int j = 0; j < cols; j++)
