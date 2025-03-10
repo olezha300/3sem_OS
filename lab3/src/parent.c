@@ -7,7 +7,7 @@
 #include <unistd.h>
 #include <sys/wait.h>
 
-#define BUFFER_SIZE 1024
+#define BUFFER_SIZE 4096
 #define SHM_NAME "/my_shared_memory"
 
 int main()
@@ -15,8 +15,8 @@ int main()
     int shm_fd;
     char *shm_ptr;
 
-    shm_fd = shm_open(SHM_NAME, O_CREAT | O_RDWR, 0666); 
-    if (shm_fd == -1)
+    shm_fd = shm_open(SHM_NAME, O_CREAT | O_RDWR, 0666);
+    if (shm_fd == -1)   
     {
         perror("Failed to create shared memory");
         return 1;
