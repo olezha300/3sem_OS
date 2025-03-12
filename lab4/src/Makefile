@@ -52,4 +52,5 @@ run2: program2
 
 # Очистка
 clean:
-	$(RM) *.o *.so $(PROGRAMS)
+	echo "Removing object files and binaries..."
+	$(RM) -v *.o *.so $(PROGRAMS)
