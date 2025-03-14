@@ -1,2 +1,0 @@
-/Library/Developer/CommandLineTools/usr/bin/ar qc ../lib/libunity.a CMakeFiles/unity.dir/__/external/unity/unity.c.o
-/Library/Developer/CommandLineTools/usr/bin/ranlib ../lib/libunity.a

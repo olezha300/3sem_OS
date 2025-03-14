@@ -1,3 +1,0 @@
-/Users/olezha3000/Documents/University/computer_science/3sem_OS/cp/src/build/_deps/libzmq-subbuild/CMakeFiles/libzmq-populate.dir
-/Users/olezha3000/Documents/University/computer_science/3sem_OS/cp/src/build/_deps/libzmq-subbuild/CMakeFiles/edit_cache.dir
-/Users/olezha3000/Documents/University/computer_science/3sem_OS/cp/src/build/_deps/libzmq-subbuild/CMakeFiles/rebuild_cache.dir
