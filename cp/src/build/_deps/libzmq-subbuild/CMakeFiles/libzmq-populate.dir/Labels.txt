@@ -1,0 +1,14 @@
+# Target labels
+ libzmq-populate
+# Source files and their labels
+/Users/olezha3000/Documents/University/computer_science/3sem_OS/cp/src/build/_deps/libzmq-subbuild/CMakeFiles/libzmq-populate
+/Users/olezha3000/Documents/University/computer_science/3sem_OS/cp/src/build/_deps/libzmq-subbuild/CMakeFiles/libzmq-populate.rule
+/Users/olezha3000/Documents/University/computer_science/3sem_OS/cp/src/build/_deps/libzmq-subbuild/CMakeFiles/libzmq-populate-complete.rule
+/Users/olezha3000/Documents/University/computer_science/3sem_OS/cp/src/build/_deps/libzmq-subbuild/libzmq-populate-prefix/src/libzmq-populate-stamp/libzmq-populate-build.rule
+/Users/olezha3000/Documents/University/computer_science/3sem_OS/cp/src/build/_deps/libzmq-subbuild/libzmq-populate-prefix/src/libzmq-populate-stamp/libzmq-populate-configure.rule
+/Users/olezha3000/Documents/University/computer_science/3sem_OS/cp/src/build/_deps/libzmq-subbuild/libzmq-populate-prefix/src/libzmq-populate-stamp/libzmq-populate-download.rule
+/Users/olezha3000/Documents/University/computer_science/3sem_OS/cp/src/build/_deps/libzmq-subbuild/libzmq-populate-prefix/src/libzmq-populate-stamp/libzmq-populate-install.rule
+/Users/olezha3000/Documents/University/computer_science/3sem_OS/cp/src/build/_deps/libzmq-subbuild/libzmq-populate-prefix/src/libzmq-populate-stamp/libzmq-populate-mkdir.rule
+/Users/olezha3000/Documents/University/computer_science/3sem_OS/cp/src/build/_deps/libzmq-subbuild/libzmq-populate-prefix/src/libzmq-populate-stamp/libzmq-populate-patch.rule
+/Users/olezha3000/Documents/University/computer_science/3sem_OS/cp/src/build/_deps/libzmq-subbuild/libzmq-populate-prefix/src/libzmq-populate-stamp/libzmq-populate-test.rule
+/Users/olezha3000/Documents/University/computer_science/3sem_OS/cp/src/build/_deps/libzmq-subbuild/libzmq-populate-prefix/src/libzmq-populate-stamp/libzmq-populate-update.rule

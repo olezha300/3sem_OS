@@ -81,9 +81,9 @@ bool checkIfAvailable (Topology topology, int id)
         return false;
     if (topology->id == id) 
         return topology->available;
-    return checkIfAvailable(topology->left, id) || checkIfAvailable(topology->right, id);
+    return checkIfAvailable(topology->left, id) ||  checkIfAvailable(topology->right, id); // Рекурсивный поиск в поддеревьях
 }
-
+// используется для обработки ситуаций, когда выч узел завершил работу
 void setNotAvailable (Topology topology, pid_t pid) 
 {
     if (topology == NULL) 
@@ -111,11 +111,6 @@ pid_t getPidTopology (Topology topology, int id)
 
 void deleteHandler (Topology node) 
 {
-    // хотел килять процессы вручную по завершении, но там бывает ошибки возникают из-за этого
-    // if (kill(node->pid, SIGKILL) == -1) {
-    //     perror("kill");
-    //     exit(EXIT_FAILURE);
-    // }
 }
 
 bool printNotAvailable (Topology topology) 
@@ -143,6 +138,7 @@ void printTopology(Topology topology, int offset)
     printTopology(topology->left, offset + 1);
 }
 
+// создает новый выч узел
 pid_t buySlave (Topology *topology, int id) 
 {
     pid_t pid = fork();
@@ -172,45 +168,70 @@ void exitWithError(const char *message)
     exit(EXIT_FAILURE);
 }
 
+// настраивает подключение к брокеру, создает канал, объявляет очереди и 
+// подготавливает систему для обмена сообщениями
 void initRabbitMQ() 
 {
     connection = amqp_new_connection();
-    amqp_socket_t *socket = amqp_tcp_socket_new(connection);
+    amqp_socket_t *socket = amqp_tcp_socket_new(connection); // TCP-сокет
     if (!socket) 
         exitWithError("Creating TCP socket failed");
 
     if (amqp_socket_open(socket, RABBIT_HOST, RABBIT_PORT)) 
         exitWithError("Opening TCP socket failed");
 
+    // аутентификация
     amqp_rpc_reply_t r = amqp_login(
         connection, 
-        "/", 
-        0, 
-        131072, 
-        0,
-        AMQP_SASL_METHOD_PLAIN, 
-        "guest", 
-        "guest"
+        "/",                      // виртуальный хост (/ - хост)
+        0,                        // канал (0 - автоматический вывод)
+        131072,                   // Макс размер фрейма в байтах
+        0,                        // Механизм сердцебиения (откл)
+        AMQP_SASL_METHOD_PLAIN,   // Метод аутентификации
+        "guest",                  // Логин
+        "guest"                   // Пароль
     );
     
     if (r.reply_type != AMQP_RESPONSE_NORMAL)
         exitWithError("Login failed");
 
-    amqp_channel_open(connection, channel);
+    amqp_channel_open(connection, channel);   // открывает виртуальный канал (channel == 1)
     r = amqp_get_rpc_reply(connection);
     if (r.reply_type != AMQP_RESPONSE_NORMAL) 
         exitWithError("Opening channel failed");
 
-    amqp_queue_declare(connection, channel, amqp_cstring_bytes("master_queue"), 0, 0, 0, 0, amqp_empty_table);
+    // объявление очереди, через которую управл узел будет получать ответы от выч узлов
+    amqp_queue_declare(
+        connection, 
+        channel, 
+        amqp_cstring_bytes("master_queue"),  // имя очереди
+        0,   // создать очередь, если не существует
+        0,   // очередь не сохраняется после перезагрузки
+        0,   // очередь доступна другим соединениям
+        0,   // очередь не удаляется при отключении
+        amqp_empty_table
+    );
+
     r = amqp_get_rpc_reply(connection);
     if (r.reply_type != AMQP_RESPONSE_NORMAL) 
         exitWithError("Queue declare failed");
 
-    amqp_basic_consume(connection, channel, amqp_cstring_bytes("master_queue"), amqp_empty_bytes, 0, 0, 0, amqp_empty_table);
+    // подписка на очередь, чтобы начать получать сообщения из очереди
+    amqp_basic_consume(
+        connection, 
+        channel, 
+        amqp_cstring_bytes("master_queue"),   // имя очереди
+        amqp_empty_bytes,    // пусто - брокер сам назначит
+        0,    // получать свои же сообщения
+        0,    // подтверждение доставки требуется
+        0,    // другие могут подключаться
+        amqp_empty_table
+    );
     r = amqp_get_rpc_reply(connection);
     if (r.reply_type != AMQP_RESPONSE_NORMAL) 
         exitWithError("Consume on master_queue failed");
 
+    // очистка очереди перед началом работы, чтобы избежать обработки старых сообщений
     amqp_queue_purge(connection, channel, amqp_cstring_bytes("master_queue"));
 }
 
@@ -219,34 +240,42 @@ void sendMessage (int nodeId, char *cmd)
     char queue_name[64];
     snprintf(queue_name, sizeof(queue_name), "slave_queue_%d", nodeId);
 
+    // создание уникального айдишника
+    // используется для асинхронной обработки команд
     uuid_t uuid;
     uuid_generate(uuid);
     char corr_id[37];
     uuid_unparse_lower(uuid, corr_id);
 
-    amqp_basic_properties_t props;
-    props._flags = AMQP_BASIC_CORRELATION_ID_FLAG;
-    props.correlation_id = amqp_cstring_bytes(corr_id);
 
+    amqp_basic_properties_t props;
+    props._flags = AMQP_BASIC_CORRELATION_ID_FLAG;  // указывает, что используется correlation_id (уникальный айдищник)
+    props.correlation_id = amqp_cstring_bytes(corr_id); // // Привязывает UUID к сообщению
+
+    // отправка сообщений
     amqp_basic_publish(
-        connection, 
-        channel, 
-        amqp_empty_bytes, 
-        amqp_cstring_bytes(queue_name),
-        0, 
-        0, 
-        &props, 
-        amqp_cstring_bytes(cmd)
+        connection, // Дескриптор соединения 
+        channel,    // Номер канала (1)
+        amqp_empty_bytes,  // Имя обменника
+        amqp_cstring_bytes(queue_name),   // Ключ маршрутизации (имя очереди)
+        0,   // игнорировать, если очередь не существует
+        0,   // не требовать немедленной доставки
+        &props,  // Свойства сообщения
+        amqp_cstring_bytes(cmd)  // Тело сообщения (команда для выполнения), cmd - например "3 1 2 3"
     );
 }
 
+// работает в отдельном потоке и отвечает за асинхронный прием сообщений от выч узлов 
 void *messageFromSlavesHandler(void *arg) 
 {
     while (1) 
     {
-        amqp_envelope_t envelope;
-        amqp_maybe_release_buffers(connection);
+        amqp_envelope_t envelope; // контейнер для сообщения
+        amqp_maybe_release_buffers(connection);  // Освобождает буферы соединения
+
+        // прием сообщений из очереди
         amqp_rpc_reply_t res = amqp_consume_message(connection, &envelope, NULL, 0);
+        // подтверждение получения сообщения
         amqp_basic_ack(connection, channel, envelope.delivery_tag, 0);
 
         if (res.reply_type == AMQP_RESPONSE_NORMAL) 
@@ -254,7 +283,7 @@ void *messageFromSlavesHandler(void *arg)
             printf("%.*s\n$ ", (int)envelope.message.body.len, (char *)envelope.message.body.bytes);
             fflush(stdout);
 
-            amqp_destroy_envelope(&envelope);
+            amqp_destroy_envelope(&envelope); // освобождение памяти контейнера
         } 
 
         else 

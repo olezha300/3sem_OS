@@ -22,7 +22,6 @@ int main()
         return 1;
     }
 
-    // Устанавливаем размер памяти
     if (ftruncate(shm_fd, BUFFER_SIZE) == -1)
     {
         perror("Failed to set the size of shared memory");
@@ -31,7 +30,6 @@ int main()
         return 1;
     }
 
-    // Подключаем память в адресное пространство
     shm_ptr = mmap(0, BUFFER_SIZE, PROT_READ | PROT_WRITE, MAP_SHARED, shm_fd, 0);
     if (shm_ptr == MAP_FAILED)
     {

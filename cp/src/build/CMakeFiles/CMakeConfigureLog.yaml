@@ -1,0 +1,2113 @@
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineSystem.cmake:205 (message)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      The system is: Darwin - 24.3.0 - arm64
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+      Compiler: /Library/Developer/CommandLineTools/usr/bin/cc 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      1
+      ld: library 'System' not found
+      cc: error: linker command failed with exit code 1 (use -v to see invocation)
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+      Compiler: /Library/Developer/CommandLineTools/usr/bin/cc 
+      Build flags: 
+      Id flags: -c 
+      
+      The output was:
+      0
+      
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CMakeCCompilerId.o"
+      
+      The C compiler identification is AppleClang, found in:
+        /Users/olezha3000/Documents/University/computer_science/3sem_OS/cp/src/build/CMakeFiles/3.31.2/CompilerIdC/CMakeCCompilerId.o
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+      Compiler: /Library/Developer/CommandLineTools/usr/bin/c++ 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      1
+      ld: library 'c++' not found
+      c++: error: linker command failed with exit code 1 (use -v to see invocation)
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+      Compiler: /Library/Developer/CommandLineTools/usr/bin/c++ 
+      Build flags: 
+      Id flags: -c 
+      
+      The output was:
+      0
+      
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CMakeCXXCompilerId.o"
+      
+      The CXX compiler identification is AppleClang, found in:
+        /Users/olezha3000/Documents/University/computer_science/3sem_OS/cp/src/build/CMakeFiles/3.31.2/CompilerIdCXX/CMakeCXXCompilerId.o
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:74 (try_compile)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:3 (project)"
+    checks:
+      - "Detecting C compiler ABI info"
+    directories:
+      source: "/Users/olezha3000/Documents/University/computer_science/3sem_OS/cp/src/build/CMakeFiles/CMakeScratch/TryCompile-oblBj7"
+      binary: "/Users/olezha3000/Documents/University/computer_science/3sem_OS/cp/src/build/CMakeFiles/CMakeScratch/TryCompile-oblBj7"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: "/Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk"
+    buildResult:
+      variable: "CMAKE_C_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/olezha3000/Documents/University/computer_science/3sem_OS/cp/src/build/CMakeFiles/CMakeScratch/TryCompile-oblBj7'
+        
+        Run Build Command(s): /opt/homebrew/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_e1940/fast
+        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_e1940.dir/build.make CMakeFiles/cmTC_e1940.dir/build
+        Building C object CMakeFiles/cmTC_e1940.dir/CMakeCCompilerABI.c.o
+        /Library/Developer/CommandLineTools/usr/bin/cc   -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk   -v -Wl,-v -MD -MT CMakeFiles/cmTC_e1940.dir/CMakeCCompilerABI.c.o -MF CMakeFiles/cmTC_e1940.dir/CMakeCCompilerABI.c.o.d -o CMakeFiles/cmTC_e1940.dir/CMakeCCompilerABI.c.o -c /opt/homebrew/share/cmake/Modules/CMakeCCompilerABI.c
+        Apple clang version 16.0.0 (clang-1600.0.26.6)
+        Target: arm64-apple-darwin24.3.0
+        Thread model: posix
+        InstalledDir: /Library/Developer/CommandLineTools/usr/bin
+        cc: warning: -Wl,-v: 'linker' input unused [-Wunused-command-line-argument]
+         "/Library/Developer/CommandLineTools/usr/bin/clang" -cc1 -triple arm64-apple-macosx15.0.0 -Wundef-prefix=TARGET_OS_ -Wdeprecated-objc-isa-usage -Werror=deprecated-objc-isa-usage -Werror=implicit-function-declaration -emit-obj -mrelax-all -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCCompilerABI.c -mrelocation-model pic -pic-level 2 -mframe-pointer=non-leaf -fno-strict-return -ffp-contract=on -fno-rounding-math -funwind-tables=1 -fobjc-msgsend-selector-stubs -target-sdk-version=15.2 -fvisibility-inlines-hidden-static-local-var -fno-modulemap-allow-subdirectory-search -target-cpu apple-m1 -target-feature +v8.5a -target-feature +aes -target-feature +crc -target-feature +dotprod -target-feature +fp-armv8 -target-feature +fp16fml -target-feature +lse -target-feature +ras -target-feature +rcpc -target-feature +rdm -target-feature +sha2 -target-feature +sha3 -target-feature +neon -target-feature +zcm -target-feature +zcz -target-feature +fullfp16 -target-abi darwinpcs -debugger-tuning=lldb -target-linker-version 1115.7.3 -v -fcoverage-compilation-dir=/Users/olezha3000/Documents/University/computer_science/3sem_OS/cp/src/build/CMakeFiles/CMakeScratch/TryCompile-oblBj7 -resource-dir /Library/Developer/CommandLineTools/usr/lib/clang/16 -dependency-file CMakeFiles/cmTC_e1940.dir/CMakeCCompilerABI.c.o.d -skip-unused-modulemap-deps -MT CMakeFiles/cmTC_e1940.dir/CMakeCCompilerABI.c.o -sys-header-deps -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk -internal-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/local/include -internal-isystem /Library/Developer/CommandLineTools/usr/lib/clang/16/include -internal-externc-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include -internal-externc-isystem /Library/Developer/CommandLineTools/usr/include -Wno-reorder-init-list -Wno-implicit-int-float-conversion -Wno-c99-designator -Wno-final-dtor-non-final-class -Wno-extra-semi-stmt -Wno-misleading-indentation -Wno-quoted-include-in-framework-header -Wno-implicit-fallthrough -Wno-enum-enum-conversion -Wno-enum-float-conversion -Wno-elaborated-enum-base -Wno-reserved-identifier -Wno-gnu-folding-constant -fdebug-compilation-dir=/Users/olezha3000/Documents/University/computer_science/3sem_OS/cp/src/build/CMakeFiles/CMakeScratch/TryCompile-oblBj7 -ferror-limit 19 -stack-protector 1 -fstack-check -mdarwin-stkchk-strong-link -fblocks -fencode-extended-block-signature -fregister-global-dtors-with-atexit -fgnuc-version=4.2.1 -fmax-type-align=16 -fcommon -clang-vendor-feature=+disableNonDependentMemberExprInCurrentInstantiation -fno-odr-hash-protocols -clang-vendor-feature=+enableAggressiveVLAFolding -clang-vendor-feature=+revert09abecef7bbf -clang-vendor-feature=+thisNoAlignAttr -clang-vendor-feature=+thisNoNullAttr -clang-vendor-feature=+disableAtImportPrivateFrameworkInImplementationError -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_e1940.dir/CMakeCCompilerABI.c.o -x c /opt/homebrew/share/cmake/Modules/CMakeCCompilerABI.c
+        clang -cc1 version 16.0.0 (clang-1600.0.26.6) default target arm64-apple-darwin24.3.0
+        ignoring nonexistent directory "/Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/local/include"
+        ignoring nonexistent directory "/Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/Library/Frameworks"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /Library/Developer/CommandLineTools/usr/lib/clang/16/include
+         /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include
+         /Library/Developer/CommandLineTools/usr/include
+         /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/System/Library/Frameworks (framework directory)
+        End of search list.
+        Linking C executable cmTC_e1940
+        /opt/homebrew/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e1940.dir/link.txt --verbose=1
+        Apple clang version 16.0.0 (clang-1600.0.26.6)
+        Target: arm64-apple-darwin24.3.0
+        Thread model: posix
+        InstalledDir: /Library/Developer/CommandLineTools/usr/bin
+         "/Library/Developer/CommandLineTools/usr/bin/ld" -demangle -lto_library /Library/Developer/CommandLineTools/usr/lib/libLTO.dylib -dynamic -arch arm64 -platform_version macos 15.0.0 15.2 -syslibroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk -mllvm -enable-linkonceodr-outlining -o cmTC_e1940 -search_paths_first -headerpad_max_install_names -v CMakeFiles/cmTC_e1940.dir/CMakeCCompilerABI.c.o -lSystem /Library/Developer/CommandLineTools/usr/lib/clang/16/lib/darwin/libclang_rt.osx.a
+        @(#)PROGRAM:ld PROJECT:ld-1115.7.3
+        BUILD 23:52:02 Dec  5 2024
+        configured to support archs: armv6 armv7 armv7s arm64 arm64e arm64_32 i386 x86_64 x86_64h armv6m armv7k armv7m armv7em
+        will use ld-classic for: armv6 armv7 armv7s i386 armv6m armv7k armv7m armv7em
+        LTO support using: LLVM version 16.0.0 (static support for 29, runtime is 29)
+        TAPI support using: Apple TAPI version 16.0.0 (tapi-1600.0.11.9)
+        Library search paths:
+        	/Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/lib
+        	/Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/lib/swift
+        Framework search paths:
+        	/Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/System/Library/Frameworks
+        /Library/Developer/CommandLineTools/usr/bin/cc  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names  -v -Wl,-v CMakeFiles/cmTC_e1940.dir/CMakeCCompilerABI.c.o -o cmTC_e1940
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:113 (message)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      Effective list of requested architectures (possibly empty)  : ""
+      Effective list of architectures found in the ABI info binary: "arm64"
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:182 (message)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      Parsed C implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [/Library/Developer/CommandLineTools/usr/lib/clang/16/include]
+          add: [/Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include]
+          add: [/Library/Developer/CommandLineTools/usr/include]
+        end of search list found
+        collapse include dir [/Library/Developer/CommandLineTools/usr/lib/clang/16/include] ==> [/Library/Developer/CommandLineTools/usr/lib/clang/16/include]
+        collapse include dir [/Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include] ==> [/Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include]
+        collapse include dir [/Library/Developer/CommandLineTools/usr/include] ==> [/Library/Developer/CommandLineTools/usr/include]
+        implicit include dirs: [/Library/Developer/CommandLineTools/usr/lib/clang/16/include;/Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include;/Library/Developer/CommandLineTools/usr/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:218 (message)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      Parsed C implicit link information:
+        link line regex: [^( *|.*[/\\])(ld[0-9]*(\\.[a-z]+)?|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(ld[0-9]*(\\.[a-z]+)?))("|,| |$)]
+        ignore line: [Change Dir: '/Users/olezha3000/Documents/University/computer_science/3sem_OS/cp/src/build/CMakeFiles/CMakeScratch/TryCompile-oblBj7']
+        ignore line: []
+        ignore line: [Run Build Command(s): /opt/homebrew/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_e1940/fast]
+        ignore line: [/Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_e1940.dir/build.make CMakeFiles/cmTC_e1940.dir/build]
+        ignore line: [Building C object CMakeFiles/cmTC_e1940.dir/CMakeCCompilerABI.c.o]
+        ignore line: [/Library/Developer/CommandLineTools/usr/bin/cc   -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk   -v -Wl -v -MD -MT CMakeFiles/cmTC_e1940.dir/CMakeCCompilerABI.c.o -MF CMakeFiles/cmTC_e1940.dir/CMakeCCompilerABI.c.o.d -o CMakeFiles/cmTC_e1940.dir/CMakeCCompilerABI.c.o -c /opt/homebrew/share/cmake/Modules/CMakeCCompilerABI.c]
+        ignore line: [Apple clang version 16.0.0 (clang-1600.0.26.6)]
+        ignore line: [Target: arm64-apple-darwin24.3.0]
+        ignore line: [Thread model: posix]
+        ignore line: [InstalledDir: /Library/Developer/CommandLineTools/usr/bin]
+        ignore line: [cc: warning: -Wl -v: 'linker' input unused [-Wunused-command-line-argument]]
+        ignore line: [ "/Library/Developer/CommandLineTools/usr/bin/clang" -cc1 -triple arm64-apple-macosx15.0.0 -Wundef-prefix=TARGET_OS_ -Wdeprecated-objc-isa-usage -Werror=deprecated-objc-isa-usage -Werror=implicit-function-declaration -emit-obj -mrelax-all -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCCompilerABI.c -mrelocation-model pic -pic-level 2 -mframe-pointer=non-leaf -fno-strict-return -ffp-contract=on -fno-rounding-math -funwind-tables=1 -fobjc-msgsend-selector-stubs -target-sdk-version=15.2 -fvisibility-inlines-hidden-static-local-var -fno-modulemap-allow-subdirectory-search -target-cpu apple-m1 -target-feature +v8.5a -target-feature +aes -target-feature +crc -target-feature +dotprod -target-feature +fp-armv8 -target-feature +fp16fml -target-feature +lse -target-feature +ras -target-feature +rcpc -target-feature +rdm -target-feature +sha2 -target-feature +sha3 -target-feature +neon -target-feature +zcm -target-feature +zcz -target-feature +fullfp16 -target-abi darwinpcs -debugger-tuning=lldb -target-linker-version 1115.7.3 -v -fcoverage-compilation-dir=/Users/olezha3000/Documents/University/computer_science/3sem_OS/cp/src/build/CMakeFiles/CMakeScratch/TryCompile-oblBj7 -resource-dir /Library/Developer/CommandLineTools/usr/lib/clang/16 -dependency-file CMakeFiles/cmTC_e1940.dir/CMakeCCompilerABI.c.o.d -skip-unused-modulemap-deps -MT CMakeFiles/cmTC_e1940.dir/CMakeCCompilerABI.c.o -sys-header-deps -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk -internal-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/local/include -internal-isystem /Library/Developer/CommandLineTools/usr/lib/clang/16/include -internal-externc-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include -internal-externc-isystem /Library/Developer/CommandLineTools/usr/include -Wno-reorder-init-list -Wno-implicit-int-float-conversion -Wno-c99-designator -Wno-final-dtor-non-final-class -Wno-extra-semi-stmt -Wno-misleading-indentation -Wno-quoted-include-in-framework-header -Wno-implicit-fallthrough -Wno-enum-enum-conversion -Wno-enum-float-conversion -Wno-elaborated-enum-base -Wno-reserved-identifier -Wno-gnu-folding-constant -fdebug-compilation-dir=/Users/olezha3000/Documents/University/computer_science/3sem_OS/cp/src/build/CMakeFiles/CMakeScratch/TryCompile-oblBj7 -ferror-limit 19 -stack-protector 1 -fstack-check -mdarwin-stkchk-strong-link -fblocks -fencode-extended-block-signature -fregister-global-dtors-with-atexit -fgnuc-version=4.2.1 -fmax-type-align=16 -fcommon -clang-vendor-feature=+disableNonDependentMemberExprInCurrentInstantiation -fno-odr-hash-protocols -clang-vendor-feature=+enableAggressiveVLAFolding -clang-vendor-feature=+revert09abecef7bbf -clang-vendor-feature=+thisNoAlignAttr -clang-vendor-feature=+thisNoNullAttr -clang-vendor-feature=+disableAtImportPrivateFrameworkInImplementationError -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_e1940.dir/CMakeCCompilerABI.c.o -x c /opt/homebrew/share/cmake/Modules/CMakeCCompilerABI.c]
+        ignore line: [clang -cc1 version 16.0.0 (clang-1600.0.26.6) default target arm64-apple-darwin24.3.0]
+        ignore line: [ignoring nonexistent directory "/Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/local/include"]
+        ignore line: [ignoring nonexistent directory "/Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/Library/Frameworks"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /Library/Developer/CommandLineTools/usr/lib/clang/16/include]
+        ignore line: [ /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include]
+        ignore line: [ /Library/Developer/CommandLineTools/usr/include]
+        ignore line: [ /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/System/Library/Frameworks (framework directory)]
+        ignore line: [End of search list.]
+        ignore line: [Linking C executable cmTC_e1940]
+        ignore line: [/opt/homebrew/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e1940.dir/link.txt --verbose=1]
+        ignore line: [Apple clang version 16.0.0 (clang-1600.0.26.6)]
+        ignore line: [Target: arm64-apple-darwin24.3.0]
+        ignore line: [Thread model: posix]
+        ignore line: [InstalledDir: /Library/Developer/CommandLineTools/usr/bin]
+        link line: [ "/Library/Developer/CommandLineTools/usr/bin/ld" -demangle -lto_library /Library/Developer/CommandLineTools/usr/lib/libLTO.dylib -dynamic -arch arm64 -platform_version macos 15.0.0 15.2 -syslibroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk -mllvm -enable-linkonceodr-outlining -o cmTC_e1940 -search_paths_first -headerpad_max_install_names -v CMakeFiles/cmTC_e1940.dir/CMakeCCompilerABI.c.o -lSystem /Library/Developer/CommandLineTools/usr/lib/clang/16/lib/darwin/libclang_rt.osx.a]
+          arg [/Library/Developer/CommandLineTools/usr/bin/ld] ==> ignore
+          arg [-demangle] ==> ignore
+          arg [-lto_library] ==> ignore, skip following value
+          arg [/Library/Developer/CommandLineTools/usr/lib/libLTO.dylib] ==> skip value of -lto_library
+          arg [-dynamic] ==> ignore
+          arg [-arch] ==> ignore
+          arg [arm64] ==> ignore
+          arg [-platform_version] ==> ignore
+          arg [macos] ==> ignore
+          arg [15.0.0] ==> ignore
+          arg [15.2] ==> ignore
+          arg [-syslibroot] ==> ignore
+          arg [/Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk] ==> ignore
+          arg [-mllvm] ==> ignore
+          arg [-enable-linkonceodr-outlining] ==> ignore
+          arg [-o] ==> ignore
+          arg [cmTC_e1940] ==> ignore
+          arg [-search_paths_first] ==> ignore
+          arg [-headerpad_max_install_names] ==> ignore
+          arg [-v] ==> ignore
+          arg [CMakeFiles/cmTC_e1940.dir/CMakeCCompilerABI.c.o] ==> ignore
+          arg [-lSystem] ==> lib [System]
+          arg [/Library/Developer/CommandLineTools/usr/lib/clang/16/lib/darwin/libclang_rt.osx.a] ==> lib [/Library/Developer/CommandLineTools/usr/lib/clang/16/lib/darwin/libclang_rt.osx.a]
+        linker tool for 'C': /Library/Developer/CommandLineTools/usr/bin/ld
+        Library search paths: [;/Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/lib;/Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/lib/swift]
+        Framework search paths: [;/Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/System/Library/Frameworks]
+        remove lib [System]
+        remove lib [/Library/Developer/CommandLineTools/usr/lib/clang/16/lib/darwin/libclang_rt.osx.a]
+        collapse library dir [/Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/lib] ==> [/Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/lib]
+        collapse library dir [/Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/lib/swift] ==> [/Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/lib/swift]
+        collapse framework dir [/Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/System/Library/Frameworks] ==> [/Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/System/Library/Frameworks]
+        implicit libs: []
+        implicit objs: []
+        implicit dirs: [/Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/lib;/Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/lib/swift]
+        implicit fwks: [/Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/System/Library/Frameworks]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/Internal/CMakeDetermineLinkerId.cmake:40 (message)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:255 (cmake_determine_linker_id)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      Running the C compiler's linker: "/Library/Developer/CommandLineTools/usr/bin/ld" "-v"
+      @(#)PROGRAM:ld PROJECT:ld-1115.7.3
+      BUILD 23:52:02 Dec  5 2024
+      configured to support archs: armv6 armv7 armv7s arm64 arm64e arm64_32 i386 x86_64 x86_64h armv6m armv7k armv7m armv7em
+      will use ld-classic for: armv6 armv7 armv7s i386 armv6m armv7k armv7m armv7em
+      LTO support using: LLVM version 16.0.0 (static support for 29, runtime is 29)
+      TAPI support using: Apple TAPI version 16.0.0 (tapi-1600.0.11.9)
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:74 (try_compile)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:3 (project)"
+    checks:
+      - "Detecting CXX compiler ABI info"
+    directories:
+      source: "/Users/olezha3000/Documents/University/computer_science/3sem_OS/cp/src/build/CMakeFiles/CMakeScratch/TryCompile-h6iqZq"
+      binary: "/Users/olezha3000/Documents/University/computer_science/3sem_OS/cp/src/build/CMakeFiles/CMakeScratch/TryCompile-h6iqZq"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_CXX_SCAN_FOR_MODULES: "OFF"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: "/Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk"
+    buildResult:
+      variable: "CMAKE_CXX_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/olezha3000/Documents/University/computer_science/3sem_OS/cp/src/build/CMakeFiles/CMakeScratch/TryCompile-h6iqZq'
+        
+        Run Build Command(s): /opt/homebrew/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_a1982/fast
+        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_a1982.dir/build.make CMakeFiles/cmTC_a1982.dir/build
+        Building CXX object CMakeFiles/cmTC_a1982.dir/CMakeCXXCompilerABI.cpp.o
+        /Library/Developer/CommandLineTools/usr/bin/c++   -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk   -v -Wl,-v -MD -MT CMakeFiles/cmTC_a1982.dir/CMakeCXXCompilerABI.cpp.o -MF CMakeFiles/cmTC_a1982.dir/CMakeCXXCompilerABI.cpp.o.d -o CMakeFiles/cmTC_a1982.dir/CMakeCXXCompilerABI.cpp.o -c /opt/homebrew/share/cmake/Modules/CMakeCXXCompilerABI.cpp
+        Apple clang version 16.0.0 (clang-1600.0.26.6)
+        Target: arm64-apple-darwin24.3.0
+        Thread model: posix
+        InstalledDir: /Library/Developer/CommandLineTools/usr/bin
+        c++: warning: -Wl,-v: 'linker' input unused [-Wunused-command-line-argument]
+        ignoring nonexistent directory "/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"
+         "/Library/Developer/CommandLineTools/usr/bin/clang" -cc1 -triple arm64-apple-macosx15.0.0 -Wundef-prefix=TARGET_OS_ -Wdeprecated-objc-isa-usage -Werror=deprecated-objc-isa-usage -Werror=implicit-function-declaration -emit-obj -mrelax-all -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model pic -pic-level 2 -mframe-pointer=non-leaf -fno-strict-return -ffp-contract=on -fno-rounding-math -funwind-tables=1 -fobjc-msgsend-selector-stubs -target-sdk-version=15.2 -fvisibility-inlines-hidden-static-local-var -fno-modulemap-allow-subdirectory-search -target-cpu apple-m1 -target-feature +v8.5a -target-feature +aes -target-feature +crc -target-feature +dotprod -target-feature +fp-armv8 -target-feature +fp16fml -target-feature +lse -target-feature +ras -target-feature +rcpc -target-feature +rdm -target-feature +sha2 -target-feature +sha3 -target-feature +neon -target-feature +zcm -target-feature +zcz -target-feature +fullfp16 -target-abi darwinpcs -debugger-tuning=lldb -target-linker-version 1115.7.3 -v -fcoverage-compilation-dir=/Users/olezha3000/Documents/University/computer_science/3sem_OS/cp/src/build/CMakeFiles/CMakeScratch/TryCompile-h6iqZq -resource-dir /Library/Developer/CommandLineTools/usr/lib/clang/16 -dependency-file CMakeFiles/cmTC_a1982.dir/CMakeCXXCompilerABI.cpp.o.d -skip-unused-modulemap-deps -MT CMakeFiles/cmTC_a1982.dir/CMakeCXXCompilerABI.cpp.o -sys-header-deps -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk -internal-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/c++/v1 -internal-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/local/include -internal-isystem /Library/Developer/CommandLineTools/usr/lib/clang/16/include -internal-externc-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include -internal-externc-isystem /Library/Developer/CommandLineTools/usr/include -Wno-reorder-init-list -Wno-implicit-int-float-conversion -Wno-c99-designator -Wno-final-dtor-non-final-class -Wno-extra-semi-stmt -Wno-misleading-indentation -Wno-quoted-include-in-framework-header -Wno-implicit-fallthrough -Wno-enum-enum-conversion -Wno-enum-float-conversion -Wno-elaborated-enum-base -Wno-reserved-identifier -Wno-gnu-folding-constant -fdeprecated-macro -fdebug-compilation-dir=/Users/olezha3000/Documents/University/computer_science/3sem_OS/cp/src/build/CMakeFiles/CMakeScratch/TryCompile-h6iqZq -ferror-limit 19 -stack-protector 1 -fstack-check -mdarwin-stkchk-strong-link -fblocks -fencode-extended-block-signature -fregister-global-dtors-with-atexit -fgnuc-version=4.2.1 -fno-cxx-modules -fcxx-exceptions -fexceptions -fmax-type-align=16 -fcommon -clang-vendor-feature=+disableNonDependentMemberExprInCurrentInstantiation -fno-odr-hash-protocols -clang-vendor-feature=+enableAggressiveVLAFolding -clang-vendor-feature=+revert09abecef7bbf -clang-vendor-feature=+thisNoAlignAttr -clang-vendor-feature=+thisNoNullAttr -clang-vendor-feature=+disableAtImportPrivateFrameworkInImplementationError -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_a1982.dir/CMakeCXXCompilerABI.cpp.o -x c++ /opt/homebrew/share/cmake/Modules/CMakeCXXCompilerABI.cpp
+        clang -cc1 version 16.0.0 (clang-1600.0.26.6) default target arm64-apple-darwin24.3.0
+        ignoring nonexistent directory "/Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/local/include"
+        ignoring nonexistent directory "/Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/Library/Frameworks"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/c++/v1
+         /Library/Developer/CommandLineTools/usr/lib/clang/16/include
+         /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include
+         /Library/Developer/CommandLineTools/usr/include
+         /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/System/Library/Frameworks (framework directory)
+        End of search list.
+        Linking CXX executable cmTC_a1982
+        /opt/homebrew/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a1982.dir/link.txt --verbose=1
+        Apple clang version 16.0.0 (clang-1600.0.26.6)
+        Target: arm64-apple-darwin24.3.0
+        Thread model: posix
+        InstalledDir: /Library/Developer/CommandLineTools/usr/bin
+         "/Library/Developer/CommandLineTools/usr/bin/ld" -demangle -lto_library /Library/Developer/CommandLineTools/usr/lib/libLTO.dylib -dynamic -arch arm64 -platform_version macos 15.0.0 15.2 -syslibroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk -mllvm -enable-linkonceodr-outlining -o cmTC_a1982 -search_paths_first -headerpad_max_install_names -v CMakeFiles/cmTC_a1982.dir/CMakeCXXCompilerABI.cpp.o -lc++ -lSystem /Library/Developer/CommandLineTools/usr/lib/clang/16/lib/darwin/libclang_rt.osx.a
+        @(#)PROGRAM:ld PROJECT:ld-1115.7.3
+        BUILD 23:52:02 Dec  5 2024
+        configured to support archs: armv6 armv7 armv7s arm64 arm64e arm64_32 i386 x86_64 x86_64h armv6m armv7k armv7m armv7em
+        will use ld-classic for: armv6 armv7 armv7s i386 armv6m armv7k armv7m armv7em
+        LTO support using: LLVM version 16.0.0 (static support for 29, runtime is 29)
+        TAPI support using: Apple TAPI version 16.0.0 (tapi-1600.0.11.9)
+        Library search paths:
+        	/Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/lib
+        	/Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/lib/swift
+        Framework search paths:
+        	/Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/System/Library/Frameworks
+        /Library/Developer/CommandLineTools/usr/bin/c++  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names  -v -Wl,-v CMakeFiles/cmTC_a1982.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_a1982
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:113 (message)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      Effective list of requested architectures (possibly empty)  : ""
+      Effective list of architectures found in the ABI info binary: "arm64"
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:182 (message)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      Parsed CXX implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [/Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/c++/v1]
+          add: [/Library/Developer/CommandLineTools/usr/lib/clang/16/include]
+          add: [/Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include]
+          add: [/Library/Developer/CommandLineTools/usr/include]
+        end of search list found
+        collapse include dir [/Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/c++/v1] ==> [/Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/c++/v1]
+        collapse include dir [/Library/Developer/CommandLineTools/usr/lib/clang/16/include] ==> [/Library/Developer/CommandLineTools/usr/lib/clang/16/include]
+        collapse include dir [/Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include] ==> [/Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include]
+        collapse include dir [/Library/Developer/CommandLineTools/usr/include] ==> [/Library/Developer/CommandLineTools/usr/include]
+        implicit include dirs: [/Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/c++/v1;/Library/Developer/CommandLineTools/usr/lib/clang/16/include;/Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include;/Library/Developer/CommandLineTools/usr/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:218 (message)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      Parsed CXX implicit link information:
+        link line regex: [^( *|.*[/\\])(ld[0-9]*(\\.[a-z]+)?|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(ld[0-9]*(\\.[a-z]+)?))("|,| |$)]
+        ignore line: [Change Dir: '/Users/olezha3000/Documents/University/computer_science/3sem_OS/cp/src/build/CMakeFiles/CMakeScratch/TryCompile-h6iqZq']
+        ignore line: []
+        ignore line: [Run Build Command(s): /opt/homebrew/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_a1982/fast]
+        ignore line: [/Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_a1982.dir/build.make CMakeFiles/cmTC_a1982.dir/build]
+        ignore line: [Building CXX object CMakeFiles/cmTC_a1982.dir/CMakeCXXCompilerABI.cpp.o]
+        ignore line: [/Library/Developer/CommandLineTools/usr/bin/c++   -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk   -v -Wl -v -MD -MT CMakeFiles/cmTC_a1982.dir/CMakeCXXCompilerABI.cpp.o -MF CMakeFiles/cmTC_a1982.dir/CMakeCXXCompilerABI.cpp.o.d -o CMakeFiles/cmTC_a1982.dir/CMakeCXXCompilerABI.cpp.o -c /opt/homebrew/share/cmake/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [Apple clang version 16.0.0 (clang-1600.0.26.6)]
+        ignore line: [Target: arm64-apple-darwin24.3.0]
+        ignore line: [Thread model: posix]
+        ignore line: [InstalledDir: /Library/Developer/CommandLineTools/usr/bin]
+        ignore line: [c++: warning: -Wl -v: 'linker' input unused [-Wunused-command-line-argument]]
+        ignore line: [ignoring nonexistent directory "/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"]
+        ignore line: [ "/Library/Developer/CommandLineTools/usr/bin/clang" -cc1 -triple arm64-apple-macosx15.0.0 -Wundef-prefix=TARGET_OS_ -Wdeprecated-objc-isa-usage -Werror=deprecated-objc-isa-usage -Werror=implicit-function-declaration -emit-obj -mrelax-all -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model pic -pic-level 2 -mframe-pointer=non-leaf -fno-strict-return -ffp-contract=on -fno-rounding-math -funwind-tables=1 -fobjc-msgsend-selector-stubs -target-sdk-version=15.2 -fvisibility-inlines-hidden-static-local-var -fno-modulemap-allow-subdirectory-search -target-cpu apple-m1 -target-feature +v8.5a -target-feature +aes -target-feature +crc -target-feature +dotprod -target-feature +fp-armv8 -target-feature +fp16fml -target-feature +lse -target-feature +ras -target-feature +rcpc -target-feature +rdm -target-feature +sha2 -target-feature +sha3 -target-feature +neon -target-feature +zcm -target-feature +zcz -target-feature +fullfp16 -target-abi darwinpcs -debugger-tuning=lldb -target-linker-version 1115.7.3 -v -fcoverage-compilation-dir=/Users/olezha3000/Documents/University/computer_science/3sem_OS/cp/src/build/CMakeFiles/CMakeScratch/TryCompile-h6iqZq -resource-dir /Library/Developer/CommandLineTools/usr/lib/clang/16 -dependency-file CMakeFiles/cmTC_a1982.dir/CMakeCXXCompilerABI.cpp.o.d -skip-unused-modulemap-deps -MT CMakeFiles/cmTC_a1982.dir/CMakeCXXCompilerABI.cpp.o -sys-header-deps -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk -internal-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/c++/v1 -internal-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/local/include -internal-isystem /Library/Developer/CommandLineTools/usr/lib/clang/16/include -internal-externc-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include -internal-externc-isystem /Library/Developer/CommandLineTools/usr/include -Wno-reorder-init-list -Wno-implicit-int-float-conversion -Wno-c99-designator -Wno-final-dtor-non-final-class -Wno-extra-semi-stmt -Wno-misleading-indentation -Wno-quoted-include-in-framework-header -Wno-implicit-fallthrough -Wno-enum-enum-conversion -Wno-enum-float-conversion -Wno-elaborated-enum-base -Wno-reserved-identifier -Wno-gnu-folding-constant -fdeprecated-macro -fdebug-compilation-dir=/Users/olezha3000/Documents/University/computer_science/3sem_OS/cp/src/build/CMakeFiles/CMakeScratch/TryCompile-h6iqZq -ferror-limit 19 -stack-protector 1 -fstack-check -mdarwin-stkchk-strong-link -fblocks -fencode-extended-block-signature -fregister-global-dtors-with-atexit -fgnuc-version=4.2.1 -fno-cxx-modules -fcxx-exceptions -fexceptions -fmax-type-align=16 -fcommon -clang-vendor-feature=+disableNonDependentMemberExprInCurrentInstantiation -fno-odr-hash-protocols -clang-vendor-feature=+enableAggressiveVLAFolding -clang-vendor-feature=+revert09abecef7bbf -clang-vendor-feature=+thisNoAlignAttr -clang-vendor-feature=+thisNoNullAttr -clang-vendor-feature=+disableAtImportPrivateFrameworkInImplementationError -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_a1982.dir/CMakeCXXCompilerABI.cpp.o -x c++ /opt/homebrew/share/cmake/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [clang -cc1 version 16.0.0 (clang-1600.0.26.6) default target arm64-apple-darwin24.3.0]
+        ignore line: [ignoring nonexistent directory "/Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/local/include"]
+        ignore line: [ignoring nonexistent directory "/Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/Library/Frameworks"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/c++/v1]
+        ignore line: [ /Library/Developer/CommandLineTools/usr/lib/clang/16/include]
+        ignore line: [ /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include]
+        ignore line: [ /Library/Developer/CommandLineTools/usr/include]
+        ignore line: [ /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/System/Library/Frameworks (framework directory)]
+        ignore line: [End of search list.]
+        ignore line: [Linking CXX executable cmTC_a1982]
+        ignore line: [/opt/homebrew/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a1982.dir/link.txt --verbose=1]
+        ignore line: [Apple clang version 16.0.0 (clang-1600.0.26.6)]
+        ignore line: [Target: arm64-apple-darwin24.3.0]
+        ignore line: [Thread model: posix]
+        ignore line: [InstalledDir: /Library/Developer/CommandLineTools/usr/bin]
+        link line: [ "/Library/Developer/CommandLineTools/usr/bin/ld" -demangle -lto_library /Library/Developer/CommandLineTools/usr/lib/libLTO.dylib -dynamic -arch arm64 -platform_version macos 15.0.0 15.2 -syslibroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk -mllvm -enable-linkonceodr-outlining -o cmTC_a1982 -search_paths_first -headerpad_max_install_names -v CMakeFiles/cmTC_a1982.dir/CMakeCXXCompilerABI.cpp.o -lc++ -lSystem /Library/Developer/CommandLineTools/usr/lib/clang/16/lib/darwin/libclang_rt.osx.a]
+          arg [/Library/Developer/CommandLineTools/usr/bin/ld] ==> ignore
+          arg [-demangle] ==> ignore
+          arg [-lto_library] ==> ignore, skip following value
+          arg [/Library/Developer/CommandLineTools/usr/lib/libLTO.dylib] ==> skip value of -lto_library
+          arg [-dynamic] ==> ignore
+          arg [-arch] ==> ignore
+          arg [arm64] ==> ignore
+          arg [-platform_version] ==> ignore
+          arg [macos] ==> ignore
+          arg [15.0.0] ==> ignore
+          arg [15.2] ==> ignore
+          arg [-syslibroot] ==> ignore
+          arg [/Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk] ==> ignore
+          arg [-mllvm] ==> ignore
+          arg [-enable-linkonceodr-outlining] ==> ignore
+          arg [-o] ==> ignore
+          arg [cmTC_a1982] ==> ignore
+          arg [-search_paths_first] ==> ignore
+          arg [-headerpad_max_install_names] ==> ignore
+          arg [-v] ==> ignore
+          arg [CMakeFiles/cmTC_a1982.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+          arg [-lc++] ==> lib [c++]
+          arg [-lSystem] ==> lib [System]
+          arg [/Library/Developer/CommandLineTools/usr/lib/clang/16/lib/darwin/libclang_rt.osx.a] ==> lib [/Library/Developer/CommandLineTools/usr/lib/clang/16/lib/darwin/libclang_rt.osx.a]
+        linker tool for 'CXX': /Library/Developer/CommandLineTools/usr/bin/ld
+        Library search paths: [;/Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/lib;/Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/lib/swift]
+        Framework search paths: [;/Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/System/Library/Frameworks]
+        remove lib [System]
+        remove lib [/Library/Developer/CommandLineTools/usr/lib/clang/16/lib/darwin/libclang_rt.osx.a]
+        collapse library dir [/Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/lib] ==> [/Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/lib]
+        collapse library dir [/Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/lib/swift] ==> [/Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/lib/swift]
+        collapse framework dir [/Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/System/Library/Frameworks] ==> [/Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/System/Library/Frameworks]
+        implicit libs: [c++]
+        implicit objs: []
+        implicit dirs: [/Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/lib;/Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/lib/swift]
+        implicit fwks: [/Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/System/Library/Frameworks]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/Internal/CMakeDetermineLinkerId.cmake:40 (message)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:255 (cmake_determine_linker_id)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      Running the CXX compiler's linker: "/Library/Developer/CommandLineTools/usr/bin/ld" "-v"
+      @(#)PROGRAM:ld PROJECT:ld-1115.7.3
+      BUILD 23:52:02 Dec  5 2024
+      configured to support archs: armv6 armv7 armv7s arm64 arm64e arm64_32 i386 x86_64 x86_64h armv6m armv7k armv7m armv7em
+      will use ld-classic for: armv6 armv7 armv7s i386 armv6m armv7k armv7m armv7em
+      LTO support using: LLVM version 16.0.0 (static support for 29, runtime is 29)
+      TAPI support using: Apple TAPI version 16.0.0 (tapi-1600.0.11.9)
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/Internal/CheckSourceCompiles.cmake:108 (try_compile)"
+      - "/opt/homebrew/share/cmake/Modules/CheckCSourceCompiles.cmake:58 (cmake_check_source_compiles)"
+      - "/opt/homebrew/share/cmake/Modules/FindThreads.cmake:97 (CHECK_C_SOURCE_COMPILES)"
+      - "/opt/homebrew/share/cmake/Modules/FindThreads.cmake:163 (_threads_check_libc)"
+      - "build/_deps/libzmq-src/CMakeLists.txt:20 (include)"
+    checks:
+      - "Performing Test CMAKE_HAVE_LIBC_PTHREAD"
+    directories:
+      source: "/Users/olezha3000/Documents/University/computer_science/3sem_OS/cp/src/build/CMakeFiles/CMakeScratch/TryCompile-eb6VfI"
+      binary: "/Users/olezha3000/Documents/University/computer_science/3sem_OS/cp/src/build/CMakeFiles/CMakeScratch/TryCompile-eb6VfI"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: "/Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk"
+    buildResult:
+      variable: "CMAKE_HAVE_LIBC_PTHREAD"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/olezha3000/Documents/University/computer_science/3sem_OS/cp/src/build/CMakeFiles/CMakeScratch/TryCompile-eb6VfI'
+        
+        Run Build Command(s): /opt/homebrew/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_74267/fast
+        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_74267.dir/build.make CMakeFiles/cmTC_74267.dir/build
+        Building C object CMakeFiles/cmTC_74267.dir/src.c.o
+        /Library/Developer/CommandLineTools/usr/bin/cc -DCMAKE_HAVE_LIBC_PTHREAD  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk -MD -MT CMakeFiles/cmTC_74267.dir/src.c.o -MF CMakeFiles/cmTC_74267.dir/src.c.o.d -o CMakeFiles/cmTC_74267.dir/src.c.o -c /Users/olezha3000/Documents/University/computer_science/3sem_OS/cp/src/build/CMakeFiles/CMakeScratch/TryCompile-eb6VfI/src.c
+        Linking C executable cmTC_74267
+        /opt/homebrew/bin/cmake -E cmake_link_script CMakeFiles/cmTC_74267.dir/link.txt --verbose=1
+        /Library/Developer/CommandLineTools/usr/bin/cc  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_74267.dir/src.c.o -o cmTC_74267
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/Internal/CheckSourceCompiles.cmake:108 (try_compile)"
+      - "/opt/homebrew/share/cmake/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/opt/homebrew/share/cmake/Modules/CheckCCompilerFlag.cmake:56 (cmake_check_compiler_flag)"
+      - "build/_deps/libzmq-src/CMakeLists.txt:123 (check_c_compiler_flag)"
+    checks:
+      - "Performing Test COMPILER_SUPPORTS_C11"
+    directories:
+      source: "/Users/olezha3000/Documents/University/computer_science/3sem_OS/cp/src/build/CMakeFiles/CMakeScratch/TryCompile-wRgjuK"
+      binary: "/Users/olezha3000/Documents/University/computer_science/3sem_OS/cp/src/build/CMakeFiles/CMakeScratch/TryCompile-wRgjuK"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_MODULE_PATH: "/Users/olezha3000/Documents/University/computer_science/3sem_OS/cp/src/build/_deps/libzmq-src;/Users/olezha3000/Documents/University/computer_science/3sem_OS/cp/src/build/_deps/libzmq-src/builds/cmake/Modules"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: "/Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk"
+    buildResult:
+      variable: "COMPILER_SUPPORTS_C11"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/olezha3000/Documents/University/computer_science/3sem_OS/cp/src/build/CMakeFiles/CMakeScratch/TryCompile-wRgjuK'
+        
+        Run Build Command(s): /opt/homebrew/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_562c3/fast
+        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_562c3.dir/build.make CMakeFiles/cmTC_562c3.dir/build
+        Building C object CMakeFiles/cmTC_562c3.dir/src.c.o
+        /Library/Developer/CommandLineTools/usr/bin/cc -DCOMPILER_SUPPORTS_C11  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk   -std=c11 -MD -MT CMakeFiles/cmTC_562c3.dir/src.c.o -MF CMakeFiles/cmTC_562c3.dir/src.c.o.d -o CMakeFiles/cmTC_562c3.dir/src.c.o -c /Users/olezha3000/Documents/University/computer_science/3sem_OS/cp/src/build/CMakeFiles/CMakeScratch/TryCompile-wRgjuK/src.c
+        Linking C executable cmTC_562c3
+        /opt/homebrew/bin/cmake -E cmake_link_script CMakeFiles/cmTC_562c3.dir/link.txt --verbose=1
+        /Library/Developer/CommandLineTools/usr/bin/cc  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_562c3.dir/src.c.o -o cmTC_562c3
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/Internal/CheckSourceCompiles.cmake:108 (try_compile)"
+      - "/opt/homebrew/share/cmake/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/opt/homebrew/share/cmake/Modules/CheckCXXCompilerFlag.cmake:55 (cmake_check_compiler_flag)"
+      - "build/_deps/libzmq-src/CMakeLists.txt:132 (check_cxx_compiler_flag)"
+    checks:
+      - "Performing Test CXX_HAS_TAUT_WARNING"
+    directories:
+      source: "/Users/olezha3000/Documents/University/computer_science/3sem_OS/cp/src/build/CMakeFiles/CMakeScratch/TryCompile-iXNdjl"
+      binary: "/Users/olezha3000/Documents/University/computer_science/3sem_OS/cp/src/build/CMakeFiles/CMakeScratch/TryCompile-iXNdjl"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_MODULE_PATH: "/Users/olezha3000/Documents/University/computer_science/3sem_OS/cp/src/build/_deps/libzmq-src;/Users/olezha3000/Documents/University/computer_science/3sem_OS/cp/src/build/_deps/libzmq-src/builds/cmake/Modules"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: "/Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk"
+    buildResult:
+      variable: "CXX_HAS_TAUT_WARNING"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/olezha3000/Documents/University/computer_science/3sem_OS/cp/src/build/CMakeFiles/CMakeScratch/TryCompile-iXNdjl'
+        
+        Run Build Command(s): /opt/homebrew/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_3c8d9/fast
+        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_3c8d9.dir/build.make CMakeFiles/cmTC_3c8d9.dir/build
+        Building CXX object CMakeFiles/cmTC_3c8d9.dir/src.cxx.o
+        /Library/Developer/CommandLineTools/usr/bin/c++ -DCXX_HAS_TAUT_WARNING  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk   -Wno-tautological-constant-compare -MD -MT CMakeFiles/cmTC_3c8d9.dir/src.cxx.o -MF CMakeFiles/cmTC_3c8d9.dir/src.cxx.o.d -o CMakeFiles/cmTC_3c8d9.dir/src.cxx.o -c /Users/olezha3000/Documents/University/computer_science/3sem_OS/cp/src/build/CMakeFiles/CMakeScratch/TryCompile-iXNdjl/src.cxx
+        Linking CXX executable cmTC_3c8d9
+        /opt/homebrew/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3c8d9.dir/link.txt --verbose=1
+        /Library/Developer/CommandLineTools/usr/bin/c++  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_3c8d9.dir/src.cxx.o -o cmTC_3c8d9
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/Internal/CheckSourceCompiles.cmake:108 (try_compile)"
+      - "/opt/homebrew/share/cmake/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/opt/homebrew/share/cmake/Modules/CheckCCompilerFlag.cmake:56 (cmake_check_compiler_flag)"
+      - "build/_deps/libzmq-src/CMakeLists.txt:136 (check_c_compiler_flag)"
+    checks:
+      - "Performing Test CC_HAS_TAUT_WARNING"
+    directories:
+      source: "/Users/olezha3000/Documents/University/computer_science/3sem_OS/cp/src/build/CMakeFiles/CMakeScratch/TryCompile-m93QiR"
+      binary: "/Users/olezha3000/Documents/University/computer_science/3sem_OS/cp/src/build/CMakeFiles/CMakeScratch/TryCompile-m93QiR"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -std=c11"
+      CMAKE_MODULE_PATH: "/Users/olezha3000/Documents/University/computer_science/3sem_OS/cp/src/build/_deps/libzmq-src;/Users/olezha3000/Documents/University/computer_science/3sem_OS/cp/src/build/_deps/libzmq-src/builds/cmake/Modules"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: "/Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk"
+    buildResult:
+      variable: "CC_HAS_TAUT_WARNING"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/olezha3000/Documents/University/computer_science/3sem_OS/cp/src/build/CMakeFiles/CMakeScratch/TryCompile-m93QiR'
+        
+        Run Build Command(s): /opt/homebrew/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_de6d3/fast
+        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_de6d3.dir/build.make CMakeFiles/cmTC_de6d3.dir/build
+        Building C object CMakeFiles/cmTC_de6d3.dir/src.c.o
+        /Library/Developer/CommandLineTools/usr/bin/cc -DCC_HAS_TAUT_WARNING  -std=c11  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk   -Wno-tautological-constant-compare -MD -MT CMakeFiles/cmTC_de6d3.dir/src.c.o -MF CMakeFiles/cmTC_de6d3.dir/src.c.o.d -o CMakeFiles/cmTC_de6d3.dir/src.c.o -c /Users/olezha3000/Documents/University/computer_science/3sem_OS/cp/src/build/CMakeFiles/CMakeScratch/TryCompile-m93QiR/src.c
+        Linking C executable cmTC_de6d3
+        /opt/homebrew/bin/cmake -E cmake_link_script CMakeFiles/cmTC_de6d3.dir/link.txt --verbose=1
+        /Library/Developer/CommandLineTools/usr/bin/cc  -std=c11  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_de6d3.dir/src.c.o -o cmTC_de6d3
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CheckSymbolExists.cmake:163 (try_compile)"
+      - "/opt/homebrew/share/cmake/Modules/CheckCXXSymbolExists.cmake:74 (__CHECK_SYMBOL_EXISTS_IMPL)"
+      - "build/_deps/libzmq-src/CMakeLists.txt:255 (check_cxx_symbol_exists)"
+    checks:
+      - "Looking for strlcpy"
+    directories:
+      source: "/Users/olezha3000/Documents/University/computer_science/3sem_OS/cp/src/build/CMakeFiles/CMakeScratch/TryCompile-8acAXv"
+      binary: "/Users/olezha3000/Documents/University/computer_science/3sem_OS/cp/src/build/CMakeFiles/CMakeScratch/TryCompile-8acAXv"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: " -Wno-tautological-constant-compare"
+      CMAKE_MODULE_PATH: "/Users/olezha3000/Documents/University/computer_science/3sem_OS/cp/src/build/_deps/libzmq-src;/Users/olezha3000/Documents/University/computer_science/3sem_OS/cp/src/build/_deps/libzmq-src/builds/cmake/Modules"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: "/Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk"
+    buildResult:
+      variable: "ZMQ_HAVE_STRLCPY"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/olezha3000/Documents/University/computer_science/3sem_OS/cp/src/build/CMakeFiles/CMakeScratch/TryCompile-8acAXv'
+        
+        Run Build Command(s): /opt/homebrew/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_345da/fast
+        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_345da.dir/build.make CMakeFiles/cmTC_345da.dir/build
+        Building CXX object CMakeFiles/cmTC_345da.dir/CheckSymbolExists.cxx.o
+        /Library/Developer/CommandLineTools/usr/bin/c++   -Wno-tautological-constant-compare  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk -MD -MT CMakeFiles/cmTC_345da.dir/CheckSymbolExists.cxx.o -MF CMakeFiles/cmTC_345da.dir/CheckSymbolExists.cxx.o.d -o CMakeFiles/cmTC_345da.dir/CheckSymbolExists.cxx.o -c /Users/olezha3000/Documents/University/computer_science/3sem_OS/cp/src/build/CMakeFiles/CMakeScratch/TryCompile-8acAXv/CheckSymbolExists.cxx
+        Linking CXX executable cmTC_345da
+        /opt/homebrew/bin/cmake -E cmake_link_script CMakeFiles/cmTC_345da.dir/link.txt --verbose=1
+        /Library/Developer/CommandLineTools/usr/bin/c++  -Wno-tautological-constant-compare  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_345da.dir/CheckSymbolExists.cxx.o -o cmTC_345da
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CheckSymbolExists.cmake:163 (try_compile)"
+      - "/opt/homebrew/share/cmake/Modules/CheckCXXSymbolExists.cmake:74 (__CHECK_SYMBOL_EXISTS_IMPL)"
+      - "build/_deps/libzmq-src/CMakeLists.txt:383 (check_cxx_symbol_exists)"
+    checks:
+      - "Looking for kqueue"
+    directories:
+      source: "/Users/olezha3000/Documents/University/computer_science/3sem_OS/cp/src/build/CMakeFiles/CMakeScratch/TryCompile-5VlS7O"
+      binary: "/Users/olezha3000/Documents/University/computer_science/3sem_OS/cp/src/build/CMakeFiles/CMakeScratch/TryCompile-5VlS7O"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: " -Wno-tautological-constant-compare"
+      CMAKE_MODULE_PATH: "/Users/olezha3000/Documents/University/computer_science/3sem_OS/cp/src/build/_deps/libzmq-src;/Users/olezha3000/Documents/University/computer_science/3sem_OS/cp/src/build/_deps/libzmq-src/builds/cmake/Modules"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: "/Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk"
+    buildResult:
+      variable: "HAVE_KQUEUE"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/olezha3000/Documents/University/computer_science/3sem_OS/cp/src/build/CMakeFiles/CMakeScratch/TryCompile-5VlS7O'
+        
+        Run Build Command(s): /opt/homebrew/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_151a4/fast
+        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_151a4.dir/build.make CMakeFiles/cmTC_151a4.dir/build
+        Building CXX object CMakeFiles/cmTC_151a4.dir/CheckSymbolExists.cxx.o
+        /Library/Developer/CommandLineTools/usr/bin/c++   -Wno-tautological-constant-compare  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk -MD -MT CMakeFiles/cmTC_151a4.dir/CheckSymbolExists.cxx.o -MF CMakeFiles/cmTC_151a4.dir/CheckSymbolExists.cxx.o.d -o CMakeFiles/cmTC_151a4.dir/CheckSymbolExists.cxx.o -c /Users/olezha3000/Documents/University/computer_science/3sem_OS/cp/src/build/CMakeFiles/CMakeScratch/TryCompile-5VlS7O/CheckSymbolExists.cxx
+        Linking CXX executable cmTC_151a4
+        /opt/homebrew/bin/cmake -E cmake_link_script CMakeFiles/cmTC_151a4.dir/link.txt --verbose=1
+        /Library/Developer/CommandLineTools/usr/bin/c++  -Wno-tautological-constant-compare  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_151a4.dir/CheckSymbolExists.cxx.o -o cmTC_151a4
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CheckSymbolExists.cmake:163 (try_compile)"
+      - "/opt/homebrew/share/cmake/Modules/CheckCXXSymbolExists.cmake:74 (__CHECK_SYMBOL_EXISTS_IMPL)"
+      - "build/_deps/libzmq-src/CMakeLists.txt:466 (check_cxx_symbol_exists)"
+    checks:
+      - "Looking for pselect"
+    directories:
+      source: "/Users/olezha3000/Documents/University/computer_science/3sem_OS/cp/src/build/CMakeFiles/CMakeScratch/TryCompile-ANbABW"
+      binary: "/Users/olezha3000/Documents/University/computer_science/3sem_OS/cp/src/build/CMakeFiles/CMakeScratch/TryCompile-ANbABW"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: " -Wno-tautological-constant-compare"
+      CMAKE_MODULE_PATH: "/Users/olezha3000/Documents/University/computer_science/3sem_OS/cp/src/build/_deps/libzmq-src;/Users/olezha3000/Documents/University/computer_science/3sem_OS/cp/src/build/_deps/libzmq-src/builds/cmake/Modules"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: "/Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk"
+    buildResult:
+      variable: "HAVE_PSELECT"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/olezha3000/Documents/University/computer_science/3sem_OS/cp/src/build/CMakeFiles/CMakeScratch/TryCompile-ANbABW'
+        
+        Run Build Command(s): /opt/homebrew/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_7e2f7/fast
+        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_7e2f7.dir/build.make CMakeFiles/cmTC_7e2f7.dir/build
+        Building CXX object CMakeFiles/cmTC_7e2f7.dir/CheckSymbolExists.cxx.o
+        /Library/Developer/CommandLineTools/usr/bin/c++   -Wno-tautological-constant-compare  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk -MD -MT CMakeFiles/cmTC_7e2f7.dir/CheckSymbolExists.cxx.o -MF CMakeFiles/cmTC_7e2f7.dir/CheckSymbolExists.cxx.o.d -o CMakeFiles/cmTC_7e2f7.dir/CheckSymbolExists.cxx.o -c /Users/olezha3000/Documents/University/computer_science/3sem_OS/cp/src/build/CMakeFiles/CMakeScratch/TryCompile-ANbABW/CheckSymbolExists.cxx
+        Linking CXX executable cmTC_7e2f7
+        /opt/homebrew/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7e2f7.dir/link.txt --verbose=1
+        /Library/Developer/CommandLineTools/usr/bin/c++  -Wno-tautological-constant-compare  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_7e2f7.dir/CheckSymbolExists.cxx.o -o cmTC_7e2f7
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CheckSymbolExists.cmake:163 (try_compile)"
+      - "/opt/homebrew/share/cmake/Modules/CheckCXXSymbolExists.cmake:74 (__CHECK_SYMBOL_EXISTS_IMPL)"
+      - "build/_deps/libzmq-src/CMakeLists.txt:485 (check_cxx_symbol_exists)"
+    checks:
+      - "Looking for posix_memalign"
+    directories:
+      source: "/Users/olezha3000/Documents/University/computer_science/3sem_OS/cp/src/build/CMakeFiles/CMakeScratch/TryCompile-E5QdFj"
+      binary: "/Users/olezha3000/Documents/University/computer_science/3sem_OS/cp/src/build/CMakeFiles/CMakeScratch/TryCompile-E5QdFj"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: " -Wno-tautological-constant-compare"
+      CMAKE_MODULE_PATH: "/Users/olezha3000/Documents/University/computer_science/3sem_OS/cp/src/build/_deps/libzmq-src;/Users/olezha3000/Documents/University/computer_science/3sem_OS/cp/src/build/_deps/libzmq-src/builds/cmake/Modules"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: "/Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk"
+    buildResult:
+      variable: "HAVE_POSIX_MEMALIGN"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/olezha3000/Documents/University/computer_science/3sem_OS/cp/src/build/CMakeFiles/CMakeScratch/TryCompile-E5QdFj'
+        
+        Run Build Command(s): /opt/homebrew/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_e2a4e/fast
+        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_e2a4e.dir/build.make CMakeFiles/cmTC_e2a4e.dir/build
+        Building CXX object CMakeFiles/cmTC_e2a4e.dir/CheckSymbolExists.cxx.o
+        /Library/Developer/CommandLineTools/usr/bin/c++   -Wno-tautological-constant-compare  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk -MD -MT CMakeFiles/cmTC_e2a4e.dir/CheckSymbolExists.cxx.o -MF CMakeFiles/cmTC_e2a4e.dir/CheckSymbolExists.cxx.o.d -o CMakeFiles/cmTC_e2a4e.dir/CheckSymbolExists.cxx.o -c /Users/olezha3000/Documents/University/computer_science/3sem_OS/cp/src/build/CMakeFiles/CMakeScratch/TryCompile-E5QdFj/CheckSymbolExists.cxx
+        Linking CXX executable cmTC_e2a4e
+        /opt/homebrew/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e2a4e.dir/link.txt --verbose=1
+        /Library/Developer/CommandLineTools/usr/bin/c++  -Wno-tautological-constant-compare  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_e2a4e.dir/CheckSymbolExists.cxx.o -o cmTC_e2a4e
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CheckIncludeFiles.cmake:141 (try_compile)"
+      - "build/_deps/libzmq-src/CMakeLists.txt:489 (check_include_files)"
+    checks:
+      - "Looking for include file windows.h"
+    directories:
+      source: "/Users/olezha3000/Documents/University/computer_science/3sem_OS/cp/src/build/CMakeFiles/CMakeScratch/TryCompile-ptnuYz"
+      binary: "/Users/olezha3000/Documents/University/computer_science/3sem_OS/cp/src/build/CMakeFiles/CMakeScratch/TryCompile-ptnuYz"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -std=c11 -Wno-tautological-constant-compare"
+      CMAKE_MODULE_PATH: "/Users/olezha3000/Documents/University/computer_science/3sem_OS/cp/src/build/_deps/libzmq-src;/Users/olezha3000/Documents/University/computer_science/3sem_OS/cp/src/build/_deps/libzmq-src/builds/cmake/Modules"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: "/Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk"
+    buildResult:
+      variable: "ZMQ_HAVE_WINDOWS"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/olezha3000/Documents/University/computer_science/3sem_OS/cp/src/build/CMakeFiles/CMakeScratch/TryCompile-ptnuYz'
+        
+        Run Build Command(s): /opt/homebrew/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_9b524/fast
+        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_9b524.dir/build.make CMakeFiles/cmTC_9b524.dir/build
+        Building C object CMakeFiles/cmTC_9b524.dir/ZMQ_HAVE_WINDOWS.c.o
+        /Library/Developer/CommandLineTools/usr/bin/cc   -std=c11 -Wno-tautological-constant-compare  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk -MD -MT CMakeFiles/cmTC_9b524.dir/ZMQ_HAVE_WINDOWS.c.o -MF CMakeFiles/cmTC_9b524.dir/ZMQ_HAVE_WINDOWS.c.o.d -o CMakeFiles/cmTC_9b524.dir/ZMQ_HAVE_WINDOWS.c.o -c /Users/olezha3000/Documents/University/computer_science/3sem_OS/cp/src/build/CMakeFiles/CMakeScratch/TryCompile-ptnuYz/ZMQ_HAVE_WINDOWS.c
+        /Users/olezha3000/Documents/University/computer_science/3sem_OS/cp/src/build/CMakeFiles/CMakeScratch/TryCompile-ptnuYz/ZMQ_HAVE_WINDOWS.c:2:10: fatal error: 'windows.h' file not found
+            2 | #include <windows.h>
+              |          ^~~~~~~~~~~
+        1 error generated.
+        make[1]: *** [CMakeFiles/cmTC_9b524.dir/ZMQ_HAVE_WINDOWS.c.o] Error 1
+        make: *** [cmTC_9b524/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CheckIncludeFiles.cmake:141 (try_compile)"
+      - "build/_deps/libzmq-src/CMakeLists.txt:505 (check_include_files)"
+    checks:
+      - "Looking for include file condition_variable"
+    directories:
+      source: "/Users/olezha3000/Documents/University/computer_science/3sem_OS/cp/src/build/CMakeFiles/CMakeScratch/TryCompile-az9TfU"
+      binary: "/Users/olezha3000/Documents/University/computer_science/3sem_OS/cp/src/build/CMakeFiles/CMakeScratch/TryCompile-az9TfU"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: " -Wno-tautological-constant-compare"
+      CMAKE_MODULE_PATH: "/Users/olezha3000/Documents/University/computer_science/3sem_OS/cp/src/build/_deps/libzmq-src;/Users/olezha3000/Documents/University/computer_science/3sem_OS/cp/src/build/_deps/libzmq-src/builds/cmake/Modules"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: "/Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk"
+    buildResult:
+      variable: "ZMQ_HAVE_STL_CONDITION_VARIABLE"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/olezha3000/Documents/University/computer_science/3sem_OS/cp/src/build/CMakeFiles/CMakeScratch/TryCompile-az9TfU'
+        
+        Run Build Command(s): /opt/homebrew/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_b8720/fast
+        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_b8720.dir/build.make CMakeFiles/cmTC_b8720.dir/build
+        Building CXX object CMakeFiles/cmTC_b8720.dir/ZMQ_HAVE_STL_CONDITION_VARIABLE.cpp.o
+        /Library/Developer/CommandLineTools/usr/bin/c++   -Wno-tautological-constant-compare  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk -MD -MT CMakeFiles/cmTC_b8720.dir/ZMQ_HAVE_STL_CONDITION_VARIABLE.cpp.o -MF CMakeFiles/cmTC_b8720.dir/ZMQ_HAVE_STL_CONDITION_VARIABLE.cpp.o.d -o CMakeFiles/cmTC_b8720.dir/ZMQ_HAVE_STL_CONDITION_VARIABLE.cpp.o -c /Users/olezha3000/Documents/University/computer_science/3sem_OS/cp/src/build/CMakeFiles/CMakeScratch/TryCompile-az9TfU/ZMQ_HAVE_STL_CONDITION_VARIABLE.cpp
+        Linking CXX executable cmTC_b8720
+        /opt/homebrew/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b8720.dir/link.txt --verbose=1
+        /Library/Developer/CommandLineTools/usr/bin/c++  -Wno-tautological-constant-compare  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_b8720.dir/ZMQ_HAVE_STL_CONDITION_VARIABLE.cpp.o -o cmTC_b8720
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CheckIncludeFiles.cmake:141 (try_compile)"
+      - "build/_deps/libzmq-src/CMakeLists.txt:542 (check_include_files)"
+    checks:
+      - "Looking for include file ifaddrs.h"
+    directories:
+      source: "/Users/olezha3000/Documents/University/computer_science/3sem_OS/cp/src/build/CMakeFiles/CMakeScratch/TryCompile-OTlBNT"
+      binary: "/Users/olezha3000/Documents/University/computer_science/3sem_OS/cp/src/build/CMakeFiles/CMakeScratch/TryCompile-OTlBNT"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -std=c11 -Wno-tautological-constant-compare"
+      CMAKE_MODULE_PATH: "/Users/olezha3000/Documents/University/computer_science/3sem_OS/cp/src/build/_deps/libzmq-src;/Users/olezha3000/Documents/University/computer_science/3sem_OS/cp/src/build/_deps/libzmq-src/builds/cmake/Modules"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: "/Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk"
+    buildResult:
+      variable: "ZMQ_HAVE_IFADDRS"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/olezha3000/Documents/University/computer_science/3sem_OS/cp/src/build/CMakeFiles/CMakeScratch/TryCompile-OTlBNT'
+        
+        Run Build Command(s): /opt/homebrew/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_416d4/fast
+        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_416d4.dir/build.make CMakeFiles/cmTC_416d4.dir/build
+        Building C object CMakeFiles/cmTC_416d4.dir/ZMQ_HAVE_IFADDRS.c.o
+        /Library/Developer/CommandLineTools/usr/bin/cc   -std=c11 -Wno-tautological-constant-compare  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk -MD -MT CMakeFiles/cmTC_416d4.dir/ZMQ_HAVE_IFADDRS.c.o -MF CMakeFiles/cmTC_416d4.dir/ZMQ_HAVE_IFADDRS.c.o.d -o CMakeFiles/cmTC_416d4.dir/ZMQ_HAVE_IFADDRS.c.o -c /Users/olezha3000/Documents/University/computer_science/3sem_OS/cp/src/build/CMakeFiles/CMakeScratch/TryCompile-OTlBNT/ZMQ_HAVE_IFADDRS.c
+        Linking C executable cmTC_416d4
+        /opt/homebrew/bin/cmake -E cmake_link_script CMakeFiles/cmTC_416d4.dir/link.txt --verbose=1
+        /Library/Developer/CommandLineTools/usr/bin/cc  -std=c11 -Wno-tautological-constant-compare  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_416d4.dir/ZMQ_HAVE_IFADDRS.c.o -o cmTC_416d4
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CheckIncludeFiles.cmake:141 (try_compile)"
+      - "build/_deps/libzmq-src/CMakeLists.txt:543 (check_include_files)"
+    checks:
+      - "Looking for include file sys/uio.h"
+    directories:
+      source: "/Users/olezha3000/Documents/University/computer_science/3sem_OS/cp/src/build/CMakeFiles/CMakeScratch/TryCompile-Yb7DxJ"
+      binary: "/Users/olezha3000/Documents/University/computer_science/3sem_OS/cp/src/build/CMakeFiles/CMakeScratch/TryCompile-Yb7DxJ"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -std=c11 -Wno-tautological-constant-compare"
+      CMAKE_MODULE_PATH: "/Users/olezha3000/Documents/University/computer_science/3sem_OS/cp/src/build/_deps/libzmq-src;/Users/olezha3000/Documents/University/computer_science/3sem_OS/cp/src/build/_deps/libzmq-src/builds/cmake/Modules"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: "/Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk"
+    buildResult:
+      variable: "ZMQ_HAVE_UIO"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/olezha3000/Documents/University/computer_science/3sem_OS/cp/src/build/CMakeFiles/CMakeScratch/TryCompile-Yb7DxJ'
+        
+        Run Build Command(s): /opt/homebrew/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_b614d/fast
+        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_b614d.dir/build.make CMakeFiles/cmTC_b614d.dir/build
+        Building C object CMakeFiles/cmTC_b614d.dir/ZMQ_HAVE_UIO.c.o
+        /Library/Developer/CommandLineTools/usr/bin/cc   -std=c11 -Wno-tautological-constant-compare  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk -MD -MT CMakeFiles/cmTC_b614d.dir/ZMQ_HAVE_UIO.c.o -MF CMakeFiles/cmTC_b614d.dir/ZMQ_HAVE_UIO.c.o.d -o CMakeFiles/cmTC_b614d.dir/ZMQ_HAVE_UIO.c.o -c /Users/olezha3000/Documents/University/computer_science/3sem_OS/cp/src/build/CMakeFiles/CMakeScratch/TryCompile-Yb7DxJ/ZMQ_HAVE_UIO.c
+        Linking C executable cmTC_b614d
+        /opt/homebrew/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b614d.dir/link.txt --verbose=1
+        /Library/Developer/CommandLineTools/usr/bin/cc  -std=c11 -Wno-tautological-constant-compare  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_b614d.dir/ZMQ_HAVE_UIO.c.o -o cmTC_b614d
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CheckIncludeFiles.cmake:141 (try_compile)"
+      - "build/_deps/libzmq-src/CMakeLists.txt:544 (check_include_files)"
+    checks:
+      - "Looking for include file sys/eventfd.h"
+    directories:
+      source: "/Users/olezha3000/Documents/University/computer_science/3sem_OS/cp/src/build/CMakeFiles/CMakeScratch/TryCompile-toyk1n"
+      binary: "/Users/olezha3000/Documents/University/computer_science/3sem_OS/cp/src/build/CMakeFiles/CMakeScratch/TryCompile-toyk1n"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -std=c11 -Wno-tautological-constant-compare"
+      CMAKE_MODULE_PATH: "/Users/olezha3000/Documents/University/computer_science/3sem_OS/cp/src/build/_deps/libzmq-src;/Users/olezha3000/Documents/University/computer_science/3sem_OS/cp/src/build/_deps/libzmq-src/builds/cmake/Modules"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: "/Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk"
+    buildResult:
+      variable: "ZMQ_HAVE_EVENTFD"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/olezha3000/Documents/University/computer_science/3sem_OS/cp/src/build/CMakeFiles/CMakeScratch/TryCompile-toyk1n'
+        
+        Run Build Command(s): /opt/homebrew/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_6534a/fast
+        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_6534a.dir/build.make CMakeFiles/cmTC_6534a.dir/build
+        Building C object CMakeFiles/cmTC_6534a.dir/ZMQ_HAVE_EVENTFD.c.o
+        /Library/Developer/CommandLineTools/usr/bin/cc   -std=c11 -Wno-tautological-constant-compare  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk -MD -MT CMakeFiles/cmTC_6534a.dir/ZMQ_HAVE_EVENTFD.c.o -MF CMakeFiles/cmTC_6534a.dir/ZMQ_HAVE_EVENTFD.c.o.d -o CMakeFiles/cmTC_6534a.dir/ZMQ_HAVE_EVENTFD.c.o -c /Users/olezha3000/Documents/University/computer_science/3sem_OS/cp/src/build/CMakeFiles/CMakeScratch/TryCompile-toyk1n/ZMQ_HAVE_EVENTFD.c
+        /Users/olezha3000/Documents/University/computer_science/3sem_OS/cp/src/build/CMakeFiles/CMakeScratch/TryCompile-toyk1n/ZMQ_HAVE_EVENTFD.c:2:10: fatal error: 'sys/eventfd.h' file not found
+            2 | #include <sys/eventfd.h>
+              |          ^~~~~~~~~~~~~~~
+        1 error generated.
+        make[1]: *** [CMakeFiles/cmTC_6534a.dir/ZMQ_HAVE_EVENTFD.c.o] Error 1
+        make: *** [cmTC_6534a/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CheckSymbolExists.cmake:163 (try_compile)"
+      - "/opt/homebrew/share/cmake/Modules/CheckCXXSymbolExists.cmake:74 (__CHECK_SYMBOL_EXISTS_IMPL)"
+      - "build/_deps/libzmq-src/CMakeLists.txt:566 (check_cxx_symbol_exists)"
+    checks:
+      - "Looking for if_nametoindex"
+    directories:
+      source: "/Users/olezha3000/Documents/University/computer_science/3sem_OS/cp/src/build/CMakeFiles/CMakeScratch/TryCompile-OqqtkN"
+      binary: "/Users/olezha3000/Documents/University/computer_science/3sem_OS/cp/src/build/CMakeFiles/CMakeScratch/TryCompile-OqqtkN"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: " -Wno-tautological-constant-compare"
+      CMAKE_MODULE_PATH: "/Users/olezha3000/Documents/University/computer_science/3sem_OS/cp/src/build/_deps/libzmq-src;/Users/olezha3000/Documents/University/computer_science/3sem_OS/cp/src/build/_deps/libzmq-src/builds/cmake/Modules"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: "/Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk"
+    buildResult:
+      variable: "HAVE_IF_NAMETOINDEX"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/olezha3000/Documents/University/computer_science/3sem_OS/cp/src/build/CMakeFiles/CMakeScratch/TryCompile-OqqtkN'
+        
+        Run Build Command(s): /opt/homebrew/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_d33c2/fast
+        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_d33c2.dir/build.make CMakeFiles/cmTC_d33c2.dir/build
+        Building CXX object CMakeFiles/cmTC_d33c2.dir/CheckSymbolExists.cxx.o
+        /Library/Developer/CommandLineTools/usr/bin/c++   -Wno-tautological-constant-compare  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk -MD -MT CMakeFiles/cmTC_d33c2.dir/CheckSymbolExists.cxx.o -MF CMakeFiles/cmTC_d33c2.dir/CheckSymbolExists.cxx.o.d -o CMakeFiles/cmTC_d33c2.dir/CheckSymbolExists.cxx.o -c /Users/olezha3000/Documents/University/computer_science/3sem_OS/cp/src/build/CMakeFiles/CMakeScratch/TryCompile-OqqtkN/CheckSymbolExists.cxx
+        Linking CXX executable cmTC_d33c2
+        /opt/homebrew/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d33c2.dir/link.txt --verbose=1
+        /Library/Developer/CommandLineTools/usr/bin/c++  -Wno-tautological-constant-compare  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_d33c2.dir/CheckSymbolExists.cxx.o -o cmTC_d33c2
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CheckSymbolExists.cmake:163 (try_compile)"
+      - "/opt/homebrew/share/cmake/Modules/CheckCXXSymbolExists.cmake:74 (__CHECK_SYMBOL_EXISTS_IMPL)"
+      - "build/_deps/libzmq-src/CMakeLists.txt:567 (check_cxx_symbol_exists)"
+    checks:
+      - "Looking for SO_PEERCRED"
+    directories:
+      source: "/Users/olezha3000/Documents/University/computer_science/3sem_OS/cp/src/build/CMakeFiles/CMakeScratch/TryCompile-zEjTR8"
+      binary: "/Users/olezha3000/Documents/University/computer_science/3sem_OS/cp/src/build/CMakeFiles/CMakeScratch/TryCompile-zEjTR8"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: " -Wno-tautological-constant-compare"
+      CMAKE_MODULE_PATH: "/Users/olezha3000/Documents/University/computer_science/3sem_OS/cp/src/build/_deps/libzmq-src;/Users/olezha3000/Documents/University/computer_science/3sem_OS/cp/src/build/_deps/libzmq-src/builds/cmake/Modules"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: "/Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk"
+    buildResult:
+      variable: "ZMQ_HAVE_SO_PEERCRED"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/olezha3000/Documents/University/computer_science/3sem_OS/cp/src/build/CMakeFiles/CMakeScratch/TryCompile-zEjTR8'
+        
+        Run Build Command(s): /opt/homebrew/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_68cce/fast
+        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_68cce.dir/build.make CMakeFiles/cmTC_68cce.dir/build
+        Building CXX object CMakeFiles/cmTC_68cce.dir/CheckSymbolExists.cxx.o
+        /Library/Developer/CommandLineTools/usr/bin/c++   -Wno-tautological-constant-compare  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk -MD -MT CMakeFiles/cmTC_68cce.dir/CheckSymbolExists.cxx.o -MF CMakeFiles/cmTC_68cce.dir/CheckSymbolExists.cxx.o.d -o CMakeFiles/cmTC_68cce.dir/CheckSymbolExists.cxx.o -c /Users/olezha3000/Documents/University/computer_science/3sem_OS/cp/src/build/CMakeFiles/CMakeScratch/TryCompile-zEjTR8/CheckSymbolExists.cxx
+        /Users/olezha3000/Documents/University/computer_science/3sem_OS/cp/src/build/CMakeFiles/CMakeScratch/TryCompile-zEjTR8/CheckSymbolExists.cxx:8:19: error: use of undeclared identifier 'SO_PEERCRED'
+            8 |   return ((int*)(&SO_PEERCRED))[argc];
+              |                   ^
+        1 error generated.
+        make[1]: *** [CMakeFiles/cmTC_68cce.dir/CheckSymbolExists.cxx.o] Error 1
+        make: *** [cmTC_68cce/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CheckSymbolExists.cmake:163 (try_compile)"
+      - "/opt/homebrew/share/cmake/Modules/CheckCXXSymbolExists.cmake:74 (__CHECK_SYMBOL_EXISTS_IMPL)"
+      - "build/_deps/libzmq-src/CMakeLists.txt:568 (check_cxx_symbol_exists)"
+    checks:
+      - "Looking for LOCAL_PEERCRED"
+    directories:
+      source: "/Users/olezha3000/Documents/University/computer_science/3sem_OS/cp/src/build/CMakeFiles/CMakeScratch/TryCompile-JNSt9E"
+      binary: "/Users/olezha3000/Documents/University/computer_science/3sem_OS/cp/src/build/CMakeFiles/CMakeScratch/TryCompile-JNSt9E"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: " -Wno-tautological-constant-compare"
+      CMAKE_MODULE_PATH: "/Users/olezha3000/Documents/University/computer_science/3sem_OS/cp/src/build/_deps/libzmq-src;/Users/olezha3000/Documents/University/computer_science/3sem_OS/cp/src/build/_deps/libzmq-src/builds/cmake/Modules"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: "/Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk"
+    buildResult:
+      variable: "ZMQ_HAVE_LOCAL_PEERCRED"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/olezha3000/Documents/University/computer_science/3sem_OS/cp/src/build/CMakeFiles/CMakeScratch/TryCompile-JNSt9E'
+        
+        Run Build Command(s): /opt/homebrew/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_282e8/fast
+        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_282e8.dir/build.make CMakeFiles/cmTC_282e8.dir/build
+        Building CXX object CMakeFiles/cmTC_282e8.dir/CheckSymbolExists.cxx.o
+        /Library/Developer/CommandLineTools/usr/bin/c++   -Wno-tautological-constant-compare  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk -MD -MT CMakeFiles/cmTC_282e8.dir/CheckSymbolExists.cxx.o -MF CMakeFiles/cmTC_282e8.dir/CheckSymbolExists.cxx.o.d -o CMakeFiles/cmTC_282e8.dir/CheckSymbolExists.cxx.o -c /Users/olezha3000/Documents/University/computer_science/3sem_OS/cp/src/build/CMakeFiles/CMakeScratch/TryCompile-JNSt9E/CheckSymbolExists.cxx
+        /Users/olezha3000/Documents/University/computer_science/3sem_OS/cp/src/build/CMakeFiles/CMakeScratch/TryCompile-JNSt9E/CheckSymbolExists.cxx:8:19: error: use of undeclared identifier 'LOCAL_PEERCRED'
+            8 |   return ((int*)(&LOCAL_PEERCRED))[argc];
+              |                   ^
+        1 error generated.
+        make[1]: *** [CMakeFiles/cmTC_282e8.dir/CheckSymbolExists.cxx.o] Error 1
+        make: *** [cmTC_282e8/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CheckSymbolExists.cmake:163 (try_compile)"
+      - "/opt/homebrew/share/cmake/Modules/CheckCXXSymbolExists.cmake:74 (__CHECK_SYMBOL_EXISTS_IMPL)"
+      - "build/_deps/libzmq-src/CMakeLists.txt:569 (check_cxx_symbol_exists)"
+    checks:
+      - "Looking for SO_BUSY_POLL"
+    directories:
+      source: "/Users/olezha3000/Documents/University/computer_science/3sem_OS/cp/src/build/CMakeFiles/CMakeScratch/TryCompile-CTwT97"
+      binary: "/Users/olezha3000/Documents/University/computer_science/3sem_OS/cp/src/build/CMakeFiles/CMakeScratch/TryCompile-CTwT97"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: " -Wno-tautological-constant-compare"
+      CMAKE_MODULE_PATH: "/Users/olezha3000/Documents/University/computer_science/3sem_OS/cp/src/build/_deps/libzmq-src;/Users/olezha3000/Documents/University/computer_science/3sem_OS/cp/src/build/_deps/libzmq-src/builds/cmake/Modules"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: "/Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk"
+    buildResult:
+      variable: "ZMQ_HAVE_BUSY_POLL"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/olezha3000/Documents/University/computer_science/3sem_OS/cp/src/build/CMakeFiles/CMakeScratch/TryCompile-CTwT97'
+        
+        Run Build Command(s): /opt/homebrew/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_6ca66/fast
+        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_6ca66.dir/build.make CMakeFiles/cmTC_6ca66.dir/build
+        Building CXX object CMakeFiles/cmTC_6ca66.dir/CheckSymbolExists.cxx.o
+        /Library/Developer/CommandLineTools/usr/bin/c++   -Wno-tautological-constant-compare  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk -MD -MT CMakeFiles/cmTC_6ca66.dir/CheckSymbolExists.cxx.o -MF CMakeFiles/cmTC_6ca66.dir/CheckSymbolExists.cxx.o.d -o CMakeFiles/cmTC_6ca66.dir/CheckSymbolExists.cxx.o -c /Users/olezha3000/Documents/University/computer_science/3sem_OS/cp/src/build/CMakeFiles/CMakeScratch/TryCompile-CTwT97/CheckSymbolExists.cxx
+        /Users/olezha3000/Documents/University/computer_science/3sem_OS/cp/src/build/CMakeFiles/CMakeScratch/TryCompile-CTwT97/CheckSymbolExists.cxx:8:19: error: use of undeclared identifier 'SO_BUSY_POLL'
+            8 |   return ((int*)(&SO_BUSY_POLL))[argc];
+              |                   ^
+        1 error generated.
+        make[1]: *** [CMakeFiles/cmTC_6ca66.dir/CheckSymbolExists.cxx.o] Error 1
+        make: *** [cmTC_6ca66/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CheckSymbolExists.cmake:163 (try_compile)"
+      - "/opt/homebrew/share/cmake/Modules/CheckCXXSymbolExists.cmake:74 (__CHECK_SYMBOL_EXISTS_IMPL)"
+      - "build/_deps/libzmq-src/CMakeLists.txt:597 (check_cxx_symbol_exists)"
+    checks:
+      - "Looking for clock_gettime"
+    directories:
+      source: "/Users/olezha3000/Documents/University/computer_science/3sem_OS/cp/src/build/CMakeFiles/CMakeScratch/TryCompile-BG1BXT"
+      binary: "/Users/olezha3000/Documents/University/computer_science/3sem_OS/cp/src/build/CMakeFiles/CMakeScratch/TryCompile-BG1BXT"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: " -Wno-tautological-constant-compare"
+      CMAKE_MODULE_PATH: "/Users/olezha3000/Documents/University/computer_science/3sem_OS/cp/src/build/_deps/libzmq-src;/Users/olezha3000/Documents/University/computer_science/3sem_OS/cp/src/build/_deps/libzmq-src/builds/cmake/Modules"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: "/Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk"
+    buildResult:
+      variable: "HAVE_CLOCK_GETTIME"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/olezha3000/Documents/University/computer_science/3sem_OS/cp/src/build/CMakeFiles/CMakeScratch/TryCompile-BG1BXT'
+        
+        Run Build Command(s): /opt/homebrew/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_30200/fast
+        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_30200.dir/build.make CMakeFiles/cmTC_30200.dir/build
+        Building CXX object CMakeFiles/cmTC_30200.dir/CheckSymbolExists.cxx.o
+        /Library/Developer/CommandLineTools/usr/bin/c++   -Wno-tautological-constant-compare  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk -MD -MT CMakeFiles/cmTC_30200.dir/CheckSymbolExists.cxx.o -MF CMakeFiles/cmTC_30200.dir/CheckSymbolExists.cxx.o.d -o CMakeFiles/cmTC_30200.dir/CheckSymbolExists.cxx.o -c /Users/olezha3000/Documents/University/computer_science/3sem_OS/cp/src/build/CMakeFiles/CMakeScratch/TryCompile-BG1BXT/CheckSymbolExists.cxx
+        Linking CXX executable cmTC_30200
+        /opt/homebrew/bin/cmake -E cmake_link_script CMakeFiles/cmTC_30200.dir/link.txt --verbose=1
+        ld: library 'rt' not found
+        c++: error: linker command failed with exit code 1 (use -v to see invocation)
+        /Library/Developer/CommandLineTools/usr/bin/c++  -Wno-tautological-constant-compare  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_30200.dir/CheckSymbolExists.cxx.o -o cmTC_30200  -lrt
+        make[1]: *** [cmTC_30200] Error 1
+        make: *** [cmTC_30200/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CheckSymbolExists.cmake:163 (try_compile)"
+      - "/opt/homebrew/share/cmake/Modules/CheckCXXSymbolExists.cmake:74 (__CHECK_SYMBOL_EXISTS_IMPL)"
+      - "build/_deps/libzmq-src/CMakeLists.txt:600 (check_cxx_symbol_exists)"
+    checks:
+      - "Looking for fork"
+    directories:
+      source: "/Users/olezha3000/Documents/University/computer_science/3sem_OS/cp/src/build/CMakeFiles/CMakeScratch/TryCompile-Vh66YF"
+      binary: "/Users/olezha3000/Documents/University/computer_science/3sem_OS/cp/src/build/CMakeFiles/CMakeScratch/TryCompile-Vh66YF"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: " -Wno-tautological-constant-compare"
+      CMAKE_MODULE_PATH: "/Users/olezha3000/Documents/University/computer_science/3sem_OS/cp/src/build/_deps/libzmq-src;/Users/olezha3000/Documents/University/computer_science/3sem_OS/cp/src/build/_deps/libzmq-src/builds/cmake/Modules"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: "/Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk"
+    buildResult:
+      variable: "HAVE_FORK"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/olezha3000/Documents/University/computer_science/3sem_OS/cp/src/build/CMakeFiles/CMakeScratch/TryCompile-Vh66YF'
+        
+        Run Build Command(s): /opt/homebrew/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_3a127/fast
+        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_3a127.dir/build.make CMakeFiles/cmTC_3a127.dir/build
+        Building CXX object CMakeFiles/cmTC_3a127.dir/CheckSymbolExists.cxx.o
+        /Library/Developer/CommandLineTools/usr/bin/c++   -Wno-tautological-constant-compare  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk -MD -MT CMakeFiles/cmTC_3a127.dir/CheckSymbolExists.cxx.o -MF CMakeFiles/cmTC_3a127.dir/CheckSymbolExists.cxx.o.d -o CMakeFiles/cmTC_3a127.dir/CheckSymbolExists.cxx.o -c /Users/olezha3000/Documents/University/computer_science/3sem_OS/cp/src/build/CMakeFiles/CMakeScratch/TryCompile-Vh66YF/CheckSymbolExists.cxx
+        Linking CXX executable cmTC_3a127
+        /opt/homebrew/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3a127.dir/link.txt --verbose=1
+        /Library/Developer/CommandLineTools/usr/bin/c++  -Wno-tautological-constant-compare  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_3a127.dir/CheckSymbolExists.cxx.o -o cmTC_3a127
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CheckSymbolExists.cmake:163 (try_compile)"
+      - "/opt/homebrew/share/cmake/Modules/CheckCXXSymbolExists.cmake:74 (__CHECK_SYMBOL_EXISTS_IMPL)"
+      - "build/_deps/libzmq-src/CMakeLists.txt:601 (check_cxx_symbol_exists)"
+    checks:
+      - "Looking for gethrtime"
+    directories:
+      source: "/Users/olezha3000/Documents/University/computer_science/3sem_OS/cp/src/build/CMakeFiles/CMakeScratch/TryCompile-MhZjTf"
+      binary: "/Users/olezha3000/Documents/University/computer_science/3sem_OS/cp/src/build/CMakeFiles/CMakeScratch/TryCompile-MhZjTf"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: " -Wno-tautological-constant-compare"
+      CMAKE_MODULE_PATH: "/Users/olezha3000/Documents/University/computer_science/3sem_OS/cp/src/build/_deps/libzmq-src;/Users/olezha3000/Documents/University/computer_science/3sem_OS/cp/src/build/_deps/libzmq-src/builds/cmake/Modules"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: "/Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk"
+    buildResult:
+      variable: "HAVE_GETHRTIME"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/olezha3000/Documents/University/computer_science/3sem_OS/cp/src/build/CMakeFiles/CMakeScratch/TryCompile-MhZjTf'
+        
+        Run Build Command(s): /opt/homebrew/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_ac8df/fast
+        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_ac8df.dir/build.make CMakeFiles/cmTC_ac8df.dir/build
+        Building CXX object CMakeFiles/cmTC_ac8df.dir/CheckSymbolExists.cxx.o
+        /Library/Developer/CommandLineTools/usr/bin/c++   -Wno-tautological-constant-compare  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk -MD -MT CMakeFiles/cmTC_ac8df.dir/CheckSymbolExists.cxx.o -MF CMakeFiles/cmTC_ac8df.dir/CheckSymbolExists.cxx.o.d -o CMakeFiles/cmTC_ac8df.dir/CheckSymbolExists.cxx.o -c /Users/olezha3000/Documents/University/computer_science/3sem_OS/cp/src/build/CMakeFiles/CMakeScratch/TryCompile-MhZjTf/CheckSymbolExists.cxx
+        /Users/olezha3000/Documents/University/computer_science/3sem_OS/cp/src/build/CMakeFiles/CMakeScratch/TryCompile-MhZjTf/CheckSymbolExists.cxx:8:19: error: use of undeclared identifier 'gethrtime'; did you mean 'getitimer'?
+            8 |   return ((int*)(&gethrtime))[argc];
+              |                   ^~~~~~~~~
+              |                   getitimer
+        /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/sys/time.h:197:9: note: 'getitimer' declared here
+          197 | int     getitimer(int, struct itimerval *);
+              |         ^
+        1 error generated.
+        make[1]: *** [CMakeFiles/cmTC_ac8df.dir/CheckSymbolExists.cxx.o] Error 1
+        make: *** [cmTC_ac8df/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CheckSymbolExists.cmake:163 (try_compile)"
+      - "/opt/homebrew/share/cmake/Modules/CheckCXXSymbolExists.cmake:74 (__CHECK_SYMBOL_EXISTS_IMPL)"
+      - "build/_deps/libzmq-src/CMakeLists.txt:602 (check_cxx_symbol_exists)"
+    checks:
+      - "Looking for mkdtemp"
+    directories:
+      source: "/Users/olezha3000/Documents/University/computer_science/3sem_OS/cp/src/build/CMakeFiles/CMakeScratch/TryCompile-xRjO1h"
+      binary: "/Users/olezha3000/Documents/University/computer_science/3sem_OS/cp/src/build/CMakeFiles/CMakeScratch/TryCompile-xRjO1h"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: " -Wno-tautological-constant-compare"
+      CMAKE_MODULE_PATH: "/Users/olezha3000/Documents/University/computer_science/3sem_OS/cp/src/build/_deps/libzmq-src;/Users/olezha3000/Documents/University/computer_science/3sem_OS/cp/src/build/_deps/libzmq-src/builds/cmake/Modules"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: "/Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk"
+    buildResult:
+      variable: "HAVE_MKDTEMP"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/olezha3000/Documents/University/computer_science/3sem_OS/cp/src/build/CMakeFiles/CMakeScratch/TryCompile-xRjO1h'
+        
+        Run Build Command(s): /opt/homebrew/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_e8d9a/fast
+        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_e8d9a.dir/build.make CMakeFiles/cmTC_e8d9a.dir/build
+        Building CXX object CMakeFiles/cmTC_e8d9a.dir/CheckSymbolExists.cxx.o
+        /Library/Developer/CommandLineTools/usr/bin/c++   -Wno-tautological-constant-compare  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk -MD -MT CMakeFiles/cmTC_e8d9a.dir/CheckSymbolExists.cxx.o -MF CMakeFiles/cmTC_e8d9a.dir/CheckSymbolExists.cxx.o.d -o CMakeFiles/cmTC_e8d9a.dir/CheckSymbolExists.cxx.o -c /Users/olezha3000/Documents/University/computer_science/3sem_OS/cp/src/build/CMakeFiles/CMakeScratch/TryCompile-xRjO1h/CheckSymbolExists.cxx
+        /Users/olezha3000/Documents/University/computer_science/3sem_OS/cp/src/build/CMakeFiles/CMakeScratch/TryCompile-xRjO1h/CheckSymbolExists.cxx:8:19: error: use of undeclared identifier 'mkdtemp'
+            8 |   return ((int*)(&mkdtemp))[argc];
+              |                   ^
+        1 error generated.
+        make[1]: *** [CMakeFiles/cmTC_e8d9a.dir/CheckSymbolExists.cxx.o] Error 1
+        make: *** [cmTC_e8d9a/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CheckSymbolExists.cmake:163 (try_compile)"
+      - "/opt/homebrew/share/cmake/Modules/CheckCXXSymbolExists.cmake:74 (__CHECK_SYMBOL_EXISTS_IMPL)"
+      - "build/_deps/libzmq-src/CMakeLists.txt:603 (check_cxx_symbol_exists)"
+    checks:
+      - "Looking for accept4"
+    directories:
+      source: "/Users/olezha3000/Documents/University/computer_science/3sem_OS/cp/src/build/CMakeFiles/CMakeScratch/TryCompile-6894Ux"
+      binary: "/Users/olezha3000/Documents/University/computer_science/3sem_OS/cp/src/build/CMakeFiles/CMakeScratch/TryCompile-6894Ux"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: " -Wno-tautological-constant-compare"
+      CMAKE_MODULE_PATH: "/Users/olezha3000/Documents/University/computer_science/3sem_OS/cp/src/build/_deps/libzmq-src;/Users/olezha3000/Documents/University/computer_science/3sem_OS/cp/src/build/_deps/libzmq-src/builds/cmake/Modules"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: "/Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk"
+    buildResult:
+      variable: "HAVE_ACCEPT4"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/olezha3000/Documents/University/computer_science/3sem_OS/cp/src/build/CMakeFiles/CMakeScratch/TryCompile-6894Ux'
+        
+        Run Build Command(s): /opt/homebrew/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_8ebbd/fast
+        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_8ebbd.dir/build.make CMakeFiles/cmTC_8ebbd.dir/build
+        Building CXX object CMakeFiles/cmTC_8ebbd.dir/CheckSymbolExists.cxx.o
+        /Library/Developer/CommandLineTools/usr/bin/c++   -Wno-tautological-constant-compare  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk -MD -MT CMakeFiles/cmTC_8ebbd.dir/CheckSymbolExists.cxx.o -MF CMakeFiles/cmTC_8ebbd.dir/CheckSymbolExists.cxx.o.d -o CMakeFiles/cmTC_8ebbd.dir/CheckSymbolExists.cxx.o -c /Users/olezha3000/Documents/University/computer_science/3sem_OS/cp/src/build/CMakeFiles/CMakeScratch/TryCompile-6894Ux/CheckSymbolExists.cxx
+        /Users/olezha3000/Documents/University/computer_science/3sem_OS/cp/src/build/CMakeFiles/CMakeScratch/TryCompile-6894Ux/CheckSymbolExists.cxx:8:19: error: use of undeclared identifier 'accept4'; did you mean 'accept'?
+            8 |   return ((int*)(&accept4))[argc];
+              |                   ^~~~~~~
+              |                   accept
+        /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/sys/socket.h:708:9: note: 'accept' declared here
+          708 | int     accept(int, struct sockaddr * __restrict, socklen_t * __restrict)
+              |         ^
+        1 error generated.
+        make[1]: *** [CMakeFiles/cmTC_8ebbd.dir/CheckSymbolExists.cxx.o] Error 1
+        make: *** [cmTC_8ebbd/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CheckSymbolExists.cmake:163 (try_compile)"
+      - "/opt/homebrew/share/cmake/Modules/CheckCXXSymbolExists.cmake:74 (__CHECK_SYMBOL_EXISTS_IMPL)"
+      - "build/_deps/libzmq-src/CMakeLists.txt:604 (check_cxx_symbol_exists)"
+    checks:
+      - "Looking for strnlen"
+    directories:
+      source: "/Users/olezha3000/Documents/University/computer_science/3sem_OS/cp/src/build/CMakeFiles/CMakeScratch/TryCompile-Prs5Oq"
+      binary: "/Users/olezha3000/Documents/University/computer_science/3sem_OS/cp/src/build/CMakeFiles/CMakeScratch/TryCompile-Prs5Oq"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: " -Wno-tautological-constant-compare"
+      CMAKE_MODULE_PATH: "/Users/olezha3000/Documents/University/computer_science/3sem_OS/cp/src/build/_deps/libzmq-src;/Users/olezha3000/Documents/University/computer_science/3sem_OS/cp/src/build/_deps/libzmq-src/builds/cmake/Modules"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: "/Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk"
+    buildResult:
+      variable: "HAVE_STRNLEN"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/olezha3000/Documents/University/computer_science/3sem_OS/cp/src/build/CMakeFiles/CMakeScratch/TryCompile-Prs5Oq'
+        
+        Run Build Command(s): /opt/homebrew/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_706f5/fast
+        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_706f5.dir/build.make CMakeFiles/cmTC_706f5.dir/build
+        Building CXX object CMakeFiles/cmTC_706f5.dir/CheckSymbolExists.cxx.o
+        /Library/Developer/CommandLineTools/usr/bin/c++   -Wno-tautological-constant-compare  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk -MD -MT CMakeFiles/cmTC_706f5.dir/CheckSymbolExists.cxx.o -MF CMakeFiles/cmTC_706f5.dir/CheckSymbolExists.cxx.o.d -o CMakeFiles/cmTC_706f5.dir/CheckSymbolExists.cxx.o -c /Users/olezha3000/Documents/University/computer_science/3sem_OS/cp/src/build/CMakeFiles/CMakeScratch/TryCompile-Prs5Oq/CheckSymbolExists.cxx
+        Linking CXX executable cmTC_706f5
+        /opt/homebrew/bin/cmake -E cmake_link_script CMakeFiles/cmTC_706f5.dir/link.txt --verbose=1
+        /Library/Developer/CommandLineTools/usr/bin/c++  -Wno-tautological-constant-compare  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_706f5.dir/CheckSymbolExists.cxx.o -o cmTC_706f5
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/Internal/CheckSourceCompiles.cmake:108 (try_compile)"
+      - "/opt/homebrew/share/cmake/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/opt/homebrew/share/cmake/Modules/CheckCXXCompilerFlag.cmake:55 (cmake_check_compiler_flag)"
+      - "build/_deps/libzmq-src/CMakeLists.txt:615 (check_cxx_compiler_flag)"
+      - "build/_deps/libzmq-src/CMakeLists.txt:659 (zmq_check_cxx_flag_prepend)"
+    checks:
+      - "Performing Test HAVE_FLAG_-Wall"
+    directories:
+      source: "/Users/olezha3000/Documents/University/computer_science/3sem_OS/cp/src/build/CMakeFiles/CMakeScratch/TryCompile-Py6Evu"
+      binary: "/Users/olezha3000/Documents/University/computer_science/3sem_OS/cp/src/build/CMakeFiles/CMakeScratch/TryCompile-Py6Evu"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: " -Wno-tautological-constant-compare"
+      CMAKE_MODULE_PATH: "/Users/olezha3000/Documents/University/computer_science/3sem_OS/cp/src/build/_deps/libzmq-src;/Users/olezha3000/Documents/University/computer_science/3sem_OS/cp/src/build/_deps/libzmq-src/builds/cmake/Modules"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: "/Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk"
+    buildResult:
+      variable: "HAVE_FLAG_-Wall"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/olezha3000/Documents/University/computer_science/3sem_OS/cp/src/build/CMakeFiles/CMakeScratch/TryCompile-Py6Evu'
+        
+        Run Build Command(s): /opt/homebrew/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_86e74/fast
+        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_86e74.dir/build.make CMakeFiles/cmTC_86e74.dir/build
+        Building CXX object CMakeFiles/cmTC_86e74.dir/src.cxx.o
+        /Library/Developer/CommandLineTools/usr/bin/c++   -Wno-tautological-constant-compare  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk   -DHAVE_FLAG_-Wall -Wall -MD -MT CMakeFiles/cmTC_86e74.dir/src.cxx.o -MF CMakeFiles/cmTC_86e74.dir/src.cxx.o.d -o CMakeFiles/cmTC_86e74.dir/src.cxx.o -c /Users/olezha3000/Documents/University/computer_science/3sem_OS/cp/src/build/CMakeFiles/CMakeScratch/TryCompile-Py6Evu/src.cxx
+        In file included from <built-in>:439:
+        <command line>:1:19: warning: whitespace recommended after macro name
+            1 | #define HAVE_FLAG_-Wall 1
+              |                   ^
+        1 warning generated.
+        Linking CXX executable cmTC_86e74
+        /opt/homebrew/bin/cmake -E cmake_link_script CMakeFiles/cmTC_86e74.dir/link.txt --verbose=1
+        /Library/Developer/CommandLineTools/usr/bin/c++  -Wno-tautological-constant-compare  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_86e74.dir/src.cxx.o -o cmTC_86e74
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/Internal/CheckSourceCompiles.cmake:108 (try_compile)"
+      - "/opt/homebrew/share/cmake/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/opt/homebrew/share/cmake/Modules/CheckCXXCompilerFlag.cmake:55 (cmake_check_compiler_flag)"
+      - "build/_deps/libzmq-src/CMakeLists.txt:615 (check_cxx_compiler_flag)"
+      - "build/_deps/libzmq-src/CMakeLists.txt:663 (zmq_check_cxx_flag_prepend)"
+    checks:
+      - "Performing Test HAVE_FLAG_-Wextra"
+    directories:
+      source: "/Users/olezha3000/Documents/University/computer_science/3sem_OS/cp/src/build/CMakeFiles/CMakeScratch/TryCompile-BTvIiL"
+      binary: "/Users/olezha3000/Documents/University/computer_science/3sem_OS/cp/src/build/CMakeFiles/CMakeScratch/TryCompile-BTvIiL"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: " -Wno-tautological-constant-compare -Wall"
+      CMAKE_MODULE_PATH: "/Users/olezha3000/Documents/University/computer_science/3sem_OS/cp/src/build/_deps/libzmq-src;/Users/olezha3000/Documents/University/computer_science/3sem_OS/cp/src/build/_deps/libzmq-src/builds/cmake/Modules"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: "/Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk"
+    buildResult:
+      variable: "HAVE_FLAG_-Wextra"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/olezha3000/Documents/University/computer_science/3sem_OS/cp/src/build/CMakeFiles/CMakeScratch/TryCompile-BTvIiL'
+        
+        Run Build Command(s): /opt/homebrew/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_9286f/fast
+        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_9286f.dir/build.make CMakeFiles/cmTC_9286f.dir/build
+        Building CXX object CMakeFiles/cmTC_9286f.dir/src.cxx.o
+        /Library/Developer/CommandLineTools/usr/bin/c++   -Wno-tautological-constant-compare -Wall  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk   -DHAVE_FLAG_-Wextra -Wextra -MD -MT CMakeFiles/cmTC_9286f.dir/src.cxx.o -MF CMakeFiles/cmTC_9286f.dir/src.cxx.o.d -o CMakeFiles/cmTC_9286f.dir/src.cxx.o -c /Users/olezha3000/Documents/University/computer_science/3sem_OS/cp/src/build/CMakeFiles/CMakeScratch/TryCompile-BTvIiL/src.cxx
+        In file included from <built-in>:439:
+        <command line>:1:19: warning: whitespace recommended after macro name
+            1 | #define HAVE_FLAG_-Wextra 1
+              |                   ^
+        1 warning generated.
+        Linking CXX executable cmTC_9286f
+        /opt/homebrew/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9286f.dir/link.txt --verbose=1
+        /Library/Developer/CommandLineTools/usr/bin/c++  -Wno-tautological-constant-compare -Wall  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_9286f.dir/src.cxx.o -o cmTC_9286f
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/Internal/CheckSourceCompiles.cmake:108 (try_compile)"
+      - "/opt/homebrew/share/cmake/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/opt/homebrew/share/cmake/Modules/CheckCXXCompilerFlag.cmake:55 (cmake_check_compiler_flag)"
+      - "build/_deps/libzmq-src/CMakeLists.txt:615 (check_cxx_compiler_flag)"
+      - "build/_deps/libzmq-src/CMakeLists.txt:671 (zmq_check_cxx_flag_prepend)"
+    checks:
+      - "Performing Test HAVE_FLAG_-Wno-long-long"
+    directories:
+      source: "/Users/olezha3000/Documents/University/computer_science/3sem_OS/cp/src/build/CMakeFiles/CMakeScratch/TryCompile-aRXwfV"
+      binary: "/Users/olezha3000/Documents/University/computer_science/3sem_OS/cp/src/build/CMakeFiles/CMakeScratch/TryCompile-aRXwfV"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: " -Wno-tautological-constant-compare -Wall -Wextra"
+      CMAKE_MODULE_PATH: "/Users/olezha3000/Documents/University/computer_science/3sem_OS/cp/src/build/_deps/libzmq-src;/Users/olezha3000/Documents/University/computer_science/3sem_OS/cp/src/build/_deps/libzmq-src/builds/cmake/Modules"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: "/Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk"
+    buildResult:
+      variable: "HAVE_FLAG_-Wno-long-long"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/olezha3000/Documents/University/computer_science/3sem_OS/cp/src/build/CMakeFiles/CMakeScratch/TryCompile-aRXwfV'
+        
+        Run Build Command(s): /opt/homebrew/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_c9823/fast
+        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_c9823.dir/build.make CMakeFiles/cmTC_c9823.dir/build
+        Building CXX object CMakeFiles/cmTC_c9823.dir/src.cxx.o
+        /Library/Developer/CommandLineTools/usr/bin/c++   -Wno-tautological-constant-compare -Wall -Wextra  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk   -DHAVE_FLAG_-Wno-long-long -Wno-long-long -MD -MT CMakeFiles/cmTC_c9823.dir/src.cxx.o -MF CMakeFiles/cmTC_c9823.dir/src.cxx.o.d -o CMakeFiles/cmTC_c9823.dir/src.cxx.o -c /Users/olezha3000/Documents/University/computer_science/3sem_OS/cp/src/build/CMakeFiles/CMakeScratch/TryCompile-aRXwfV/src.cxx
+        In file included from <built-in>:439:
+        <command line>:1:19: warning: whitespace recommended after macro name
+            1 | #define HAVE_FLAG_-Wno-long-long 1
+              |                   ^
+        1 warning generated.
+        Linking CXX executable cmTC_c9823
+        /opt/homebrew/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c9823.dir/link.txt --verbose=1
+        /Library/Developer/CommandLineTools/usr/bin/c++  -Wno-tautological-constant-compare -Wall -Wextra  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_c9823.dir/src.cxx.o -o cmTC_c9823
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/Internal/CheckSourceCompiles.cmake:108 (try_compile)"
+      - "/opt/homebrew/share/cmake/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/opt/homebrew/share/cmake/Modules/CheckCXXCompilerFlag.cmake:55 (cmake_check_compiler_flag)"
+      - "build/_deps/libzmq-src/CMakeLists.txt:615 (check_cxx_compiler_flag)"
+      - "build/_deps/libzmq-src/CMakeLists.txt:672 (zmq_check_cxx_flag_prepend)"
+    checks:
+      - "Performing Test HAVE_FLAG_-Wno-uninitialized"
+    directories:
+      source: "/Users/olezha3000/Documents/University/computer_science/3sem_OS/cp/src/build/CMakeFiles/CMakeScratch/TryCompile-9tAxyE"
+      binary: "/Users/olezha3000/Documents/University/computer_science/3sem_OS/cp/src/build/CMakeFiles/CMakeScratch/TryCompile-9tAxyE"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: " -Wno-tautological-constant-compare -Wall -Wextra -Wno-long-long"
+      CMAKE_MODULE_PATH: "/Users/olezha3000/Documents/University/computer_science/3sem_OS/cp/src/build/_deps/libzmq-src;/Users/olezha3000/Documents/University/computer_science/3sem_OS/cp/src/build/_deps/libzmq-src/builds/cmake/Modules"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: "/Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk"
+    buildResult:
+      variable: "HAVE_FLAG_-Wno-uninitialized"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/olezha3000/Documents/University/computer_science/3sem_OS/cp/src/build/CMakeFiles/CMakeScratch/TryCompile-9tAxyE'
+        
+        Run Build Command(s): /opt/homebrew/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_5a624/fast
+        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_5a624.dir/build.make CMakeFiles/cmTC_5a624.dir/build
+        Building CXX object CMakeFiles/cmTC_5a624.dir/src.cxx.o
+        /Library/Developer/CommandLineTools/usr/bin/c++   -Wno-tautological-constant-compare -Wall -Wextra -Wno-long-long  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk   -DHAVE_FLAG_-Wno-uninitialized -Wno-uninitialized -MD -MT CMakeFiles/cmTC_5a624.dir/src.cxx.o -MF CMakeFiles/cmTC_5a624.dir/src.cxx.o.d -o CMakeFiles/cmTC_5a624.dir/src.cxx.o -c /Users/olezha3000/Documents/University/computer_science/3sem_OS/cp/src/build/CMakeFiles/CMakeScratch/TryCompile-9tAxyE/src.cxx
+        In file included from <built-in>:439:
+        <command line>:1:19: warning: whitespace recommended after macro name
+            1 | #define HAVE_FLAG_-Wno-uninitialized 1
+              |                   ^
+        1 warning generated.
+        Linking CXX executable cmTC_5a624
+        /opt/homebrew/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5a624.dir/link.txt --verbose=1
+        /Library/Developer/CommandLineTools/usr/bin/c++  -Wno-tautological-constant-compare -Wall -Wextra -Wno-long-long  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_5a624.dir/src.cxx.o -o cmTC_5a624
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/Internal/CheckSourceCompiles.cmake:108 (try_compile)"
+      - "/opt/homebrew/share/cmake/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/opt/homebrew/share/cmake/Modules/CheckCXXCompilerFlag.cmake:55 (cmake_check_compiler_flag)"
+      - "build/_deps/libzmq-src/CMakeLists.txt:615 (check_cxx_compiler_flag)"
+      - "build/_deps/libzmq-src/CMakeLists.txt:675 (zmq_check_cxx_flag_prepend)"
+    checks:
+      - "Performing Test HAVE_FLAG_-pedantic"
+    directories:
+      source: "/Users/olezha3000/Documents/University/computer_science/3sem_OS/cp/src/build/CMakeFiles/CMakeScratch/TryCompile-wzPHYD"
+      binary: "/Users/olezha3000/Documents/University/computer_science/3sem_OS/cp/src/build/CMakeFiles/CMakeScratch/TryCompile-wzPHYD"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: " -Wno-tautological-constant-compare -Wall -Wextra -Wno-long-long -Wno-uninitialized"
+      CMAKE_MODULE_PATH: "/Users/olezha3000/Documents/University/computer_science/3sem_OS/cp/src/build/_deps/libzmq-src;/Users/olezha3000/Documents/University/computer_science/3sem_OS/cp/src/build/_deps/libzmq-src/builds/cmake/Modules"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: "/Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk"
+    buildResult:
+      variable: "HAVE_FLAG_-pedantic"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/olezha3000/Documents/University/computer_science/3sem_OS/cp/src/build/CMakeFiles/CMakeScratch/TryCompile-wzPHYD'
+        
+        Run Build Command(s): /opt/homebrew/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_b2367/fast
+        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_b2367.dir/build.make CMakeFiles/cmTC_b2367.dir/build
+        Building CXX object CMakeFiles/cmTC_b2367.dir/src.cxx.o
+        /Library/Developer/CommandLineTools/usr/bin/c++   -Wno-tautological-constant-compare -Wall -Wextra -Wno-long-long -Wno-uninitialized  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk   -DHAVE_FLAG_-pedantic -pedantic -MD -MT CMakeFiles/cmTC_b2367.dir/src.cxx.o -MF CMakeFiles/cmTC_b2367.dir/src.cxx.o.d -o CMakeFiles/cmTC_b2367.dir/src.cxx.o -c /Users/olezha3000/Documents/University/computer_science/3sem_OS/cp/src/build/CMakeFiles/CMakeScratch/TryCompile-wzPHYD/src.cxx
+        In file included from <built-in>:439:
+        <command line>:1:19: warning: whitespace recommended after macro name
+            1 | #define HAVE_FLAG_-pedantic 1
+              |                   ^
+        1 warning generated.
+        Linking CXX executable cmTC_b2367
+        /opt/homebrew/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b2367.dir/link.txt --verbose=1
+        /Library/Developer/CommandLineTools/usr/bin/c++  -Wno-tautological-constant-compare -Wall -Wextra -Wno-long-long -Wno-uninitialized  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_b2367.dir/src.cxx.o -o cmTC_b2367
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/Internal/CheckSourceCompiles.cmake:108 (try_compile)"
+      - "/opt/homebrew/share/cmake/Modules/CheckCXXSourceCompiles.cmake:58 (cmake_check_source_compiles)"
+      - "build/_deps/libzmq-src/builds/cmake/Modules/ZMQSourceRunChecks.cmake:300 (check_cxx_source_compiles)"
+      - "build/_deps/libzmq-src/CMakeLists.txt:729 (zmq_check_noexcept)"
+    checks:
+      - "Performing Test ZMQ_HAVE_NOEXCEPT"
+    directories:
+      source: "/Users/olezha3000/Documents/University/computer_science/3sem_OS/cp/src/build/CMakeFiles/CMakeScratch/TryCompile-vFI8JA"
+      binary: "/Users/olezha3000/Documents/University/computer_science/3sem_OS/cp/src/build/CMakeFiles/CMakeScratch/TryCompile-vFI8JA"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: " -Wno-tautological-constant-compare -Wall -Wextra -Wno-long-long -Wno-uninitialized -pedantic"
+      CMAKE_MODULE_PATH: "/Users/olezha3000/Documents/University/computer_science/3sem_OS/cp/src/build/_deps/libzmq-src;/Users/olezha3000/Documents/University/computer_science/3sem_OS/cp/src/build/_deps/libzmq-src/builds/cmake/Modules"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: "/Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk"
+    buildResult:
+      variable: "ZMQ_HAVE_NOEXCEPT"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/olezha3000/Documents/University/computer_science/3sem_OS/cp/src/build/CMakeFiles/CMakeScratch/TryCompile-vFI8JA'
+        
+        Run Build Command(s): /opt/homebrew/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_8c715/fast
+        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_8c715.dir/build.make CMakeFiles/cmTC_8c715.dir/build
+        Building CXX object CMakeFiles/cmTC_8c715.dir/src.cxx.o
+        /Library/Developer/CommandLineTools/usr/bin/c++ -DZMQ_HAVE_NOEXCEPT  -Wno-tautological-constant-compare -Wall -Wextra -Wno-long-long -Wno-uninitialized -pedantic  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk -MD -MT CMakeFiles/cmTC_8c715.dir/src.cxx.o -MF CMakeFiles/cmTC_8c715.dir/src.cxx.o.d -o CMakeFiles/cmTC_8c715.dir/src.cxx.o -c /Users/olezha3000/Documents/University/computer_science/3sem_OS/cp/src/build/CMakeFiles/CMakeScratch/TryCompile-vFI8JA/src.cxx
+        /Users/olezha3000/Documents/University/computer_science/3sem_OS/cp/src/build/CMakeFiles/CMakeScratch/TryCompile-vFI8JA/src.cxx:4:13: error: expected ';' at end of declaration list
+            4 |     X(int i) noexcept {}
+              |             ^
+              |             ;
+        /Users/olezha3000/Documents/University/computer_science/3sem_OS/cp/src/build/CMakeFiles/CMakeScratch/TryCompile-vFI8JA/src.cxx:7:14: warning: unused parameter 'argc' [-Wunused-parameter]
+            7 | int main(int argc, char *argv [])
+              |              ^
+        /Users/olezha3000/Documents/University/computer_science/3sem_OS/cp/src/build/CMakeFiles/CMakeScratch/TryCompile-vFI8JA/src.cxx:7:26: warning: unused parameter 'argv' [-Wunused-parameter]
+            7 | int main(int argc, char *argv [])
+              |                          ^
+        2 warnings and 1 error generated.
+        make[1]: *** [CMakeFiles/cmTC_8c715.dir/src.cxx.o] Error 1
+        make: *** [cmTC_8c715/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/Internal/CheckSourceCompiles.cmake:108 (try_compile)"
+      - "/opt/homebrew/share/cmake/Modules/CheckCSourceCompiles.cmake:58 (cmake_check_source_compiles)"
+      - "build/_deps/libzmq-src/builds/cmake/Modules/ZMQSourceRunChecks.cmake:215 (check_c_source_compiles)"
+      - "build/_deps/libzmq-src/CMakeLists.txt:735 (zmq_check_pthread_setname)"
+    checks:
+      - "Performing Test ZMQ_HAVE_PTHREAD_SETNAME_1"
+    directories:
+      source: "/Users/olezha3000/Documents/University/computer_science/3sem_OS/cp/src/build/CMakeFiles/CMakeScratch/TryCompile-eWRB2s"
+      binary: "/Users/olezha3000/Documents/University/computer_science/3sem_OS/cp/src/build/CMakeFiles/CMakeScratch/TryCompile-eWRB2s"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -std=c11 -Wno-tautological-constant-compare"
+      CMAKE_MODULE_PATH: "/Users/olezha3000/Documents/University/computer_science/3sem_OS/cp/src/build/_deps/libzmq-src;/Users/olezha3000/Documents/University/computer_science/3sem_OS/cp/src/build/_deps/libzmq-src/builds/cmake/Modules"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: "/Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk"
+    buildResult:
+      variable: "ZMQ_HAVE_PTHREAD_SETNAME_1"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/olezha3000/Documents/University/computer_science/3sem_OS/cp/src/build/CMakeFiles/CMakeScratch/TryCompile-eWRB2s'
+        
+        Run Build Command(s): /opt/homebrew/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_e0b96/fast
+        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_e0b96.dir/build.make CMakeFiles/cmTC_e0b96.dir/build
+        Building C object CMakeFiles/cmTC_e0b96.dir/src.c.o
+        /Library/Developer/CommandLineTools/usr/bin/cc -DZMQ_HAVE_PTHREAD_SETNAME_1  -std=c11 -Wno-tautological-constant-compare -D_GNU_SOURCE -Werror -pthread -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk -MD -MT CMakeFiles/cmTC_e0b96.dir/src.c.o -MF CMakeFiles/cmTC_e0b96.dir/src.c.o.d -o CMakeFiles/cmTC_e0b96.dir/src.c.o -c /Users/olezha3000/Documents/University/computer_science/3sem_OS/cp/src/build/CMakeFiles/CMakeScratch/TryCompile-eWRB2s/src.c
+        Linking C executable cmTC_e0b96
+        /opt/homebrew/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e0b96.dir/link.txt --verbose=1
+        /Library/Developer/CommandLineTools/usr/bin/cc  -std=c11 -Wno-tautological-constant-compare -D_GNU_SOURCE -Werror -pthread -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_e0b96.dir/src.c.o -o cmTC_e0b96
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/Internal/CheckSourceCompiles.cmake:108 (try_compile)"
+      - "/opt/homebrew/share/cmake/Modules/CheckCSourceCompiles.cmake:58 (cmake_check_source_compiles)"
+      - "build/_deps/libzmq-src/builds/cmake/Modules/ZMQSourceRunChecks.cmake:226 (check_c_source_compiles)"
+      - "build/_deps/libzmq-src/CMakeLists.txt:735 (zmq_check_pthread_setname)"
+    checks:
+      - "Performing Test ZMQ_HAVE_PTHREAD_SETNAME_2"
+    directories:
+      source: "/Users/olezha3000/Documents/University/computer_science/3sem_OS/cp/src/build/CMakeFiles/CMakeScratch/TryCompile-yZ55JC"
+      binary: "/Users/olezha3000/Documents/University/computer_science/3sem_OS/cp/src/build/CMakeFiles/CMakeScratch/TryCompile-yZ55JC"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -std=c11 -Wno-tautological-constant-compare"
+      CMAKE_MODULE_PATH: "/Users/olezha3000/Documents/University/computer_science/3sem_OS/cp/src/build/_deps/libzmq-src;/Users/olezha3000/Documents/University/computer_science/3sem_OS/cp/src/build/_deps/libzmq-src/builds/cmake/Modules"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: "/Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk"
+    buildResult:
+      variable: "ZMQ_HAVE_PTHREAD_SETNAME_2"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/olezha3000/Documents/University/computer_science/3sem_OS/cp/src/build/CMakeFiles/CMakeScratch/TryCompile-yZ55JC'
+        
+        Run Build Command(s): /opt/homebrew/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_785d4/fast
+        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_785d4.dir/build.make CMakeFiles/cmTC_785d4.dir/build
+        Building C object CMakeFiles/cmTC_785d4.dir/src.c.o
+        /Library/Developer/CommandLineTools/usr/bin/cc -DZMQ_HAVE_PTHREAD_SETNAME_2  -std=c11 -Wno-tautological-constant-compare -D_GNU_SOURCE -Werror -pthread -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk -MD -MT CMakeFiles/cmTC_785d4.dir/src.c.o -MF CMakeFiles/cmTC_785d4.dir/src.c.o.d -o CMakeFiles/cmTC_785d4.dir/src.c.o -c /Users/olezha3000/Documents/University/computer_science/3sem_OS/cp/src/build/CMakeFiles/CMakeScratch/TryCompile-yZ55JC/src.c
+        /Users/olezha3000/Documents/University/computer_science/3sem_OS/cp/src/build/CMakeFiles/CMakeScratch/TryCompile-yZ55JC/src.c:6:41: error: too many arguments to function call, expected 1, have 2
+            6 |     pthread_setname_np (pthread_self(), "foo");
+              |     ~~~~~~~~~~~~~~~~~~                  ^~~~~
+        /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/pthread.h:535:5: note: 'pthread_setname_np' declared here
+          535 | int     pthread_setname_np(const char*);
+              |         ^                  ~~~~~~~~~~~
+        1 error generated.
+        make[1]: *** [CMakeFiles/cmTC_785d4.dir/src.c.o] Error 1
+        make: *** [cmTC_785d4/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/Internal/CheckSourceCompiles.cmake:108 (try_compile)"
+      - "/opt/homebrew/share/cmake/Modules/CheckCSourceCompiles.cmake:58 (cmake_check_source_compiles)"
+      - "build/_deps/libzmq-src/builds/cmake/Modules/ZMQSourceRunChecks.cmake:237 (check_c_source_compiles)"
+      - "build/_deps/libzmq-src/CMakeLists.txt:735 (zmq_check_pthread_setname)"
+    checks:
+      - "Performing Test ZMQ_HAVE_PTHREAD_SETNAME_3"
+    directories:
+      source: "/Users/olezha3000/Documents/University/computer_science/3sem_OS/cp/src/build/CMakeFiles/CMakeScratch/TryCompile-WRXBMS"
+      binary: "/Users/olezha3000/Documents/University/computer_science/3sem_OS/cp/src/build/CMakeFiles/CMakeScratch/TryCompile-WRXBMS"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -std=c11 -Wno-tautological-constant-compare"
+      CMAKE_MODULE_PATH: "/Users/olezha3000/Documents/University/computer_science/3sem_OS/cp/src/build/_deps/libzmq-src;/Users/olezha3000/Documents/University/computer_science/3sem_OS/cp/src/build/_deps/libzmq-src/builds/cmake/Modules"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: "/Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk"
+    buildResult:
+      variable: "ZMQ_HAVE_PTHREAD_SETNAME_3"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/olezha3000/Documents/University/computer_science/3sem_OS/cp/src/build/CMakeFiles/CMakeScratch/TryCompile-WRXBMS'
+        
+        Run Build Command(s): /opt/homebrew/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_28865/fast
+        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_28865.dir/build.make CMakeFiles/cmTC_28865.dir/build
+        Building C object CMakeFiles/cmTC_28865.dir/src.c.o
+        /Library/Developer/CommandLineTools/usr/bin/cc -DZMQ_HAVE_PTHREAD_SETNAME_3  -std=c11 -Wno-tautological-constant-compare -D_GNU_SOURCE -Werror -pthread -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk -MD -MT CMakeFiles/cmTC_28865.dir/src.c.o -MF CMakeFiles/cmTC_28865.dir/src.c.o.d -o CMakeFiles/cmTC_28865.dir/src.c.o -c /Users/olezha3000/Documents/University/computer_science/3sem_OS/cp/src/build/CMakeFiles/CMakeScratch/TryCompile-WRXBMS/src.c
+        /Users/olezha3000/Documents/University/computer_science/3sem_OS/cp/src/build/CMakeFiles/CMakeScratch/TryCompile-WRXBMS/src.c:6:41: error: too many arguments to function call, expected 1, have 3
+            6 |     pthread_setname_np (pthread_self(), "foo", (void *)0);
+              |     ~~~~~~~~~~~~~~~~~~                  ^~~~~~~~~~~~~~~~
+        /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/pthread.h:535:5: note: 'pthread_setname_np' declared here
+          535 | int     pthread_setname_np(const char*);
+              |         ^                  ~~~~~~~~~~~
+        1 error generated.
+        make[1]: *** [CMakeFiles/cmTC_28865.dir/src.c.o] Error 1
+        make: *** [cmTC_28865/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/Internal/CheckSourceCompiles.cmake:108 (try_compile)"
+      - "/opt/homebrew/share/cmake/Modules/CheckCSourceCompiles.cmake:58 (cmake_check_source_compiles)"
+      - "build/_deps/libzmq-src/builds/cmake/Modules/ZMQSourceRunChecks.cmake:248 (check_c_source_compiles)"
+      - "build/_deps/libzmq-src/CMakeLists.txt:735 (zmq_check_pthread_setname)"
+    checks:
+      - "Performing Test ZMQ_HAVE_PTHREAD_SET_NAME"
+    directories:
+      source: "/Users/olezha3000/Documents/University/computer_science/3sem_OS/cp/src/build/CMakeFiles/CMakeScratch/TryCompile-OJH3Yo"
+      binary: "/Users/olezha3000/Documents/University/computer_science/3sem_OS/cp/src/build/CMakeFiles/CMakeScratch/TryCompile-OJH3Yo"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -std=c11 -Wno-tautological-constant-compare"
+      CMAKE_MODULE_PATH: "/Users/olezha3000/Documents/University/computer_science/3sem_OS/cp/src/build/_deps/libzmq-src;/Users/olezha3000/Documents/University/computer_science/3sem_OS/cp/src/build/_deps/libzmq-src/builds/cmake/Modules"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: "/Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk"
+    buildResult:
+      variable: "ZMQ_HAVE_PTHREAD_SET_NAME"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/olezha3000/Documents/University/computer_science/3sem_OS/cp/src/build/CMakeFiles/CMakeScratch/TryCompile-OJH3Yo'
+        
+        Run Build Command(s): /opt/homebrew/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_ef9fd/fast
+        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_ef9fd.dir/build.make CMakeFiles/cmTC_ef9fd.dir/build
+        Building C object CMakeFiles/cmTC_ef9fd.dir/src.c.o
+        /Library/Developer/CommandLineTools/usr/bin/cc -DZMQ_HAVE_PTHREAD_SET_NAME  -std=c11 -Wno-tautological-constant-compare -D_GNU_SOURCE -Werror -pthread -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk -MD -MT CMakeFiles/cmTC_ef9fd.dir/src.c.o -MF CMakeFiles/cmTC_ef9fd.dir/src.c.o.d -o CMakeFiles/cmTC_ef9fd.dir/src.c.o -c /Users/olezha3000/Documents/University/computer_science/3sem_OS/cp/src/build/CMakeFiles/CMakeScratch/TryCompile-OJH3Yo/src.c
+        /Users/olezha3000/Documents/University/computer_science/3sem_OS/cp/src/build/CMakeFiles/CMakeScratch/TryCompile-OJH3Yo/src.c:6:5: error: call to undeclared function 'pthread_set_name_np'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+            6 |     pthread_set_name_np (pthread_self(), "foo");
+              |     ^
+        /Users/olezha3000/Documents/University/computer_science/3sem_OS/cp/src/build/CMakeFiles/CMakeScratch/TryCompile-OJH3Yo/src.c:6:5: note: did you mean 'pthread_setname_np'?
+        /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/pthread.h:535:5: note: 'pthread_setname_np' declared here
+          535 | int     pthread_setname_np(const char*);
+              |         ^
+        1 error generated.
+        make[1]: *** [CMakeFiles/cmTC_ef9fd.dir/src.c.o] Error 1
+        make: *** [cmTC_ef9fd/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/Internal/CheckSourceCompiles.cmake:108 (try_compile)"
+      - "/opt/homebrew/share/cmake/Modules/CheckCSourceCompiles.cmake:58 (cmake_check_source_compiles)"
+      - "build/_deps/libzmq-src/builds/cmake/Modules/ZMQSourceRunChecks.cmake:266 (check_c_source_compiles)"
+      - "build/_deps/libzmq-src/CMakeLists.txt:736 (zmq_check_pthread_setaffinity)"
+    checks:
+      - "Performing Test ZMQ_HAVE_PTHREAD_SET_AFFINITY"
+    directories:
+      source: "/Users/olezha3000/Documents/University/computer_science/3sem_OS/cp/src/build/CMakeFiles/CMakeScratch/TryCompile-Dh9tIL"
+      binary: "/Users/olezha3000/Documents/University/computer_science/3sem_OS/cp/src/build/CMakeFiles/CMakeScratch/TryCompile-Dh9tIL"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -std=c11 -Wno-tautological-constant-compare"
+      CMAKE_MODULE_PATH: "/Users/olezha3000/Documents/University/computer_science/3sem_OS/cp/src/build/_deps/libzmq-src;/Users/olezha3000/Documents/University/computer_science/3sem_OS/cp/src/build/_deps/libzmq-src/builds/cmake/Modules"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: "/Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk"
+    buildResult:
+      variable: "ZMQ_HAVE_PTHREAD_SET_AFFINITY"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/olezha3000/Documents/University/computer_science/3sem_OS/cp/src/build/CMakeFiles/CMakeScratch/TryCompile-Dh9tIL'
+        
+        Run Build Command(s): /opt/homebrew/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_08bbb/fast
+        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_08bbb.dir/build.make CMakeFiles/cmTC_08bbb.dir/build
+        Building C object CMakeFiles/cmTC_08bbb.dir/src.c.o
+        /Library/Developer/CommandLineTools/usr/bin/cc -DZMQ_HAVE_PTHREAD_SET_AFFINITY  -std=c11 -Wno-tautological-constant-compare -D_GNU_SOURCE -Werror -pthread -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk -MD -MT CMakeFiles/cmTC_08bbb.dir/src.c.o -MF CMakeFiles/cmTC_08bbb.dir/src.c.o.d -o CMakeFiles/cmTC_08bbb.dir/src.c.o -c /Users/olezha3000/Documents/University/computer_science/3sem_OS/cp/src/build/CMakeFiles/CMakeScratch/TryCompile-Dh9tIL/src.c
+        /Users/olezha3000/Documents/University/computer_science/3sem_OS/cp/src/build/CMakeFiles/CMakeScratch/TryCompile-Dh9tIL/src.c:6:5: error: use of undeclared identifier 'cpu_set_t'
+            6 |     cpu_set_t test; 
+              |     ^
+        /Users/olezha3000/Documents/University/computer_science/3sem_OS/cp/src/build/CMakeFiles/CMakeScratch/TryCompile-Dh9tIL/src.c:7:5: error: call to undeclared function 'pthread_setaffinity_np'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+            7 |     pthread_setaffinity_np (pthread_self(), sizeof(cpu_set_t), &test);
+              |     ^
+        /Users/olezha3000/Documents/University/computer_science/3sem_OS/cp/src/build/CMakeFiles/CMakeScratch/TryCompile-Dh9tIL/src.c:7:5: note: did you mean 'pthread_setname_np'?
+        /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/pthread.h:535:5: note: 'pthread_setname_np' declared here
+          535 | int     pthread_setname_np(const char*);
+              |         ^
+        /Users/olezha3000/Documents/University/computer_science/3sem_OS/cp/src/build/CMakeFiles/CMakeScratch/TryCompile-Dh9tIL/src.c:7:52: error: use of undeclared identifier 'cpu_set_t'
+            7 |     pthread_setaffinity_np (pthread_self(), sizeof(cpu_set_t), &test);
+              |                                                    ^
+        /Users/olezha3000/Documents/University/computer_science/3sem_OS/cp/src/build/CMakeFiles/CMakeScratch/TryCompile-Dh9tIL/src.c:7:65: error: use of undeclared identifier 'test'; did you mean 'tzset'?
+            7 |     pthread_setaffinity_np (pthread_self(), sizeof(cpu_set_t), &test);
+              |                                                                 ^~~~
+              |                                                                 tzset
+        /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/_time.h:121:6: note: 'tzset' declared here
+          121 | void tzset(void);
+              |      ^
+        4 errors generated.
+        make[1]: *** [CMakeFiles/cmTC_08bbb.dir/src.c.o] Error 1
+        make: *** [cmTC_08bbb/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_run-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/Internal/CheckSourceRuns.cmake:99 (try_run)"
+      - "/opt/homebrew/share/cmake/Modules/CheckCSourceRuns.cmake:52 (cmake_check_source_runs)"
+      - "build/_deps/libzmq-src/builds/cmake/Modules/ZMQSourceRunChecks.cmake:5 (check_c_source_runs)"
+      - "build/_deps/libzmq-src/CMakeLists.txt:739 (zmq_check_sock_cloexec)"
+    checks:
+      - "Performing Test ZMQ_HAVE_SOCK_CLOEXEC"
+    directories:
+      source: "/Users/olezha3000/Documents/University/computer_science/3sem_OS/cp/src/build/CMakeFiles/CMakeScratch/TryCompile-lPM97b"
+      binary: "/Users/olezha3000/Documents/University/computer_science/3sem_OS/cp/src/build/CMakeFiles/CMakeScratch/TryCompile-lPM97b"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -std=c11 -Wno-tautological-constant-compare"
+      CMAKE_MODULE_PATH: "/Users/olezha3000/Documents/University/computer_science/3sem_OS/cp/src/build/_deps/libzmq-src;/Users/olezha3000/Documents/University/computer_science/3sem_OS/cp/src/build/_deps/libzmq-src/builds/cmake/Modules"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: "/Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk"
+    buildResult:
+      variable: "ZMQ_HAVE_SOCK_CLOEXEC_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/olezha3000/Documents/University/computer_science/3sem_OS/cp/src/build/CMakeFiles/CMakeScratch/TryCompile-lPM97b'
+        
+        Run Build Command(s): /opt/homebrew/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_0e0bb/fast
+        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_0e0bb.dir/build.make CMakeFiles/cmTC_0e0bb.dir/build
+        Building C object CMakeFiles/cmTC_0e0bb.dir/src.c.o
+        /Library/Developer/CommandLineTools/usr/bin/cc -DZMQ_HAVE_SOCK_CLOEXEC  -std=c11 -Wno-tautological-constant-compare  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk -MD -MT CMakeFiles/cmTC_0e0bb.dir/src.c.o -MF CMakeFiles/cmTC_0e0bb.dir/src.c.o.d -o CMakeFiles/cmTC_0e0bb.dir/src.c.o -c /Users/olezha3000/Documents/University/computer_science/3sem_OS/cp/src/build/CMakeFiles/CMakeScratch/TryCompile-lPM97b/src.c
+        /Users/olezha3000/Documents/University/computer_science/3sem_OS/cp/src/build/CMakeFiles/CMakeScratch/TryCompile-lPM97b/src.c:7:43: error: use of undeclared identifier 'SOCK_CLOEXEC'
+            7 |     int s = socket(PF_INET, SOCK_STREAM | SOCK_CLOEXEC, 0);
+              |                                           ^
+        1 error generated.
+        make[1]: *** [CMakeFiles/cmTC_0e0bb.dir/src.c.o] Error 1
+        make: *** [cmTC_0e0bb/fast] Error 2
+        
+      exitCode: 2
+    runResult:
+      variable: "ZMQ_HAVE_SOCK_CLOEXEC_EXITCODE"
+      cached: true
+  -
+    kind: "try_run-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/Internal/CheckSourceRuns.cmake:99 (try_run)"
+      - "/opt/homebrew/share/cmake/Modules/CheckCSourceRuns.cmake:52 (cmake_check_source_runs)"
+      - "build/_deps/libzmq-src/builds/cmake/Modules/ZMQSourceRunChecks.cmake:36 (check_c_source_runs)"
+      - "build/_deps/libzmq-src/CMakeLists.txt:740 (zmq_check_o_cloexec)"
+    checks:
+      - "Performing Test ZMQ_HAVE_O_CLOEXEC"
+    directories:
+      source: "/Users/olezha3000/Documents/University/computer_science/3sem_OS/cp/src/build/CMakeFiles/CMakeScratch/TryCompile-eAhAQr"
+      binary: "/Users/olezha3000/Documents/University/computer_science/3sem_OS/cp/src/build/CMakeFiles/CMakeScratch/TryCompile-eAhAQr"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -std=c11 -Wno-tautological-constant-compare"
+      CMAKE_MODULE_PATH: "/Users/olezha3000/Documents/University/computer_science/3sem_OS/cp/src/build/_deps/libzmq-src;/Users/olezha3000/Documents/University/computer_science/3sem_OS/cp/src/build/_deps/libzmq-src/builds/cmake/Modules"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: "/Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk"
+    buildResult:
+      variable: "ZMQ_HAVE_O_CLOEXEC_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/olezha3000/Documents/University/computer_science/3sem_OS/cp/src/build/CMakeFiles/CMakeScratch/TryCompile-eAhAQr'
+        
+        Run Build Command(s): /opt/homebrew/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_b4bb4/fast
+        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_b4bb4.dir/build.make CMakeFiles/cmTC_b4bb4.dir/build
+        Building C object CMakeFiles/cmTC_b4bb4.dir/src.c.o
+        /Library/Developer/CommandLineTools/usr/bin/cc -DZMQ_HAVE_O_CLOEXEC  -std=c11 -Wno-tautological-constant-compare  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk -MD -MT CMakeFiles/cmTC_b4bb4.dir/src.c.o -MF CMakeFiles/cmTC_b4bb4.dir/src.c.o.d -o CMakeFiles/cmTC_b4bb4.dir/src.c.o -c /Users/olezha3000/Documents/University/computer_science/3sem_OS/cp/src/build/CMakeFiles/CMakeScratch/TryCompile-eAhAQr/src.c
+        Linking C executable cmTC_b4bb4
+        /opt/homebrew/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b4bb4.dir/link.txt --verbose=1
+        /Library/Developer/CommandLineTools/usr/bin/cc  -std=c11 -Wno-tautological-constant-compare  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_b4bb4.dir/src.c.o -o cmTC_b4bb4
+        
+      exitCode: 0
+    runResult:
+      variable: "ZMQ_HAVE_O_CLOEXEC_EXITCODE"
+      cached: true
+      stdout: |
+      stderr: |
+      exitCode: 0
+  -
+    kind: "try_run-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/Internal/CheckSourceRuns.cmake:99 (try_run)"
+      - "/opt/homebrew/share/cmake/Modules/CheckCSourceRuns.cmake:52 (cmake_check_source_runs)"
+      - "build/_deps/libzmq-src/builds/cmake/Modules/ZMQSourceRunChecks.cmake:53 (check_c_source_runs)"
+      - "build/_deps/libzmq-src/CMakeLists.txt:741 (zmq_check_so_bindtodevice)"
+    checks:
+      - "Performing Test ZMQ_HAVE_SO_BINDTODEVICE"
+    directories:
+      source: "/Users/olezha3000/Documents/University/computer_science/3sem_OS/cp/src/build/CMakeFiles/CMakeScratch/TryCompile-EcTx2i"
+      binary: "/Users/olezha3000/Documents/University/computer_science/3sem_OS/cp/src/build/CMakeFiles/CMakeScratch/TryCompile-EcTx2i"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -std=c11 -Wno-tautological-constant-compare"
+      CMAKE_MODULE_PATH: "/Users/olezha3000/Documents/University/computer_science/3sem_OS/cp/src/build/_deps/libzmq-src;/Users/olezha3000/Documents/University/computer_science/3sem_OS/cp/src/build/_deps/libzmq-src/builds/cmake/Modules"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: "/Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk"
+    buildResult:
+      variable: "ZMQ_HAVE_SO_BINDTODEVICE_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/olezha3000/Documents/University/computer_science/3sem_OS/cp/src/build/CMakeFiles/CMakeScratch/TryCompile-EcTx2i'
+        
+        Run Build Command(s): /opt/homebrew/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_9556a/fast
+        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_9556a.dir/build.make CMakeFiles/cmTC_9556a.dir/build
+        Building C object CMakeFiles/cmTC_9556a.dir/src.c.o
+        /Library/Developer/CommandLineTools/usr/bin/cc -DZMQ_HAVE_SO_BINDTODEVICE  -std=c11 -Wno-tautological-constant-compare  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk -MD -MT CMakeFiles/cmTC_9556a.dir/src.c.o -MF CMakeFiles/cmTC_9556a.dir/src.c.o.d -o CMakeFiles/cmTC_9556a.dir/src.c.o -c /Users/olezha3000/Documents/University/computer_science/3sem_OS/cp/src/build/CMakeFiles/CMakeScratch/TryCompile-EcTx2i/src.c
+        Linking C executable cmTC_9556a
+        /opt/homebrew/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9556a.dir/link.txt --verbose=1
+        /Library/Developer/CommandLineTools/usr/bin/cc  -std=c11 -Wno-tautological-constant-compare  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_9556a.dir/src.c.o -o cmTC_9556a
+        
+      exitCode: 0
+    runResult:
+      variable: "ZMQ_HAVE_SO_BINDTODEVICE_EXITCODE"
+      cached: true
+      stdout: |
+      stderr: |
+      exitCode: 0
+  -
+    kind: "try_run-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/Internal/CheckSourceRuns.cmake:99 (try_run)"
+      - "/opt/homebrew/share/cmake/Modules/CheckCSourceRuns.cmake:52 (cmake_check_source_runs)"
+      - "build/_deps/libzmq-src/builds/cmake/Modules/ZMQSourceRunChecks.cmake:74 (check_c_source_runs)"
+      - "build/_deps/libzmq-src/CMakeLists.txt:742 (zmq_check_so_keepalive)"
+    checks:
+      - "Performing Test ZMQ_HAVE_SO_KEEPALIVE"
+    directories:
+      source: "/Users/olezha3000/Documents/University/computer_science/3sem_OS/cp/src/build/CMakeFiles/CMakeScratch/TryCompile-CxzCKH"
+      binary: "/Users/olezha3000/Documents/University/computer_science/3sem_OS/cp/src/build/CMakeFiles/CMakeScratch/TryCompile-CxzCKH"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -std=c11 -Wno-tautological-constant-compare"
+      CMAKE_MODULE_PATH: "/Users/olezha3000/Documents/University/computer_science/3sem_OS/cp/src/build/_deps/libzmq-src;/Users/olezha3000/Documents/University/computer_science/3sem_OS/cp/src/build/_deps/libzmq-src/builds/cmake/Modules"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: "/Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk"
+    buildResult:
+      variable: "ZMQ_HAVE_SO_KEEPALIVE_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/olezha3000/Documents/University/computer_science/3sem_OS/cp/src/build/CMakeFiles/CMakeScratch/TryCompile-CxzCKH'
+        
+        Run Build Command(s): /opt/homebrew/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_99952/fast
+        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_99952.dir/build.make CMakeFiles/cmTC_99952.dir/build
+        Building C object CMakeFiles/cmTC_99952.dir/src.c.o
+        /Library/Developer/CommandLineTools/usr/bin/cc -DZMQ_HAVE_SO_KEEPALIVE  -std=c11 -Wno-tautological-constant-compare  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk -MD -MT CMakeFiles/cmTC_99952.dir/src.c.o -MF CMakeFiles/cmTC_99952.dir/src.c.o.d -o CMakeFiles/cmTC_99952.dir/src.c.o -c /Users/olezha3000/Documents/University/computer_science/3sem_OS/cp/src/build/CMakeFiles/CMakeScratch/TryCompile-CxzCKH/src.c
+        Linking C executable cmTC_99952
+        /opt/homebrew/bin/cmake -E cmake_link_script CMakeFiles/cmTC_99952.dir/link.txt --verbose=1
+        /Library/Developer/CommandLineTools/usr/bin/cc  -std=c11 -Wno-tautological-constant-compare  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_99952.dir/src.c.o -o cmTC_99952
+        
+      exitCode: 0
+    runResult:
+      variable: "ZMQ_HAVE_SO_KEEPALIVE_EXITCODE"
+      cached: true
+      stdout: |
+      stderr: |
+      exitCode: 0
+  -
+    kind: "try_run-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/Internal/CheckSourceRuns.cmake:99 (try_run)"
+      - "/opt/homebrew/share/cmake/Modules/CheckCSourceRuns.cmake:52 (cmake_check_source_runs)"
+      - "build/_deps/libzmq-src/builds/cmake/Modules/ZMQSourceRunChecks.cmake:318 (check_c_source_runs)"
+      - "build/_deps/libzmq-src/CMakeLists.txt:743 (zmq_check_so_priority)"
+    checks:
+      - "Performing Test ZMQ_HAVE_SO_PRIORITY"
+    directories:
+      source: "/Users/olezha3000/Documents/University/computer_science/3sem_OS/cp/src/build/CMakeFiles/CMakeScratch/TryCompile-gGDcla"
+      binary: "/Users/olezha3000/Documents/University/computer_science/3sem_OS/cp/src/build/CMakeFiles/CMakeScratch/TryCompile-gGDcla"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -std=c11 -Wno-tautological-constant-compare"
+      CMAKE_MODULE_PATH: "/Users/olezha3000/Documents/University/computer_science/3sem_OS/cp/src/build/_deps/libzmq-src;/Users/olezha3000/Documents/University/computer_science/3sem_OS/cp/src/build/_deps/libzmq-src/builds/cmake/Modules"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: "/Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk"
+    buildResult:
+      variable: "ZMQ_HAVE_SO_PRIORITY_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/olezha3000/Documents/University/computer_science/3sem_OS/cp/src/build/CMakeFiles/CMakeScratch/TryCompile-gGDcla'
+        
+        Run Build Command(s): /opt/homebrew/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_d94a6/fast
+        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_d94a6.dir/build.make CMakeFiles/cmTC_d94a6.dir/build
+        Building C object CMakeFiles/cmTC_d94a6.dir/src.c.o
+        /Library/Developer/CommandLineTools/usr/bin/cc -DZMQ_HAVE_SO_PRIORITY  -std=c11 -Wno-tautological-constant-compare  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk -MD -MT CMakeFiles/cmTC_d94a6.dir/src.c.o -MF CMakeFiles/cmTC_d94a6.dir/src.c.o.d -o CMakeFiles/cmTC_d94a6.dir/src.c.o -c /Users/olezha3000/Documents/University/computer_science/3sem_OS/cp/src/build/CMakeFiles/CMakeScratch/TryCompile-gGDcla/src.c
+        /Users/olezha3000/Documents/University/computer_science/3sem_OS/cp/src/build/CMakeFiles/CMakeScratch/TryCompile-gGDcla/src.c:10:43: error: use of undeclared identifier 'SO_PRIORITY'
+           10 |         ((rc = setsockopt (s, SOL_SOCKET, SO_PRIORITY, (char*) &opt, sizeof (int))) == -1)
+              |                                           ^
+        1 error generated.
+        make[1]: *** [CMakeFiles/cmTC_d94a6.dir/src.c.o] Error 1
+        make: *** [cmTC_d94a6/fast] Error 2
+        
+      exitCode: 2
+    runResult:
+      variable: "ZMQ_HAVE_SO_PRIORITY_EXITCODE"
+      cached: true
+  -
+    kind: "try_run-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/Internal/CheckSourceRuns.cmake:99 (try_run)"
+      - "/opt/homebrew/share/cmake/Modules/CheckCSourceRuns.cmake:52 (cmake_check_source_runs)"
+      - "build/_deps/libzmq-src/builds/cmake/Modules/ZMQSourceRunChecks.cmake:93 (check_c_source_runs)"
+      - "build/_deps/libzmq-src/CMakeLists.txt:744 (zmq_check_tcp_keepcnt)"
+    checks:
+      - "Performing Test ZMQ_HAVE_TCP_KEEPCNT"
+    directories:
+      source: "/Users/olezha3000/Documents/University/computer_science/3sem_OS/cp/src/build/CMakeFiles/CMakeScratch/TryCompile-LgeWrW"
+      binary: "/Users/olezha3000/Documents/University/computer_science/3sem_OS/cp/src/build/CMakeFiles/CMakeScratch/TryCompile-LgeWrW"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -std=c11 -Wno-tautological-constant-compare"
+      CMAKE_MODULE_PATH: "/Users/olezha3000/Documents/University/computer_science/3sem_OS/cp/src/build/_deps/libzmq-src;/Users/olezha3000/Documents/University/computer_science/3sem_OS/cp/src/build/_deps/libzmq-src/builds/cmake/Modules"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: "/Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk"
+    buildResult:
+      variable: "ZMQ_HAVE_TCP_KEEPCNT_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/olezha3000/Documents/University/computer_science/3sem_OS/cp/src/build/CMakeFiles/CMakeScratch/TryCompile-LgeWrW'
+        
+        Run Build Command(s): /opt/homebrew/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_55459/fast
+        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_55459.dir/build.make CMakeFiles/cmTC_55459.dir/build
+        Building C object CMakeFiles/cmTC_55459.dir/src.c.o
+        /Library/Developer/CommandLineTools/usr/bin/cc -DZMQ_HAVE_TCP_KEEPCNT  -std=c11 -Wno-tautological-constant-compare  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk -MD -MT CMakeFiles/cmTC_55459.dir/src.c.o -MF CMakeFiles/cmTC_55459.dir/src.c.o.d -o CMakeFiles/cmTC_55459.dir/src.c.o -c /Users/olezha3000/Documents/University/computer_science/3sem_OS/cp/src/build/CMakeFiles/CMakeScratch/TryCompile-LgeWrW/src.c
+        Linking C executable cmTC_55459
+        /opt/homebrew/bin/cmake -E cmake_link_script CMakeFiles/cmTC_55459.dir/link.txt --verbose=1
+        /Library/Developer/CommandLineTools/usr/bin/cc  -std=c11 -Wno-tautological-constant-compare  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_55459.dir/src.c.o -o cmTC_55459
+        
+      exitCode: 0
+    runResult:
+      variable: "ZMQ_HAVE_TCP_KEEPCNT_EXITCODE"
+      cached: true
+      stdout: |
+      stderr: |
+      exitCode: 0
+  -
+    kind: "try_run-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/Internal/CheckSourceRuns.cmake:99 (try_run)"
+      - "/opt/homebrew/share/cmake/Modules/CheckCSourceRuns.cmake:52 (cmake_check_source_runs)"
+      - "build/_deps/libzmq-src/builds/cmake/Modules/ZMQSourceRunChecks.cmake:115 (check_c_source_runs)"
+      - "build/_deps/libzmq-src/CMakeLists.txt:745 (zmq_check_tcp_keepidle)"
+    checks:
+      - "Performing Test ZMQ_HAVE_TCP_KEEPIDLE"
+    directories:
+      source: "/Users/olezha3000/Documents/University/computer_science/3sem_OS/cp/src/build/CMakeFiles/CMakeScratch/TryCompile-jzkJs9"
+      binary: "/Users/olezha3000/Documents/University/computer_science/3sem_OS/cp/src/build/CMakeFiles/CMakeScratch/TryCompile-jzkJs9"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -std=c11 -Wno-tautological-constant-compare"
+      CMAKE_MODULE_PATH: "/Users/olezha3000/Documents/University/computer_science/3sem_OS/cp/src/build/_deps/libzmq-src;/Users/olezha3000/Documents/University/computer_science/3sem_OS/cp/src/build/_deps/libzmq-src/builds/cmake/Modules"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: "/Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk"
+    buildResult:
+      variable: "ZMQ_HAVE_TCP_KEEPIDLE_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/olezha3000/Documents/University/computer_science/3sem_OS/cp/src/build/CMakeFiles/CMakeScratch/TryCompile-jzkJs9'
+        
+        Run Build Command(s): /opt/homebrew/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_d85d0/fast
+        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_d85d0.dir/build.make CMakeFiles/cmTC_d85d0.dir/build
+        Building C object CMakeFiles/cmTC_d85d0.dir/src.c.o
+        /Library/Developer/CommandLineTools/usr/bin/cc -DZMQ_HAVE_TCP_KEEPIDLE  -std=c11 -Wno-tautological-constant-compare  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk -MD -MT CMakeFiles/cmTC_d85d0.dir/src.c.o -MF CMakeFiles/cmTC_d85d0.dir/src.c.o.d -o CMakeFiles/cmTC_d85d0.dir/src.c.o -c /Users/olezha3000/Documents/University/computer_science/3sem_OS/cp/src/build/CMakeFiles/CMakeScratch/TryCompile-jzkJs9/src.c
+        /Users/olezha3000/Documents/University/computer_science/3sem_OS/cp/src/build/CMakeFiles/CMakeScratch/TryCompile-jzkJs9/src.c:13:42: error: use of undeclared identifier 'TCP_KEEPIDLE'
+           13 |        ((rc = setsockopt(s, IPPROTO_TCP, TCP_KEEPIDLE,(char*) &opt, sizeof(int))) == -1)
+              |                                          ^
+        1 error generated.
+        make[1]: *** [CMakeFiles/cmTC_d85d0.dir/src.c.o] Error 1
+        make: *** [cmTC_d85d0/fast] Error 2
+        
+      exitCode: 2
+    runResult:
+      variable: "ZMQ_HAVE_TCP_KEEPIDLE_EXITCODE"
+      cached: true
+  -
+    kind: "try_run-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/Internal/CheckSourceRuns.cmake:99 (try_run)"
+      - "/opt/homebrew/share/cmake/Modules/CheckCSourceRuns.cmake:52 (cmake_check_source_runs)"
+      - "build/_deps/libzmq-src/builds/cmake/Modules/ZMQSourceRunChecks.cmake:138 (check_c_source_runs)"
+      - "build/_deps/libzmq-src/CMakeLists.txt:746 (zmq_check_tcp_keepintvl)"
+    checks:
+      - "Performing Test ZMQ_HAVE_TCP_KEEPINTVL"
+    directories:
+      source: "/Users/olezha3000/Documents/University/computer_science/3sem_OS/cp/src/build/CMakeFiles/CMakeScratch/TryCompile-voKdT5"
+      binary: "/Users/olezha3000/Documents/University/computer_science/3sem_OS/cp/src/build/CMakeFiles/CMakeScratch/TryCompile-voKdT5"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -std=c11 -Wno-tautological-constant-compare"
+      CMAKE_MODULE_PATH: "/Users/olezha3000/Documents/University/computer_science/3sem_OS/cp/src/build/_deps/libzmq-src;/Users/olezha3000/Documents/University/computer_science/3sem_OS/cp/src/build/_deps/libzmq-src/builds/cmake/Modules"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: "/Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk"
+    buildResult:
+      variable: "ZMQ_HAVE_TCP_KEEPINTVL_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/olezha3000/Documents/University/computer_science/3sem_OS/cp/src/build/CMakeFiles/CMakeScratch/TryCompile-voKdT5'
+        
+        Run Build Command(s): /opt/homebrew/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_30515/fast
+        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_30515.dir/build.make CMakeFiles/cmTC_30515.dir/build
+        Building C object CMakeFiles/cmTC_30515.dir/src.c.o
+        /Library/Developer/CommandLineTools/usr/bin/cc -DZMQ_HAVE_TCP_KEEPINTVL  -std=c11 -Wno-tautological-constant-compare  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk -MD -MT CMakeFiles/cmTC_30515.dir/src.c.o -MF CMakeFiles/cmTC_30515.dir/src.c.o.d -o CMakeFiles/cmTC_30515.dir/src.c.o -c /Users/olezha3000/Documents/University/computer_science/3sem_OS/cp/src/build/CMakeFiles/CMakeScratch/TryCompile-voKdT5/src.c
+        Linking C executable cmTC_30515
+        /opt/homebrew/bin/cmake -E cmake_link_script CMakeFiles/cmTC_30515.dir/link.txt --verbose=1
+        /Library/Developer/CommandLineTools/usr/bin/cc  -std=c11 -Wno-tautological-constant-compare  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_30515.dir/src.c.o -o cmTC_30515
+        
+      exitCode: 0
+    runResult:
+      variable: "ZMQ_HAVE_TCP_KEEPINTVL_EXITCODE"
+      cached: true
+      stdout: |
+      stderr: |
+      exitCode: 0
+  -
+    kind: "try_run-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/Internal/CheckSourceRuns.cmake:99 (try_run)"
+      - "/opt/homebrew/share/cmake/Modules/CheckCSourceRuns.cmake:52 (cmake_check_source_runs)"
+      - "build/_deps/libzmq-src/builds/cmake/Modules/ZMQSourceRunChecks.cmake:162 (check_c_source_runs)"
+      - "build/_deps/libzmq-src/CMakeLists.txt:747 (zmq_check_tcp_keepalive)"
+    checks:
+      - "Performing Test ZMQ_HAVE_TCP_KEEPALIVE"
+    directories:
+      source: "/Users/olezha3000/Documents/University/computer_science/3sem_OS/cp/src/build/CMakeFiles/CMakeScratch/TryCompile-OooL2l"
+      binary: "/Users/olezha3000/Documents/University/computer_science/3sem_OS/cp/src/build/CMakeFiles/CMakeScratch/TryCompile-OooL2l"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -std=c11 -Wno-tautological-constant-compare"
+      CMAKE_MODULE_PATH: "/Users/olezha3000/Documents/University/computer_science/3sem_OS/cp/src/build/_deps/libzmq-src;/Users/olezha3000/Documents/University/computer_science/3sem_OS/cp/src/build/_deps/libzmq-src/builds/cmake/Modules"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: "/Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk"
+    buildResult:
+      variable: "ZMQ_HAVE_TCP_KEEPALIVE_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/olezha3000/Documents/University/computer_science/3sem_OS/cp/src/build/CMakeFiles/CMakeScratch/TryCompile-OooL2l'
+        
+        Run Build Command(s): /opt/homebrew/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_41779/fast
+        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_41779.dir/build.make CMakeFiles/cmTC_41779.dir/build
+        Building C object CMakeFiles/cmTC_41779.dir/src.c.o
+        /Library/Developer/CommandLineTools/usr/bin/cc -DZMQ_HAVE_TCP_KEEPALIVE  -std=c11 -Wno-tautological-constant-compare  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk -MD -MT CMakeFiles/cmTC_41779.dir/src.c.o -MF CMakeFiles/cmTC_41779.dir/src.c.o.d -o CMakeFiles/cmTC_41779.dir/src.c.o -c /Users/olezha3000/Documents/University/computer_science/3sem_OS/cp/src/build/CMakeFiles/CMakeScratch/TryCompile-OooL2l/src.c
+        Linking C executable cmTC_41779
+        /opt/homebrew/bin/cmake -E cmake_link_script CMakeFiles/cmTC_41779.dir/link.txt --verbose=1
+        /Library/Developer/CommandLineTools/usr/bin/cc  -std=c11 -Wno-tautological-constant-compare  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_41779.dir/src.c.o -o cmTC_41779
+        
+      exitCode: 0
+    runResult:
+      variable: "ZMQ_HAVE_TCP_KEEPALIVE_EXITCODE"
+      cached: true
+      stdout: |
+      stderr: |
+      exitCode: 0
+  -
+    kind: "try_run-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/Internal/CheckSourceRuns.cmake:99 (try_run)"
+      - "/opt/homebrew/share/cmake/Modules/CheckCSourceRuns.cmake:52 (cmake_check_source_runs)"
+      - "build/_deps/libzmq-src/builds/cmake/Modules/ZMQSourceRunChecks.cmake:185 (check_c_source_runs)"
+      - "build/_deps/libzmq-src/CMakeLists.txt:748 (zmq_check_tcp_tipc)"
+    checks:
+      - "Performing Test ZMQ_HAVE_TIPC"
+    directories:
+      source: "/Users/olezha3000/Documents/University/computer_science/3sem_OS/cp/src/build/CMakeFiles/CMakeScratch/TryCompile-EozWdx"
+      binary: "/Users/olezha3000/Documents/University/computer_science/3sem_OS/cp/src/build/CMakeFiles/CMakeScratch/TryCompile-EozWdx"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -std=c11 -Wno-tautological-constant-compare"
+      CMAKE_MODULE_PATH: "/Users/olezha3000/Documents/University/computer_science/3sem_OS/cp/src/build/_deps/libzmq-src;/Users/olezha3000/Documents/University/computer_science/3sem_OS/cp/src/build/_deps/libzmq-src/builds/cmake/Modules"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: "/Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk"
+    buildResult:
+      variable: "ZMQ_HAVE_TIPC_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/olezha3000/Documents/University/computer_science/3sem_OS/cp/src/build/CMakeFiles/CMakeScratch/TryCompile-EozWdx'
+        
+        Run Build Command(s): /opt/homebrew/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_8afb0/fast
+        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_8afb0.dir/build.make CMakeFiles/cmTC_8afb0.dir/build
+        Building C object CMakeFiles/cmTC_8afb0.dir/src.c.o
+        /Library/Developer/CommandLineTools/usr/bin/cc -DZMQ_HAVE_TIPC  -std=c11 -Wno-tautological-constant-compare  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk -MD -MT CMakeFiles/cmTC_8afb0.dir/src.c.o -MF CMakeFiles/cmTC_8afb0.dir/src.c.o.d -o CMakeFiles/cmTC_8afb0.dir/src.c.o -c /Users/olezha3000/Documents/University/computer_science/3sem_OS/cp/src/build/CMakeFiles/CMakeScratch/TryCompile-EozWdx/src.c
+        /Users/olezha3000/Documents/University/computer_science/3sem_OS/cp/src/build/CMakeFiles/CMakeScratch/TryCompile-EozWdx/src.c:7:10: fatal error: 'linux/tipc.h' file not found
+            7 | #include <linux/tipc.h>
+              |          ^~~~~~~~~~~~~~
+        1 error generated.
+        make[1]: *** [CMakeFiles/cmTC_8afb0.dir/src.c.o] Error 1
+        make: *** [cmTC_8afb0/fast] Error 2
+        
+      exitCode: 2
+    runResult:
+      variable: "ZMQ_HAVE_TIPC_EXITCODE"
+      cached: true
+  -
+    kind: "try_run-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/Internal/CheckSourceRuns.cmake:99 (try_run)"
+      - "/opt/homebrew/share/cmake/Modules/CheckCSourceRuns.cmake:52 (cmake_check_source_runs)"
+      - "build/_deps/libzmq-src/builds/cmake/Modules/ZMQSourceRunChecks.cmake:284 (check_c_source_runs)"
+      - "build/_deps/libzmq-src/CMakeLists.txt:749 (zmq_check_getrandom)"
+    checks:
+      - "Performing Test ZMQ_HAVE_GETRANDOM"
+    directories:
+      source: "/Users/olezha3000/Documents/University/computer_science/3sem_OS/cp/src/build/CMakeFiles/CMakeScratch/TryCompile-6E1j3N"
+      binary: "/Users/olezha3000/Documents/University/computer_science/3sem_OS/cp/src/build/CMakeFiles/CMakeScratch/TryCompile-6E1j3N"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -std=c11 -Wno-tautological-constant-compare"
+      CMAKE_MODULE_PATH: "/Users/olezha3000/Documents/University/computer_science/3sem_OS/cp/src/build/_deps/libzmq-src;/Users/olezha3000/Documents/University/computer_science/3sem_OS/cp/src/build/_deps/libzmq-src/builds/cmake/Modules"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: "/Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk"
+    buildResult:
+      variable: "ZMQ_HAVE_GETRANDOM_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/olezha3000/Documents/University/computer_science/3sem_OS/cp/src/build/CMakeFiles/CMakeScratch/TryCompile-6E1j3N'
+        
+        Run Build Command(s): /opt/homebrew/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_16f21/fast
+        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_16f21.dir/build.make CMakeFiles/cmTC_16f21.dir/build
+        Building C object CMakeFiles/cmTC_16f21.dir/src.c.o
+        /Library/Developer/CommandLineTools/usr/bin/cc -DZMQ_HAVE_GETRANDOM  -std=c11 -Wno-tautological-constant-compare  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk -MD -MT CMakeFiles/cmTC_16f21.dir/src.c.o -MF CMakeFiles/cmTC_16f21.dir/src.c.o.d -o CMakeFiles/cmTC_16f21.dir/src.c.o -c /Users/olezha3000/Documents/University/computer_science/3sem_OS/cp/src/build/CMakeFiles/CMakeScratch/TryCompile-6E1j3N/src.c
+        /Users/olezha3000/Documents/University/computer_science/3sem_OS/cp/src/build/CMakeFiles/CMakeScratch/TryCompile-6E1j3N/src.c:7:14: error: call to undeclared function 'getrandom'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+            7 |     int rc = getrandom(buf, 4, 0);
+              |              ^
+        1 error generated.
+        make[1]: *** [CMakeFiles/cmTC_16f21.dir/src.c.o] Error 1
+        make: *** [cmTC_16f21/fast] Error 2
+        
+      exitCode: 2
+    runResult:
+      variable: "ZMQ_HAVE_GETRANDOM_EXITCODE"
+      cached: true
+...

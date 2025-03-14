@@ -73,6 +73,7 @@ int main()
             close(shm_fd);
             return 1;
         }
+        
         result /= numbers[i];
     }
 
